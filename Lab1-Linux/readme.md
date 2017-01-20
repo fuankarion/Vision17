@@ -97,15 +97,14 @@ The file system through the terminal
    ```
    
 2.  Decompress the images (use ``tar``, check the man)
-3.  Use  ``imagemagick`` to find all *grayscale* images
-    Notice that we first need to install the *imagemagick* package by typing
+3.  Use  ``imagemagick`` to find all *grayscale* images. We first need to install the *imagemagick* package by typing
 
     ```bash
     sudo apt-get install imagemagick
     ```
     
-    Sudo is a special command that lets us perform the next command as if we were system administrators
-    (super users). In general it is not recommended to work as a super user, it should only be used 
+    Sudo is a special command that lets us perform the next command as the system administrator
+    (super user). In general it is not recommended to work as a super user, it should only be used 
     when it is necessary. This provides additional protectection for the system.
     
     ```bash
