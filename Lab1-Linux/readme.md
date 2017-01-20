@@ -8,7 +8,7 @@
    Go to the the *Activities* menu (top left corner, or *start* key):
       -  Go to settings, then keyboard. Set the layout for latin america
       -  Go to software and updates, and select the server for Colombia
- 3. (Recommended) Create a partition in your pc's hard drive and install the linux distribution of your choice, the installed Os should perform better than the live cd.
+3. (Recommended) Create a partition in your pc's hard drive and install the linux distribution of your choice, the installed Os should perform better than the live cd.
 
 ## Introduction to Linux
 
