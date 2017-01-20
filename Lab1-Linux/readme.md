@@ -4,29 +4,28 @@
 
 1. Boot from a live cd, we will be using the [Ubuntu gnome](http://ubuntugnome.org/) distribution.
 
-2. Configure keyboard and software repository
-   From the *Activities* menu (top left corner, or *start* key):
-      -  Go to settings, keyboard and add the layout for latin america
+2. (Optional) Configure keyboard layout and software repository
+   Go to the the *Activities* menu (top left corner, or *start* key):
+      -  Go to settings, then keyboard. Set the layout for latin america
       -  Go to software and updates, and select the server for Colombia
 
 ## Introduction to Linux
 
-1. The graphical interface
+1. Linux Distributions
 
-   Linux can be run using a graphical interface. There are several of these available for every taste.
+   Linux is free software, it allowa to do all sort of things with it. The main component in linux is the kernel, which is the part of the operating system that interfaces with the hardware. Applications run on top of it. 
+   Distributions pack together the kernel with several applications in order to provide a complete operating system. There are hundreds of linux distributions available. In
+   this lab we will be using Ubuntu as it is one of the largest, more supported, and user friendly distributions.
+
+
+2. The graphical interface
+
+   Most linux distributions include a graphical interface. There are several of these available for any taste.
    (http://www.howtogeek.com/163154/linux-users-have-a-choice-8-linux-desktop-environments/).
    Most activities can be accomplished from the interface, but the terminal is where the real power lies.
 
-2. Linux Distributions
 
-   Linux is free software, and as such it is possible for people to do all kinds of things with it.
-   The main component in linux is the kernel, which is the part of the operating system that interfaces 
-   with the hardware and manages resources. Applications run on top of it on user space. 
-   Distributions pack together the kernel with several 
-   applications in order to provide a complete system. There are hundreds of linux distributions available. In
-   this lab we will be using Ubuntu because it is one of the largest, more supported, and user friendly distributions.
-
-2. The file system through the terminal   
+3. The file system through the terminal   
    Some basic commands to navigate through the file system
 
    -  ls: List contents of current directory
