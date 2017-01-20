@@ -74,7 +74,7 @@ The file system through the terminal
 4. Owner and permissions   
    Use ``ls -l`` to see a detailed list of files, this includes permissions and ownership
    Permissions are displayed as 9 letters, for example the following line means that the directory (we know it is a directory becasue of the first *d*) *images*
-   belongs to user *vision* and group *vision*. Its owner can read write and enter it, users in the group can only read and enter the directory, while other users can't do anything. For files the x means execute. 
+   belongs to user *vision* and group *vision*. Its owner can read write and access it, users in the group can only read and access the directory, while other users can't do anything. For files the x means execute. 
    ```bash
    drwxr-x--- 2 vision vision 4096 ene 25 18:45 images
    ```
@@ -85,8 +85,7 @@ The file system through the terminal
 
 ## Exercise: Image database
 
-1. The following command lets us connect to another machine and use its terminal,
-   the second command lets us copy files between systems.
+1. The following command lets us connect to a remoter machine identified by SERVER (either a name or an ip address), as the user VISION. The second command allows us copy files between systems.
 
    ```bash
    
