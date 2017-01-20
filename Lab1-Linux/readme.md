@@ -54,17 +54,17 @@ The file system through the terminal
    for example ``man find`` or search in google.
 
 2. Find the ```passwd```file
-   >  ``find / -name passwd 2 > /dev/null``
+   >  ``find / -name passwd  2> /dev/null``
 
-   The ``2>`` operator redirects the error output to ``/dev/null``. This is a special file that acts as a sink,
-   anything that is send to it will dissappear. Other important redirection operations are
+   The `` 2>`` operator redirects the error output to ``/dev/null``. This is a special file that acts as a sink,
+   anything sent to it will dissappear. Other important redirection operations are
       -  `` > `` : Redirect standard output to a file
       -  `` | `` : Redirect standard output to standar input of another program
       -  `` 2> ``: Redirect error output to a file
       -  `` < `` : Send contents of a file to standard input
       -  `` 2>&1``: Send error output to the sampe place as standard output
 
-3. To have a nicer display of the *passwd* we can use the following command. It sends the content of the 
+3. To have a nicer display of the *passwd* file we can use the following command. It sends the content of the 
    file to the ``tr`` command, which translates columns to tabs.
 
    ```bash
