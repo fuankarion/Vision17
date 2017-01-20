@@ -2,7 +2,7 @@
 
 ## Preparation
 
-1. Boot from a live cd, we will be using the [Ubuntu gnome](http://ubuntugnome.org/) distribution.
+1. Boot from a live cd, we suggest to use  [Ubuntu gnome](http://ubuntugnome.org/) distribution, or any ibuntu derivative.
 
 2. (Optional) Configure keyboard layout and software repository
    Go to the the *Activities* menu (top left corner, or *start* key):
