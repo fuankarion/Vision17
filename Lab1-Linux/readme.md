@@ -38,7 +38,7 @@
    -  rm: Remove a file
    -  touch: Create a file, or update its timestamp
    -  echo: Print something to standard output
-   -  nano: Edit files
+   -  nano: Command line file editor
    -  find: Find files and perform actions on it
    -  which: Find the location of a binary
 
@@ -48,9 +48,9 @@
       -  ``/`` (slash): The root of the file system
       -  ``~`` (tilde) :  Home directory
       
-   Take some time to explore the file system
+   Take some time to explore the ubuntu file system 
    
-   To find more information about a command call it with the ``--help`` flag, call ``man <command>``, like
+   To get more information about a command call it with the ``--help`` flag, or call ``man <command>`` for a more detailed description of it,
    for example ``man find`` or search in google.
 
 2. Find the ```passwd```file
