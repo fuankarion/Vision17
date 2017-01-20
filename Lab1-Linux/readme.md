@@ -25,8 +25,8 @@
    (http://www.howtogeek.com/163154/linux-users-have-a-choice-8-linux-desktop-environments/).
    Most activities can be accomplished from the interface, but the terminal is where the real power lies.
 
-
-3. The file system through the terminal   
+### Playing arround with the file system and the terminal
+The file system through the terminal   
    Like any other component of the Os, the file systema can be accesed from the command line. Here are some basic commands to navigate through the file system
 
    -  ls: List contents of current directory
