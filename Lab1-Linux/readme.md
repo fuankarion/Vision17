@@ -8,6 +8,7 @@
    Go to the the *Activities* menu (top left corner, or *start* key):
       -  Go to settings, then keyboard. Set the layout for latin america
       -  Go to software and updates, and select the server for Colombia
+ 3. (Recommended) Create a partition in your pc's hard drive and install the linux distribution of your choice, the installed Os should perform better than the live cd.
 
 ## Introduction to Linux
 
@@ -26,7 +27,7 @@
 
 
 3. The file system through the terminal   
-   Some basic commands to navigate through the file system
+   Like any other component of the Os, the file systema can be accesed from the command line. Here are some basic commands to navigate through the file system
 
    -  ls: List contents of current directory
    -  pwd: Give location of current directory
