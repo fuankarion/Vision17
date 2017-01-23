@@ -89,7 +89,7 @@ To get more information about a command call it with the ``--help`` flag, or cal
 
 ## Exercise: Image database
 
-1. The following command lets us connect to a remote machine identified by SERVER (either a name that can be resolved by the DNS, or an ip address), as the user VISION. The second command allows us to copy files between systems.
+1. The following command lets us connect to a remote machine identified by SERVER (either a name that can be resolved by the DNS, or an ip address), as the user VISION. The second command allows us to copy files between systems (you will get the actual login information in class).
 
    ```bash
    
