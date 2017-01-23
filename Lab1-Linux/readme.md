@@ -43,6 +43,7 @@ The file system through the terminal
    -  nano: Handy command line file editor
    -  find: Find files and perform actions on it
    -  which: Find the location of a binary
+   - wget: Download a resource (identified by its url) form internet 
 
 Some special directories are:
    - ``.`` (dot) : The current directory
