@@ -180,13 +180,13 @@ To get more information about a command call it with the ``--help`` flag, or cal
 ## Your turn
 
 1. Download the *bsds500* image segmentation database and decompress it (keep it in you hard drive, we will come back over this data in a few weeks).
-2. How many images are there?
-3. What is the resolution?
+2. What is the disk size of the uncompressed dataset, How many images are there?
+3. What is the resolution, what is their format?
 4. How many of them are in *landscape* orientation (opposed to *portrait*)?
 5. Crop all images to make them square using [imagemagick](http://www.imagemagick.org/script/index.php)
 
 ### Report
-Complete the 5 
+Complete the 5 previous task/questions. DO NOT use a graphical interface to complete them. Give a detailed description of all the commands you used.
 
 ## Tutorial
 
