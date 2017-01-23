@@ -1,20 +1,22 @@
+
+
 # Introduction to Linux
 
 ## Preparation
 
-1. Boot from a live cd, we suggest to use  [Ubuntu gnome](http://ubuntugnome.org/) distribution, or any ibuntu derivative.
+1. Boot from a live cd, we suggest to use  [Ubuntu gnome](http://ubuntugnome.org/) distribution, or any ubuntu derivative.
 
 2. (Optional) Configure keyboard layout and software repository
    Go to the the *Activities* menu (top left corner, or *start* key):
       -  Go to settings, then keyboard. Set the layout for latin america
       -  Go to software and updates, and select the server for Colombia
-3. (Recommended) Instead of booting form a live Cd. Create a partition in your pc's hard drive and install the linux distribution of your choice, the installed Os should perform better than the live cd.
+3. (Recommended) Instead of booting from a live Cd. Create a partition in your pc's hard drive and install the linux distribution of your choice, the installed Os should perform better than the live cd.
 
 ## Introduction to Linux
 
 1. Linux Distributions
 
-   Linux is free software, it allowa to do all sort of things with it. The main component in linux is the kernel, which is the part of the operating system that interfaces with the hardware. Applications run on top of it. 
+   Linux is free software, it allows to do all sort of things with it. The main component in linux is the kernel, which is the part of the operating system that interfaces with the hardware. Applications run on top of it. 
    Distributions pack together the kernel with several applications in order to provide a complete operating system. There are hundreds of linux distributions available. In
    this lab we will be using Ubuntu as it is one of the largest, more supported, and user friendly distributions.
 
@@ -25,9 +27,9 @@
    (http://www.howtogeek.com/163154/linux-users-have-a-choice-8-linux-desktop-environments/).
    Most activities can be accomplished from the interface, but the terminal is where the real power lies.
 
-### Playing arround with the file system and the terminal
+### Playing around with the file system and the terminal
 The file system through the terminal   
-   Like any other component of the Os, the file systema can be accesed from the command line. Here are some basic commands to navigate through the file system
+   Like any other component of the Os, the file system can be accessed from the command line. Here are some basic commands to navigate through the file system
 
    -  ls: List contents of current directory
    -  pwd: Give location of current directory
@@ -57,12 +59,12 @@ The file system through the terminal
    >  ``find / -name passwd  2> /dev/null``
 
    The `` 2>`` operator redirects the error output to ``/dev/null``. This is a special file that acts as a sink,
-   anything sent to it will dissappear. Other important redirection operations are
+   anything sent to it will disappear. Other important redirection operations are
       -  `` > `` : Redirect standard output to a file
-      -  `` | `` : Redirect standard output to standar input of another program
+      -  `` | `` : Redirect standard output to standard input of another program
       -  `` 2> ``: Redirect error output to a file
       -  `` < `` : Send contents of a file to standard input
-      -  `` 2>&1``: Send error output to the sampe place as standard output
+      -  `` 2>&1``: Send error output to the same place as standard output
 
 3. To have a nicer display of the *passwd* file we can use the following command. It sends the content of the 
    file to the ``tr`` command, which translates columns to tabs.
@@ -73,7 +75,7 @@ The file system through the terminal
    
 4. Owner and permissions   
    Use ``ls -l`` to see a detailed list of files, this includes permissions and ownership
-   Permissions are displayed as 9 letters, for example the following line means that the directory (we know it is a directory becasue of the first *d*) *images*
+   Permissions are displayed as 9 letters, for example the following line means that the directory (we know it is a directory because of the first *d*) *images*
    belongs to user *vision* and group *vision*. Its owner can read write and access it, users in the group can only read and access the directory, while other users can't do anything. For files the x means execute. 
    ```bash
    drwxr-x--- 2 vision vision 4096 ene 25 18:45 images
@@ -85,7 +87,7 @@ The file system through the terminal
 
 ## Exercise: Image database
 
-1. The following command lets us connect to a remoter machine identified by SERVER (either a name or an ip address), as the user VISION. The second command allows us copy files between systems.
+1. The following command lets us connect to a remote machine identified by SERVER (either a name or an ip address), as the user VISION. The second command allows us copy files between systems.
 
    ```bash
    
@@ -105,7 +107,7 @@ The file system through the terminal
     
     Sudo is a special command that lets us perform the next command as the system administrator
     (super user). In general it is not recommended to work as a super user, it should only be used 
-    when it is necessary. This provides additional protectection for the system.
+    when it is necessary. This provides additional protection for the system.
     
     ```bash
     find . -name "*.tiff" -exec identify {} \; | grep -i gray | wc -l
@@ -121,7 +123,7 @@ The file system through the terminal
       cd ~
       # remove the folder created by a previous run from the script
       rm -r color_images 2>/dev/null
-      # create otuput directory
+      # create output directory
       mkdir color_images
       # find all files whose name end in .tif
       images=$(find sipi_images -name *.tiff)
@@ -132,7 +134,7 @@ The file system through the terminal
          # check if the output from identify contains the word "gray"
          identify $im | grep -q -i gray
          
-         # $? gives the exit code of the last command, in this case grep, it will be zero if a coincidense was found
+         # $? gives the exit code of the last command, in this case grep, it will be zero if a match was found
          if [ $? -eq 0 ]
          then
             echo $im is gray
@@ -144,7 +146,7 @@ The file system through the terminal
       
       ```
       -  save it for example as ``find_color_images.sh``
-      -  make executable ``chmod u+x`` (This means add Execute permision for the user)
+      -  make executable ``chmod u+x`` (This means add Execute permission for the user)
       -  run ``./find_duplicates.sh`` (The dot is necessary to run a program in the current directory)
       
 5.  Find all images with size larger than 500k
@@ -183,3 +185,5 @@ The file system through the terminal
 ## Tutorial
 
 http://www.ee.surrey.ac.uk/Teaching/Unix/ 
+
+
