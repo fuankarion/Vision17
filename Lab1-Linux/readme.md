@@ -185,6 +185,9 @@ To get more information about a command call it with the ``--help`` flag, or cal
 4. How many of them are in *landscape* orientation (opposed to *portrait*)?
 5. Crop all images to make them square using [imagemagick](http://www.imagemagick.org/script/index.php)
 
+### Report
+Complete the 5 
+
 ## Tutorial
 
 http://www.ee.surrey.ac.uk/Teaching/Unix/ 
