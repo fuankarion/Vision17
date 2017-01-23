@@ -75,7 +75,7 @@ To get more information about a command call it with the ``--help`` flag, or cal
    cat /etc/passwd | tr ':' '\t'
    ```
    
-4. Owner and permissions   
+## Owner and permissions   
    Use ``ls -l`` to see a detailed list of files, this includes permissions and ownership
    Permissions are displayed as 9 letters, for example the following line means that the directory (we know it is a directory because of the first *d*) *images*
    belongs to user *vision* and group *vision*. Its owner can read write and access it, users in the group can only read and access the directory, while other users can't do anything. For files the x means execute. 
