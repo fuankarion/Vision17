@@ -89,7 +89,7 @@ To get more information about a command call it with the ``--help`` flag, or cal
 
 ## Exercise: Image database
 
-1. The following command lets us connect to a remote machine identified by SERVER (either a name or an ip address), as the user VISION. The second command allows us copy files between systems.
+1. The following command lets us connect to a remote machine identified by SERVER (either a name that can be resolved by the DNS, or an ip address), as the user VISION. The second command allows us to copy files between systems.
 
    ```bash
    
@@ -158,11 +158,10 @@ To get more information about a command call it with the ``--help`` flag, or cal
 
 ## In the Cloud
 
-- [Koding](https://koding.com/R/diego0020) Offers free virtual machines running linux in the cloud. 
 - [Red Hat OpenShift](https://www.openshift.com/pricing/plan-comparison.html) Commercial platform as a service from red hat, has a free plan.
 - [Amazon Web Services](https://aws.amazon.com) Commercial cloud service, includes instances with GPU to run CUDA applications.
 - [Google Cloud](cloud.google.com) Commercial cloud service
-- [Cloud académico uniandes](https://cloud.uniandes.edu.co/).... New offer in the university
+- [Cloud académico uniandes](https://cloud.uniandes.edu.co/). 
 
 ## On Windows
 
