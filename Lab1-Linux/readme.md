@@ -44,7 +44,7 @@ The file system through the terminal
    -  find: Find files and perform actions on it
    -  which: Find the location of a binary
 
-   Some special directories are:
+Some special directories are:
       - ``.`` (dot) : The current directory
       -  ``..`` (two dots) : The parent of the current directory
       -  ``/`` (slash): The root of the file system
