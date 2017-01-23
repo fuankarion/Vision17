@@ -207,19 +207,20 @@ To get more information about a command call it with the ``--help`` flag, or cal
 11. What command will produce a table of Users and Shells sorted by shell (tip: using ``cut`` and ``sort``)
    
 12. Create a script for finding duplicate images based on their content (tip: hash or checksum)
-    You may look in the internet for ideas, but please indicate the source of any code you use
-    Save this script as ``find_duplicates.sh`` in this directory and commit your changes to github
+    You may look in the internet for ideas, Do not forget to include the source of any code you use.
 
-    
-
-1. Download the *bsds500* image segmentation database and decompress it (keep it in you hard drive, we will come back over this data in a few weeks).
-2. What is the disk size of the uncompressed dataset, How many images are in the directory 'BSR/BSDS500/data/images'?
-3. What is their resolution, what is their format?
-4. How many of them are in *landscape* orientation (opposed to *portrait*)?
-5. Crop all images to make them square (256x256). Tip: do not forget about  [imagemagick](http://www.imagemagick.org/script/index.php).
+ 13. Download the *bsds500* image segmentation database and decompress it (keep it in you hard drive, we will come back over this data in a few weeks).
+ 
+ 14. What is the disk size of the uncompressed dataset, How many images are in the directory 'BSR/BSDS500/data/images'?
+ 
+ 15. What is their resolution, what is their format?
+ 
+ 16. How many of them are in *landscape* orientation (opposed to *portrait*)?
+ 
+ 17. Crop all images to make them square (256x256). Tip: do not forget about  [imagemagick](http://www.imagemagick.org/script/index.php).
 
 ### Report
-Complete the 5 previous tasks in a linux environment (use either live cd/virtual machine/local installation/cloud service, it is your choice, just make sure you report this) . DO NOT use a graphical interface to complete them. For every task write a detailed description of all the commands/scripts you used to complete them.
+Questions 10 to 17 MUST be completed in a linux environment (use either live cd/virtual machine/local installation/cloud service, it is your choice, just make sure you report this) Notice some of them actually requiere you to connect to the course sever. DO NOT use a graphical interface to complete any them. For every question write a detailed description of all the commands/scripts you used to complete them.
 
 The deadline for this lab is....
 
