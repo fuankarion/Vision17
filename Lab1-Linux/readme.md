@@ -106,6 +106,10 @@ To get more information about a command call it with the ``--help`` flag, or cal
    - [... more](http://www.thegeekstuff.com/2011/06/windows-sftp-scp-clients/)
 - Emulate linux environment, run shell scripts, connect to machines using X protocol, use linux tools
    - [cygwin](https://www.cygwin.com/)
+   
+- Emulate the hardware of a computer, intall (almmost) any Operative system, run a linux virtual installation inside a Windows host
+   - [VirtualBox](https://www.virtualbox.org)
+   - [VMWare](http://www.vmware.com)
 
 
 ## Sample Exercise: Image database
