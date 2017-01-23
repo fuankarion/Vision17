@@ -57,19 +57,21 @@ To get more information about a command call it with the ``--help`` flag, or cal
    for example ``man find`` or just search in google :P .
 
 
-##Redirections
-2. Find the ```passwd```file, and redirect its contents error log to the 'Black Hole'
+##Input/Output Redirections
+Programs can work together in the linux envirrorment, we just have to porperly 'link' their outputs and their expected inputs. Here are some simple examples:
+
+1. Find the ```passwd```file, and redirect its contents error log to the 'Black Hole'
    >  ``find / -name passwd  2> /dev/null``
 
    The `` 2>`` operator redirects the error output to ``/dev/null``. This is a special file that acts as a sink,
-   anything sent to it will disappear. Other useful redirection operations are
+   anything sent to it will disappear. Other useful I/O redirection operations are
       -  `` > `` : Redirect standard output to a file
       -  `` | `` : Redirect standard output to standard input of another program
       -  `` 2> ``: Redirect error output to a file
       -  `` < `` : Send contents of a file to standard input
       -  `` 2>&1``: Send error output to the same place as standard output
 
-3. To have a nicer display of the *passwd* file we can use the following command. It sends the content of the 
+2. To have a nicer display of the *passwd* file we can use the following command. It sends the content of the 
    file to the ``tr`` command, which can be configured to format columns to tabs.
 
    ```bash
