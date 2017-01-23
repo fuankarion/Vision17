@@ -187,7 +187,7 @@ To get more information about a command call it with the ``--help`` flag, or cal
 5. Crop all images to make them square using [imagemagick](http://www.imagemagick.org/script/index.php)
 
 ### Report
-Complete the 5 previous task/questions in a linux evirrorment (use either live cd/virtual machine/loca installation/ cloud service, it is your choice). DO NOT use a graphical interface to complete them. Give a detailed description of all the commands you used.
+Complete the 5 previous task/questions in a linux evirrorment (use either live cd/virtual machine/loca installation/ cloud service, it is your choice). DO NOT use a graphical interface to complete them. Give a detailed description of all the commands you need to coplete every step.
 
 ## Tutorial
 
