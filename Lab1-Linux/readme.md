@@ -4,7 +4,7 @@
 
 ## Preparation
 
-1. Boot from a live cd, we suggest to use  [Ubuntu gnome](http://ubuntugnome.org/) distribution, or any ubuntu derivative.
+1. Boot from a live cd, we suggest to use  [Ubuntu gnome](http://ubuntugnome.org/) distribution, or another ubuntu derivative.
 
 2. (Optional) Configure keyboard layout and software repository
    Go to the the *Activities* menu (top left corner, or *start* key):
@@ -18,7 +18,7 @@
 
    Linux is free software, it allows to do all sort of things with it. The main component in linux is the kernel, which is the part of the operating system that interfaces with the hardware. Applications run on top of it. 
    Distributions pack together the kernel with several applications in order to provide a complete operating system. There are hundreds of linux distributions available. In
-   this lab we will be using Ubuntu as it is one of the largest, more supported, and user friendly distributions.
+   this lab we will be using Ubuntu as it is one of the largest, better supported, and user friendly distributions.
 
 
 2. The graphical interface
@@ -32,15 +32,15 @@ The file system through the terminal
    Like any other component of the Os, the file system can be accessed from the command line. Here are some basic commands to navigate through the file system
 
    -  ls: List contents of current directory
-   -  pwd: Give location of current directory
+   -  pwd: Get the path  of current directory
    -  cd: Change Directory
-   -  cat: Print contents of a file (and concatenate files)
+   -  cat: Print contents of a file (also useful to concatenate files)
    -  mv: Move a file
    -  cp: Copy a file
    -  rm: Remove a file
    -  touch: Create a file, or update its timestamp
    -  echo: Print something to standard output
-   -  nano: Command line file editor
+   -  nano: Handy command line file editor
    -  find: Find files and perform actions on it
    -  which: Find the location of a binary
 
