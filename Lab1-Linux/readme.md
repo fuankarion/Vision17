@@ -43,7 +43,7 @@ The file system through the terminal
    -  nano: Handy command line file editor
    -  find: Find files and perform actions on it
    -  which: Find the location of a binary
-   - wget: Download a resource (identified by its url) form internet 
+   - wget: Download a resource (identified by its url) from internet 
 
 Some special directories are:
    - ``.`` (dot) : The current directory
@@ -51,14 +51,14 @@ Some special directories are:
    -  ``/`` (slash): The root of the file system
    -  ``~`` (tilde) :  Home directory
       
-Using these commands, take some time to explore the ubuntu file system, get to know  the location of yout user directory, and its default contents. 
+Using these commands, take some time to explore the ubuntu filesystem, get to know  the location of yout user directory, and its default contents. 
    
 To get more information about a command call it with the ``--help`` flag, or call ``man <command>`` for a more detailed description of it,
    for example ``man find`` or just search in google :P .
 
 
 ##Redirections
-2. Find the ```passwd```file, and redirectr its contents error log to the 'Black Hole'
+2. Find the ```passwd```file, and redirect its contents error log to the 'Black Hole'
    >  ``find / -name passwd  2> /dev/null``
 
    The `` 2>`` operator redirects the error output to ``/dev/null``. This is a special file that acts as a sink,
@@ -70,7 +70,7 @@ To get more information about a command call it with the ``--help`` flag, or cal
       -  `` 2>&1``: Send error output to the same place as standard output
 
 3. To have a nicer display of the *passwd* file we can use the following command. It sends the content of the 
-   file to the ``tr`` command, which can be configuired to format columns to tabs.
+   file to the ``tr`` command, which can be configured to format columns to tabs.
 
    ```bash
    cat /etc/passwd | tr ':' '\t'
@@ -107,7 +107,7 @@ To get more information about a command call it with the ``--help`` flag, or cal
 - Emulate linux environment, run shell scripts, connect to machines using X protocol, use linux tools
    - [cygwin](https://www.cygwin.com/)
    
-- Emulate the hardware of a computer, intall (almmost) any Operative system, run a linux virtual installation inside a Windows host
+- Emulate the hardware of a computer, install (almost) any Operative system, run a linux virtual installation inside a Windows host
    - [VirtualBox](https://www.virtualbox.org)
    - [VMWare](http://www.vmware.com)
 
@@ -191,12 +191,13 @@ To get more information about a command call it with the ``--help`` flag, or cal
 5. Crop all images to make them square (256x256). Tip: do not forget about  [imagemagick](http://www.imagemagick.org/script/index.php).
 
 ### Report
-Complete the 5 previous tasks in a linux evirrorment (use either live cd/virtual machine/local installation/cloud service, it is your choice, just make sure you report this) . DO NOT use a graphical interface to complete them. For aevery task write a detailed description of all the commands/scripts you used to complete them.
+Complete the 5 previous tasks in a linux environment (use either live cd/virtual machine/local installation/cloud service, it is your choice, just make sure you report this) . DO NOT use a graphical interface to complete them. For every task write a detailed description of all the commands/scripts you used to complete them.
 
 The deadline for this lab is....
 
 ## Tutorial
 
 http://www.ee.surrey.ac.uk/Teaching/Unix/ 
+
 
 
