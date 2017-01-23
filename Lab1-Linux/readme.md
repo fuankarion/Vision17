@@ -75,7 +75,7 @@ To get more information about a command call it with the ``--help`` flag, or cal
    cat /etc/passwd | tr ':' '\t'
    ```
    
-## Owner and permissions   
+## File Owner and permissions   
    Use ``ls -l`` to see a detailed list of files, this includes permissions and ownership
    Permissions are displayed as 9 letters, for example the following line means that the directory (we know it is a directory because of the first *d*) *images*
    belongs to user *vision* and group *vision*. Its owner can read write and access it, users in the group can only read and access the directory, while other users can't do anything. For files the x means execute. 
@@ -87,7 +87,27 @@ To get more information about a command call it with the ``--help`` flag, or cal
    -  ``chmod`` change access permissions of a file (you must have write access)
    -  ``chown`` change the owner of a file
 
-## Exercise: Image database
+## In the Cloud
+
+- [Red Hat OpenShift](https://www.openshift.com/pricing/plan-comparison.html) Commercial platform as a service from red hat, has a free plan.
+- [Amazon Web Services](https://aws.amazon.com) Commercial cloud service, includes instances with GPU to run CUDA applications.
+- [Google Cloud](cloud.google.com) Commercial cloud service
+- [Cloud académico uniandes](https://cloud.uniandes.edu.co/). 
+
+## On Windows
+
+- To connect to linux machines using ssh:
+   - [putty](http://www.chiark.greenend.org.uk/~sgtatham/putty/)
+   - [MobaXterm](http://mobaxterm.mobatek.net/) Non-free
+- To transfer files using ssh
+   - [filezilla](https://filezilla-project.org/)
+   - [WinSCP](https://winscp.net/eng/docs/free_ssh_client_for_windows)
+   - [... more](http://www.thegeekstuff.com/2011/06/windows-sftp-scp-clients/)
+- Emulate linux environment, run shell scripts, connect to machines using X protocol, use linux tools
+   - [cygwin](https://www.cygwin.com/)
+
+
+## Sample Exercise: Image database
 
 1. The following command lets us connect to a remote machine identified by SERVER (either a name that can be resolved by the DNS, or an ip address), as the user VISION. The second command allows us to copy files between systems (you will get the actual login information in class).
 
@@ -156,28 +176,10 @@ To get more information about a command call it with the ``--help`` flag, or cal
    
 7. Convert all images to *jpg* (tip: use ``mogrify``)
 
-## In the Cloud
 
-- [Red Hat OpenShift](https://www.openshift.com/pricing/plan-comparison.html) Commercial platform as a service from red hat, has a free plan.
-- [Amazon Web Services](https://aws.amazon.com) Commercial cloud service, includes instances with GPU to run CUDA applications.
-- [Google Cloud](cloud.google.com) Commercial cloud service
-- [Cloud académico uniandes](https://cloud.uniandes.edu.co/). 
+## Your turn
 
-## On Windows
-
-- To connect to linux machines using ssh:
-   - [putty](http://www.chiark.greenend.org.uk/~sgtatham/putty/)
-   - [MobaXterm](http://mobaxterm.mobatek.net/) Non-free
-- To transfer files using ssh
-   - [filezilla](https://filezilla-project.org/)
-   - [WinSCP](https://winscp.net/eng/docs/free_ssh_client_for_windows)
-   - [... more](http://www.thegeekstuff.com/2011/06/windows-sftp-scp-clients/)
-- Emulate linux environment, run shell scripts, connect to machines using X protocol, use linux tools
-   - [cygwin](https://www.cygwin.com/)
-
-## Practice questions
-
-1. Download the *bsds500* database and decompress it.
+1. Download the *bsds500* image segmentation database and decompress it (keep it in you hard drive, we will come back over this data in a few weeks).
 2. How many images are there?
 3. What is the resolution?
 4. How many of them are in *landscape* orientation (opposed to *portrait*)?
