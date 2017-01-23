@@ -97,9 +97,9 @@ To get more information about a command call it with the ``--help`` flag, or cal
 
 ## On Windows
 
-- To connect to linux machines using ssh:
+- Connect to linux machines using ssh:
    - [putty](http://www.chiark.greenend.org.uk/~sgtatham/putty/)
-   - [MobaXterm](http://mobaxterm.mobatek.net/) Non-free
+   - [MobaXterm](http://mobaxterm.mobatek.net/) "Freemium" software (some fetures free to use, some only for paid users)
 - To transfer files using ssh
    - [filezilla](https://filezilla-project.org/)
    - [WinSCP](https://winscp.net/eng/docs/free_ssh_client_for_windows)
