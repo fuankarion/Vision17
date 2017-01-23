@@ -57,7 +57,7 @@ To get more information about a command call it with the ``--help`` flag, or cal
 
 
 ##Concatenating commands
-2. Find the ```passwd```file, and redirectr its contents to the 'Black Hole'
+2. Find the ```passwd```file, and redirectr its contents error log to the 'Black Hole'
    >  ``find / -name passwd  2> /dev/null``
 
    The `` 2>`` operator redirects the error output to ``/dev/null``. This is a special file that acts as a sink,
