@@ -50,11 +50,13 @@ Some special directories are:
    -  ``/`` (slash): The root of the file system
    -  ``~`` (tilde) :  Home directory
       
-Using these commands, take some time to explore the ubuntu file system, get to know  the location of yout user directory, its default contents. 
+Using these commands, take some time to explore the ubuntu file system, get to know  the location of yout user directory, and its default contents. 
    
 To get more information about a command call it with the ``--help`` flag, or call ``man <command>`` for a more detailed description of it,
-   for example ``man find`` or search in google.
+   for example ``man find`` or just search in google :P .
 
+
+##Concatenating commands
 2. Find the ```passwd```file
    >  ``find / -name passwd  2> /dev/null``
 
