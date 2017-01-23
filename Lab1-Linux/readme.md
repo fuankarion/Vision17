@@ -45,10 +45,10 @@ The file system through the terminal
    -  which: Find the location of a binary
 
 Some special directories are:
-      - ``.`` (dot) : The current directory
-      -  ``..`` (two dots) : The parent of the current directory
-      -  ``/`` (slash): The root of the file system
-      -  ``~`` (tilde) :  Home directory
+   - ``.`` (dot) : The current directory
+   -  ``..`` (two dots) : The parent of the current directory
+   -  ``/`` (slash): The root of the file system
+   -  ``~`` (tilde) :  Home directory
       
    Take some time to explore the ubuntu file system 
    
