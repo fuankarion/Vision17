@@ -60,7 +60,7 @@ Go into your GitHub account and create a new repository (green button at the rig
 ### Pulling changes
 
 1. Make some changes to your project using the GitHub interface.
-2. Run `git pull`. What happenes?
+2. Run `git pull`. What happened?
 
 ### Conflicts
 
@@ -102,7 +102,7 @@ GitHub is a web service that provides git on the cloud.
  - Pull Requests
 - Makes collaboration easy
 - Makes easy to contribute to open source projects
-- An student package is available. It provies 10 free private repositories among other benefits   
+- An student package is available. It provides 10 free private repositories among other benefits   
   https://education.github.com/pack
  - Additional features:
  - Issue Tracker
@@ -170,3 +170,5 @@ See a more complete list at https://git-scm.com/downloads/guis
 3. Commit the changes (answers) to your copy of the lab repository
 4. Make sure that your answers are available at 
    `https://github.com/<USERNAME>/lab_vision/blob/master/lab01_git/questions.md` 
+
+
