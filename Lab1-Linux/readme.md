@@ -106,7 +106,7 @@ Programs can work together in the linux envirrorment, we just have to porperly '
    - [filezilla](https://filezilla-project.org/)
    - [WinSCP](https://winscp.net/eng/docs/free_ssh_client_for_windows)
    - [... more](http://www.thegeekstuff.com/2011/06/windows-sftp-scp-clients/)
-- Emulate linux environment, run shell scripts, connect to machines using X protocol, use linux tools
+-  Linux environment emulator, run shell scripts, connect to machines using X protocol, use linux tools
    - [cygwin](https://www.cygwin.com/)
    
 - Emulate the hardware of a computer, install (almost) any Operative system, run a linux virtual installation inside a Windows host
