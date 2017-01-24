@@ -222,9 +222,12 @@ Programs can work together in the linux envirrorment, we just have to porperly '
 17. Crop all images to make them square (256x256). Tip: do not forget about  [imagemagick](http://www.imagemagick.org/script/index.php).
 
 ### Report
-Questions 10 to 17 MUST be completed in a linux environment (use either live cd/virtual machine/local installation/cloud service, it is your choice, just make sure you report this) Notice some of them actually requiere you to connect to the course sever. DO NOT use a graphical interface to complete any them. For every question write a detailed description of all the commands/scripts you used to complete them.
+Questions 10 to 17 MUST be completed in a linux environment (you can use a live cd/virtual machine/local installation/cloud service, it is your choice, just make sure you report yout platform). For every question write a detailed description of all the commands/scripts you used to complete them. DO NOT use a graphical interface to complete any the tasks. 
 
-The deadline for this lab is....
+Notice some of the questions actually requiere you to connect to the course sever, the login instructions and credentials will be provided on the first session. 
+
+###Deadline
+We will be delivering every lab trought the [github](https://github.com) tool. We haven't yet completered the tutorial for it, therefore the deadline for this lab will be **February 9 12pm the same as the second lab** 
 
 ## Tutorial
 
