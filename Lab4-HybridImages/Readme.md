@@ -7,7 +7,6 @@ This lab is based on
 - http://cs.brown.edu/courses/cs143/proj1/
 - https://courses.engr.illinois.edu/cs498dh3/fa2014/projects/hybrid/ComputationalPhotography_ProjectHybrid.html
 - http://cvcl.mit.edu/publications/OlivaTorralb_Hybrid_Siggraph06.pdf
-- http://cvcl.mit.edu/hybridimage.htm (Link down)
 
 ## Examples
 
@@ -19,7 +18,7 @@ These images look different when viewed from far (or zoomed out), than when look
 
 ## Theory
 
-*Hybrid images* are composed from two images. A low pass filter is applied to the first one and a high pass filter is applied to the other. From a close distance the high pass filtered imaged dominates, while from a far away the low pass filtered one does. The effect works best when images are aligned.
+*Hybrid images* are made from two images. A low pass filter is applied to one of them, and a high pass filter to the other. After merging the filtered images into a single image, from a close distance the high pass filtered image dominates; from a far away the low pass filtered one dominates. This effect works best when images are aligned and share slightly similar visual inforation.
 
 ## Exercise
 
