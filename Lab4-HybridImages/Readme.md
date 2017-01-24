@@ -49,30 +49,34 @@ Where *L* is a low pass filter, and *X1* and *X2* are the input images. Notice t
 
 In order to simulate how the image will look from different distances we can use a pyramid (see figure at the bottom of http://cs.brown.edu/courses/cs143/proj1/ ).
 
-- Create such a visualization for your image
+- Create such a similar visualization for your image
 - Upload it to the repository
 
-## Homework
+## Yout Turn
 
-Create a hybrid image based on images from your own collections. The more original the better. Some ideas are
+Create a hybrid image based on images from *your own* collections. Some ideas are
 
 - You or people you know
 - Pets
 - Pictures of the university or the city
 - Pictures of places you have visited (preferably in Colombia)
-- Be creative
-- Avoid images downloaded from internet
+Be creative and *avoid images downloaded from internet*
 
-Notice that you will have to *align and crop* the images to get a good effect. To do this you may use image edition software like gimp or photoshop. You are free to do any additional processing that you want in order to increase the effect. Also consider how to deal with color on the images.
+Remeber that you will have to *align and crop* the images to get a better effect. To do this you may use image edition software like gimp or photoshop. You are free to do any additional processing that you want in order to increase the effect. Also consider how to deal with color on the images.
 
-Finally, upload to the repository
+### Report
+
+Be sure to upload o the repository the following items:
 
 - The original images
 - The processed images (cropped, aligned, color adjusted)
-- A short description of each image (one paragraph)
+- A short description of each image (no more than ne paragraph each)
 - The final hybrid image
-- The pyramid
-- The code you used (with comments)
+- The pyramid (use 4 images at least)
+- The full code you used 
 
-**DUE**: 3 /3 /2016 ; 10:00 a.m.
+Along with the items listed above be sure to upload a small report that describes the more relevant aspects of your code. 
+
+### Deadline
+
 
