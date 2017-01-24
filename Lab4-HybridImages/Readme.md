@@ -16,30 +16,27 @@ This lab is based on
 
 These images look different when viewed from far (or zoomed out), than when looking at close range.
 
-## Theory
+## Short Introduction
 
 *Hybrid images* are made from two images. A low pass filter is applied to one of them, and a high pass filter to the other. After merging the filtered images into a single image, from a close distance the high pass filtered image dominates; from a far away the low pass filtered one dominates. This effect works best when images are aligned and share slightly similar visual inforation.
 
 ## Exercise
 
-### Choose images
+### Start with good images
 
-The data folder (originally downloaded from [here](http://cs.brown.edu/courses/cs143/proj1/) ) contains several pairs of aligned images. Choose one pair, and read both images into matlab.
+The data folder (originally downloaded from [here](http://cs.brown.edu/courses/cs143/proj1/) ) contains several pairs of aligned images. Choose one pair, and load both images into matlab.
 
 ### Filtering
 
 Use [imfilter](http://www.mathworks.com/help/images/ref/imfilter.html) to apply a low pass filter to one image.
 For creating the high-pass filtered image, apply a low pass filter to it, and then subtract it from the original image. Mathematically: *Y = X - f(X)* , where *X* is the input image and *f* is the low pass filter. Note that this image will contain negative values.
 
-Look at the [fft](http://www.mathworks.com/help/matlab/ref/fft2.html) and [dct](http://www.mathworks.com/help/images/ref/dct2.html) transforms of
+You maight also looak at the [fft](http://www.mathworks.com/help/matlab/ref/fft2.html) and [dct](http://www.mathworks.com/help/images/ref/dct2.html) transforms to create the filtered images.
 
-- The original images
-- The filter
-- The filtered images
 
-### Summing the images
+### Creating a hybrid image
 
-The hybrid image is composed by adding the two filtered images. The full formula would be
+The hybrid image is created by adding the two filtered images:
 
 *H = f1(X1) + (X2 - f2(X2) )*
 
