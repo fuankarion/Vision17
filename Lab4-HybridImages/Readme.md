@@ -38,9 +38,9 @@ You maight also looak at the [fft](http://www.mathworks.com/help/matlab/ref/fft2
 
 The hybrid image is created by adding the two filtered images:
 
-*H = f1(X1) + (X2 - f2(X2) )*
+*H = L(X1,T1) + (X2 - L(X2,T1) )*
 
-Where *f1* and *f2* are low pass filters, and *X1* and *X2* are the input images. Notice that the effect depends on the cut-off frequencies of both filters (see figure 5 of the [Hybrid Images paper](http://cvcl.mit.edu/publications/OlivaTorralb_Hybrid_Siggraph06.pdf)). Additionally, you may scale the amplitude of one of the images to reduce or increase its impact. Play with this parameters to get a good Hybrid Image.
+Where *L* is a low pass filter, and *X1* and *X2* are the input images. Notice that the effect depends on the cut-off frequencies *T1* and *T2* of both filters (see figure 5 of the [Hybrid Images paper](http://cvcl.mit.edu/publications/OlivaTorralb_Hybrid_Siggraph06.pdf)). Additionally, you may scale the amplitude of one of the images to reduce or increase its impact. Play with this parameters to get a good Hybrid Image.
 
 - Upload the full matlab script used to generate the image to the repository
 - Upload the final image to the repository
