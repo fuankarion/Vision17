@@ -61,12 +61,12 @@ Remember that you will have to *align and probably crop* the images to get a bet
 
 ### Report
 
-Be sure to upload o the repository the following items:
+Be sure to upload to the repository the following items:
 
 - The original images
 - The processed images (cropped, aligned, color adjusted)
 - A short description of each image (no more than one paragraph each)
-- If you had to capture new images just for this lab, please describe if you took any special 
+- If you had to capture new images just for this lab, please describe if you took any special measure
 - The final hybrid image 
 - The pyramid (use 4 images at least)
 - The full code you used 
