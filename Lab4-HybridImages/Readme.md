@@ -42,17 +42,12 @@ The hybrid image is created by adding the two filtered images:
 
 Where *L* is a low pass filter, and *X1* and *X2* are the input images. Notice that the effect depends on the cut-off frequencies *T1* and *T2* of both filters (see figure 5 of the [Hybrid Images paper](http://cvcl.mit.edu/publications/OlivaTorralb_Hybrid_Siggraph06.pdf)). Additionally, you may scale the amplitude of one of the images to reduce or increase its impact. Play with this parameters to get a good Hybrid Image.
 
-- Upload the full matlab script used to generate the image to the repository
-- Upload the final image to the repository
-
 ### Visualization
 
-In order to simulate how the image will look from different distances we can use a pyramid (see figure at the bottom of http://cs.brown.edu/courses/cs143/proj1/ ).
+In order to approximate how the image would look from different distances we can use a pyramid (see figure at the bottom of http://cs.brown.edu/courses/cs143/proj1/ ).
 
-- Create such a similar visualization for your image
-- Upload it to the repository
 
-## Yout Turn
+## Your Turn
 
 Create a hybrid image based on images from *your own* collections. Some ideas are
 
