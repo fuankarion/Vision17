@@ -52,12 +52,12 @@ In order to approximate how the image would look from different distances we can
 Create a hybrid image based on images from *your own* collections. Some ideas are
 
 - You or people you know
-- Pets
+- Pets (Your teacher's personal favorites)
 - Pictures of the university or the city
-- Pictures of places you have visited (preferably in Colombia)
+- Pictures of places you have visited (preferably some well known places)
 Be creative and *avoid images downloaded from internet*
 
-Remeber that you will have to *align and crop* the images to get a better effect. To do this you may use image edition software like gimp or photoshop. You are free to do any additional processing that you want in order to increase the effect. Also consider how to deal with color on the images.
+Remember that you will have to *align and probably crop* the images to get a better effect. To do this you may use image edition software like gimp or photoshop (Matlab if you feel brave). You are free to do any additional processing that you want in order to improve the effect. Also take some time to think how to deal with color images.
 
 ### Report
 
