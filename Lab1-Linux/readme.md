@@ -219,7 +219,7 @@ Programs can work together in the linux envirrorment, we just have to porperly '
 ### Report
 Questions 10 to 17 MUST be completed in a linux environment (you can use a live cd/virtual machine/local installation/cloud service, it is your choice, just make sure you report your platform). For every question write a detailed description of all the commands/scripts you used to complete them. DO NOT use a graphical interface to complete any of the tasks. 
 
-Feel free to search for help on the internet, but ALLWAYS report any external soruce you used.
+Feel free to search for help on the internet, but ALLWAYS report any external source you used.
 
 Notice some of the questions actually require you to connect to the course sever, the login instructions and credentials will be provided on the first session. 
 
