@@ -29,9 +29,13 @@ The data folder (originally downloaded from [here](http://cs.brown.edu/courses/c
 ### Filtering
 
 Use [imfilter](http://www.mathworks.com/help/images/ref/imfilter.html) to apply a low pass filter to one image.
-To create the high-pass filtered image, apply a low pass filter to it, and then subtract it from the original image. You might also use the frecuency representation of the image (i.e. Fouries transform) and operate directly on the frecuency space; This might provide better results. Check [fft](http://www.mathworks.com/help/matlab/ref/fft2.html) and [dct](http://www.mathworks.com/help/images/ref/dct2.html).
+To create the high-pass filtered image, apply a low pass filter to it, and then subtract it from the original image.
 
 Mathematically: *Y = X - f(X)* , where *X* is the input image and *f* is the low pass filter. Note that this image will contain negative values.
+
+You might also use the frecuency representation of the image (i.e. Fouries transform) and operate directly on the frecuency space; This might provide better results. Check [fft](http://www.mathworks.com/help/matlab/ref/fft2.html) and [dct](http://www.mathworks.com/help/images/ref/dct2.html).
+
+
 
 
 
