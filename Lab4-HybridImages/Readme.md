@@ -14,22 +14,24 @@ This lab is based on
 
 ![Jaguar - Tiger](JaguarTigerHybrid.jpg)
 
-These images look different when viewed from far (or zoomed out), than when looking at close range.
+Notice how these images look different when viewed from far (or zoomed out), than when looking at close range.
 
 ## Short Introduction
 
-*Hybrid images* are made from two images. A low pass filter is applied to one of them, and a high pass filter to the other. After merging the filtered images into a single image, from a close distance the high pass filtered image dominates; from a far away the low pass filtered one dominates. This effect works best when images are aligned and share slightly similar visual inforation.
+*Hybrid images* are made from two images. A low pass filter is applied to one of them, and a high pass filter to the other. After merging the filtered images into a single image, from a close distance the high pass filtered image (small details) dominates; from far away the low pass filtered (Broad patterns) one dominates. This effect works best when images are aligned and share slightly similar visual inforation.
 
 ## Exercise
 
-### Start with good images
+### Start with good images 
 
-The data folder (originally downloaded from [here](http://cs.brown.edu/courses/cs143/proj1/) ) contains several pairs of aligned images. Choose one pair, and load both images into matlab.
+The data folder (originally downloaded from [here](http://cs.brown.edu/courses/cs143/proj1/) ) contains several pairs of aligned images. Choose one pair (not any pair, be sure the images look simmilar), and load both  into matlab.
 
 ### Filtering
 
 Use [imfilter](http://www.mathworks.com/help/images/ref/imfilter.html) to apply a low pass filter to one image.
-For creating the high-pass filtered image, apply a low pass filter to it, and then subtract it from the original image. Mathematically: *Y = X - f(X)* , where *X* is the input image and *f* is the low pass filter. Note that this image will contain negative values.
+To create the high-pass filtered image, apply a low pass filter to it, and then subtract it from the original image. You might also find the frecuency representation of the image (i.e. Fouries transform) and operate directly on the frecuency space; This might provide better results.
+
+Mathematically: *Y = X - f(X)* , where *X* is the input image and *f* is the low pass filter. Note that this image will contain negative values.
 
 You maight also looak at the [fft](http://www.mathworks.com/help/matlab/ref/fft2.html) and [dct](http://www.mathworks.com/help/images/ref/dct2.html) transforms to create the filtered images.
 
