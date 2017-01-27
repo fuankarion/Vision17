@@ -178,11 +178,6 @@ Programs can work together in the linux envirrorment, we just have to porperly '
       -  make executable ``chmod u+x`` (This means add Execute permission for the user)
       -  run ``./find_duplicates.sh`` (The dot is necessary to run a program in the current directory)
       
-5.  Find all images with size larger than 500k
-6.  how many are there? (use ``wc`` and ``find``)
-   
-7. Convert all images to *jpg* (tip: use ``mogrify``)
-
 
 ## Your turn
 
