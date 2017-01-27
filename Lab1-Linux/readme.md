@@ -78,7 +78,7 @@ Programs can work together in the linux envirrorment, we just have to porperly '
    cat /etc/passwd | tr ':' '\t'
    ```
    
-## File Owner and permissions   
+## File Ownership and permissions   
    Use ``ls -l`` to see a detailed list of files, this includes permissions and ownership
    Permissions are displayed as 9 letters, for example the following line means that the directory (we know it is a directory because of the first *d*) *images*
    belongs to user *vision* and group *vision*. Its owner can read write and access it, users in the group can only read and access the directory, while other users can't do anything. For files the x means execute. 
@@ -224,7 +224,7 @@ Feel free to search for help on the internet, but ALLWAYS report any external so
 Notice some of the questions actually require you to connect to the course sever, the login instructions and credentials will be provided on the first session. 
 
 ###Deadline
-We will be delivering every lab through the [github](https://github.com) tool. According to our schedule we will complete that tutorial on the second week, therefore the deadline for this lab will be specially long **February 9 11:59 pm, it is the same as the second lab** 
+We will be delivering every lab through the [github](https://github.com) tool (Silly link isn't it?). According to our schedule we will complete that tutorial on the second week, therefore the deadline for this lab will be specially long **February 9 11:59 pm, (it is the same as the second lab)** 
 
 ## More information on
 
