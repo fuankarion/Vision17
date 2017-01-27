@@ -68,7 +68,7 @@ Be sure to upload to the repository the following items:
 - A short description of each image (no more than one paragraph each)
 - If you had to capture new images just for this lab, please describe if you took any special measure
 - The final hybrid image 
-- The pyramid (use 4 images at least)
+- The pyramid (use 4 scales at least)
 - The full code you used 
 
 Along with the items listed above be sure to upload a small report that describes the more relevant aspects of your code. 
