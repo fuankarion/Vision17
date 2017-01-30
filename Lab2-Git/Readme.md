@@ -165,10 +165,13 @@ See a more complete list at https://git-scm.com/downloads/guis
 
 # HomeWork
 
-1. Fork the lab repository (https://github.com/diego0020/lab_vision)
-2. Open the *questions.md* file, and answer the questions
-3. Commit the changes (answers) to your copy of the lab repository
+1. Fork the lab repository (https://github.com/fuankarion/Vision17)
+2. Go to the 'Lab1-Linux' directory, and create a new directory named 'Answers'
+3. Inside the directory 'Answers', cerate a new file named 'Readme.md'
+4. In the file 'Readme.md' write the answers to the excercises of lab1
+5. Commit the changes (answers) to your local repository, give it a proper log message
+6. Push the changes to the remote repository in github.
 4. Make sure that your answers are available at 
-   `https://github.com/<USERNAME>/lab_vision/blob/master/lab01_git/questions.md` 
+   `https://github.com/<USERNAME>/Vision17/tree/master/Lab1-Linux/Answers
 
 
