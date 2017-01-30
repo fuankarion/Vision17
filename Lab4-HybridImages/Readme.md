@@ -57,7 +57,7 @@ Create a hybrid image based on images from *your own* collections. Some ideas ar
 - Pictures of the university or the city
 - Pictures of places you have visited (preferably some well known places)
 
-Be creative and *avoid images downloaded from internet*
+Be creative and **avoid images downloaded from internet**
 
 Remember that you will have to *align and probably crop* the images to get a better effect. To do this you may use image editing software like gimp or photoshop (Matlab if you feel brave). You are free to do any additional processing that you want in order to improve the effect. Also take some time to think how to deal with color images.
 
