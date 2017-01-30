@@ -2,7 +2,7 @@
 
 ## Source
 
-This lab is based on
+This lab is based on:
 
 - http://cs.brown.edu/courses/cs143/proj1/
 - https://courses.engr.illinois.edu/cs498dh3/fa2014/projects/hybrid/ComputationalPhotography_ProjectHybrid.html
@@ -10,11 +10,12 @@ This lab is based on
 
 ## Examples
 
+Notice how the folowing images look different when viewed from far (or zoomed out), than when looking at close range (or zoomed in).
+
 ![Dolphin - Car](DolphinCarHybrid.jpg)
 
 ![Jaguar - Tiger](JaguarTigerHybrid.jpg)
 
-Notice how these images look different when viewed from far (or zoomed out), than when looking at close range.
 
 ## Short Introduction
 
@@ -55,6 +56,7 @@ Create a hybrid image based on images from *your own* collections. Some ideas ar
 - Pets (Your teacher's personal favorites)
 - Pictures of the university or the city
 - Pictures of places you have visited (preferably some well known places)
+
 Be creative and *avoid images downloaded from internet*
 
 Remember that you will have to *align and probably crop* the images to get a better effect. To do this you may use image editing software like gimp or photoshop (Matlab if you feel brave). You are free to do any additional processing that you want in order to improve the effect. Also take some time to think how to deal with color images.
