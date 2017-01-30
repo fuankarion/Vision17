@@ -38,8 +38,8 @@
 
 - Init: Initialize a repository
 - Status: Show current changes and staged files
-- Commit: Write changes to repository
 - Add: Add files to staging area
+- Commit: Write changes to local repository
 - Checkout: Move to another point in the revision tree
 - Diff: Compare two points in the tree
 - Log: Review history
@@ -49,7 +49,7 @@
 
 ### Setup
 
-Go into your GitHub account and create a new repository (green button at the right side). Don't initialize the repository, and in the next step say that you are importing an existing repository. Follow the instructions to link load your local repository into github.
+Go into your GitHub account and create a new repository (green button at the right side). Don't initialize the repository, follow the instructions on the next step to import an existing repository, the one you just created.
 
 ### Pushing changes
 
@@ -59,7 +59,7 @@ Go into your GitHub account and create a new repository (green button at the rig
 
 ### Pulling changes
 
-1. Make some changes to your project using the GitHub interface.
+1. Make some changes to your project using the GitHub interface (for example edit a Readme.md).
 2. Run `git pull`. What happened?
 
 ### Conflicts
@@ -76,7 +76,6 @@ Go into your GitHub account and create a new repository (green button at the rig
 3. Run `git remotes`, what is the output?
 4. Can you see the commit history?
 5. Can you make changes?
-6. Can you make upstream changes?
 
 ### Pull Request
 
@@ -100,8 +99,8 @@ GitHub is a web service that provides git on the cloud.
  - Diff
  - Branching
  - Pull Requests
-- Makes collaboration easy
-- Makes easy to contribute to open source projects
+- Makes collaboration easier
+- Makes it easier to contribute to open source projects
 - An student package is available. It provides 10 free private repositories among other benefits   
   https://education.github.com/pack
  - Additional features:
