@@ -71,7 +71,7 @@ Go into your GitHub account and create a new repository (green button at the rig
 
 ### Clones and Forks
 
-1. Go into the lab repository (https://github.com/diego0020/lab_vision) , and fork it (button at the top right), what happened?
+1. Go into the lab repository (https://github.com/fuankarion/Vision17) , and fork it (button at the top right), what happened?
 2. In your machine run `git clone <github url>`, to clone your copy of the lab repository.
 3. Run `git remotes`, what is the output?
 4. Can you see the commit history?
