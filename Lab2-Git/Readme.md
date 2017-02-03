@@ -117,7 +117,7 @@ GitHub is a web service that provides git on the cloud.
 - Becomes part of your portfolio
 - Usually tech companies will see your gitHub profile
 
-GitHUB in IMAGINE presentation: https://goo.gl/xrSY6W
+GitHUB slides for class:
 
 
 ## Alternatives
@@ -141,6 +141,9 @@ See a more complete list at https://git-scm.com/downloads/guis
 - Just enough git to be less dangerous  
   http://eev.ee/blog/2015/04/24/just-enough-git-to-be-less-dangerous
 
+- Friendly GitHub guide:  
+  http://readwrite.com/2013/10/02/github-for-beginners-part-2
+  
 - Interactive tutorial:  
   https://try.github.io
 
@@ -152,12 +155,9 @@ See a more complete list at https://git-scm.com/downloads/guis
 
 - Long guide:  
   https://www.atlassian.com/git/tutorials/
-
+  
 - Highly technical guide:  
   http://git-scm.com/docs/gittutorial
-
-- Friendly GitHub guide:  
-  http://readwrite.com/2013/10/02/github-for-beginners-part-2
   
 - XKCD  
   http://xkcd.com/1597/
