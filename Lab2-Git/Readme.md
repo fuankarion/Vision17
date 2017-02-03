@@ -170,8 +170,14 @@ See a more complete list at https://git-scm.com/downloads/guis
 4. In the file 'Readme.md' write the answers to the exercises of lab1
 5. Commit the changes (answers) to your local repository, give it a proper log message
 6. Push the changes to the remote repository in github.
-4. Make sure that your answers are available at 
+7. Make sure that your answers are available at 
    `https://github.com/<USERNAME>/Vision17/tree/master/Lab1-Linux/Answers
+8. Send me the link of your forked repo, 
+
+# Deadline 
+**February 9 11:59 pm, (it is the same as the first lab)**, plase send your fork's address **before the deadline** so I can properly clone your repositories at the deadline or inform you of any errors.
+
+   
 
 
 
