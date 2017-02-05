@@ -123,12 +123,16 @@ Programs can work together in the linux envirrorment, we just have to porperly '
    #connect
    ssh USER@SERVER
    ```
-2. The scp command allows us to copy files form a remote server identified by SERVER (either a name that can be resolved by the DNS, or an ip address), as the user USER. Following the SERVER information, we add ':' and write the full path of the file we want to copy por example:
+2. The scp command allows us to copy files form a remote server identified by SERVER (either a name that can be resolved by the DNS, or an ip address), as the user USER. Following the SERVER information, we add ':' and write the full path of the file we want to copy, finally we add the local path where the file will be copied (remember '.' is the current directory). If we want to copy a directory we add the -r option. for example:
 
    ```bash
    #copy 
    scp USER@SERVER:/datos1/vision/sipi_images/<file> .
+   
+   scp -r USER@SERVER:/datos1/vision/sipi_images .
    ```
+   
+   Notiec how the second commad will fail without the -r option
    
 3.  Decompress the images (use ``tar``, check the man)
 4.  Use  ``imagemagick`` to find all *grayscale* images. We first need to install the *imagemagick* package by typing
