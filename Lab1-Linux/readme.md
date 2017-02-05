@@ -116,19 +116,22 @@ Programs can work together in the linux envirrorment, we just have to porperly '
 
 ## Sample Exercise: Image database
 
-1. The following command lets us connect to a remote machine identified by SERVER (either a name that can be resolved by the DNS, or an ip address), as the user VISION. The second command allows us to copy files between systems (you will get the actual login information in class).
+1. The ssh command lets us connect to a remote machine identified by SERVER (either a name that can be resolved by the DNS, or an ip address), as the user VISION. The second command allows us to copy files between systems (you will get the actual login information in class).
 
    ```bash
    
    #connect
-   ssh vision@SERVER
-   
+   ssh USER@SERVER
+   ```
+2. The scp command allows us to copy files form a remote server identified by SERVER (either a name that can be resolved by the DNS, or an ip address), as the user USER. Following the SERVER information, we add ':' and write the full path of the file we want to copy por example:
+
+   ```bash
    #copy 
-   scp vision@SERVER:/datos1/vision/sipi_images/<file> .
+   scp USER@SERVER:/datos1/vision/sipi_images/<file> .
    ```
    
-2.  Decompress the images (use ``tar``, check the man)
-3.  Use  ``imagemagick`` to find all *grayscale* images. We first need to install the *imagemagick* package by typing
+3.  Decompress the images (use ``tar``, check the man)
+4.  Use  ``imagemagick`` to find all *grayscale* images. We first need to install the *imagemagick* package by typing
 
     ```bash
     sudo apt-get install imagemagick
@@ -142,7 +145,7 @@ Programs can work together in the linux envirrorment, we just have to porperly '
     find . -name "*.tiff" -exec identify {} \; | grep -i gray | wc -l
     ```
     
-4.  Create a script to copy all *color* images to a different folder
+5.  Create a script to copy all *color* images to a different folder
     Lines that start with # are comments
        
       ```bash
