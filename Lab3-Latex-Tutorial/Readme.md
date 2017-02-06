@@ -1,4 +1,4 @@
-# Lab 2: Introduction to LaTeX
+# Lab 3: Introduction to LaTeX
 
 ## LaTeX Books
 
