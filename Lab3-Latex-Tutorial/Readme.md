@@ -141,6 +141,9 @@ The file ``3-bibliography.tex`` illustrates how to add bibliography in LaTeX; us
 
 ## Cloud Latex
 
-- [Sharelatex](https://www.sharelatex.com?r=646eabb2&rm=d&rs=b)
+There cloud services that allow to write and easily compile latex documents (less hassle handling dependecies .sty). Additionally some alllow  collaborative editing of the files (just like google drive).
+
 - [Overleaf](https://www.overleaf.com/signup?ref=e22adb5e092e)
+- [Sharelatex](https://www.sharelatex.com?r=646eabb2&rm=d&rs=b)
+
 
