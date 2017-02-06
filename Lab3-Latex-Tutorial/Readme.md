@@ -7,12 +7,12 @@
 
 ## Installing LaTeX
 
-### Windows
+### On Windows
 
 - MikTex
 - TexLive
 
-Tip: Use *sumatraPDF* instead of Adobe Acrobat to preview generated pdfs.
+Tip: You might want to install *sumatraPDF* instead of Adobe Acrobat to preview generated pdfs.
 
 ### Linux
 
@@ -41,15 +41,13 @@ Use the package manager, for example in Ubuntu
 
 - MacTex 
 
-## CVPR Style (Must be used on all lab reports) 
+## CVPR Style 
 
-http://www.pamitc.org/cvpr15/author_guidelines.php
+http://www.pamitc.org/cvpr15/author_guidelines.php , Download and keep it in your pc. From now on forward you must use this template for every lab.
 
 ## LaTeX and git
 
-Latex files work very well with version control, however latex uses several intermediary files that we don't
-need in the version control system. The only files we trully want are the source files, including images and 
-other assets. 
+Latex files work very well with version control as they are plain text. However latex uses several intermediary files that we don't need in the version control system. The only files we trully want are the source files (.text) along with the images and some other assets. 
 
 The ``.gitignore`` file tells git to ignore files whose name match a certain pattern. Take a look at it.
 
