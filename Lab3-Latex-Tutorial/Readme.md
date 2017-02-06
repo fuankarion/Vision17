@@ -43,13 +43,29 @@ Use the package manager, for example in Ubuntu
 
 ## CVPR Style 
 
-http://www.pamitc.org/cvpr15/author_guidelines.php , Download and keep it in your pc. From now on forward you must use this template for every lab.
+http://www.pamitc.org/cvpr15/author_guidelines.php , Download the article template, keep it in your pc. From now on forward you must use this template for every lab.
 
 ## LaTeX and git
 
 Latex files work very well with version control as they are plain text. However latex uses several intermediary files that we don't need in the version control system. The only files we trully want are the source files (.text) along with the images and some other assets. 
 
-The ``.gitignore`` file tells git to ignore files whose name match a certain pattern. Take a look at it.
+The ``.gitignore``file tells git to ignore files whose name match a certain pattern. Take a look at it. This is a sample .gitignore file that I use for versioning tex documents.
+
+```
+*.aux
+*.log
+*.nav
+*.out
+*.snm
+*.synctex.gz
+*.gz
+*.toc
+*.avi
+*.mp4
+*.pdf
+"
+```
+
 
 ## Compiling (rendering) LaTeX files
 
