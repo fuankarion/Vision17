@@ -2,6 +2,8 @@
 
 ## LaTeX Books
 
+Latex is feature rich is a document preparation system. Opossed to WYSIWYG editors (like word and gooogle drive), Latex requries markup and tagging conventions to specify the structure of a document, ist style and citations (and  posibly other cross-references like hyperlinks). We wil only go throug a few of the most basic features in latex, we  ecourage you to further read about it in 
+
 - http://en.wikibooks.org/wiki/LaTeX
 - https://tobi.oetiker.ch/lshort/lshort.pdf
 
