@@ -92,7 +92,7 @@ be copied to the same directory as the rest of your latex source files. This rep
   - To edit vector graphics (svg or pdf) you may use [inkscape](https://inkscape.org)
   - To edit raster graphics (png or jpg) you may use [gimp](https://gimp.org)
 
-### Image Formats
+### Some Supported Image Formats
   
 - Vectorial (svg -> pdf)
  - Stores geometry information
