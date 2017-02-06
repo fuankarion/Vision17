@@ -49,7 +49,8 @@ http://www.pamitc.org/cvpr15/author_guidelines.php , Download the article templa
 
 Latex files work very well with version control as they are plain text. However latex uses several intermediary files that we don't need in the version control system. The only files we trully want are the source files (.text) along with the images and some other assets. 
 
-The ``.gitignore``file tells git to ignore files whose name match a certain pattern. Take a look at it. This is a sample .gitignore file that I use for versioning tex documents.
+The ``.gitignore``file tells git to ignore files whose name match a certain pattern. Take a look at it. 
+This is a sample .gitignore file that I use for versioning tex documents, it keeps alot of intermediate files and large binary filesout of the repository, thus saving space and commint times.
 
 ```
 *.aux
@@ -63,13 +64,12 @@ The ``.gitignore``file tells git to ignore files whose name match a certain patt
 *.avi
 *.mp4
 *.pdf
-"
 ```
 
 
 ## Compiling (rendering) LaTeX files
 
-LaTeX files are written as plain text, and must be compiled into PDF or DVI to produce publication ready documents. 
+LaTeX files are written as plain text, and must be compiled into PDF or DVI to produce publication ready documents (just like C/C++ source code). 
 
 From the commandline you can use the ´pdflatex´ (recommended) or ´latex´ commands. Some modern alternatives are ´xelatex´
 and ´luatex´, which have better handing of not ascii characters.
@@ -78,8 +78,7 @@ Most LaTeX IDEs can call these command automatically and show the results. Moreo
   
 ## Style files  
   
-Latex style files control most of the stetic aspects from the document. When writing articles for a journal
-or congress, the will provide you with the style file and instructions on how to use it. Style files should
+Latex style files caontain the actual text, and most of the astetic aspects from the document. When writing articles for a journal or congress, the will provide you with the style file and instructions on how to use it. Style files should
 be copied to the same directory as the rest of your latex source files. This repository already includes the 
 [cvpr](http://www.pamitc.org/cvpr15/author_guidelines.php) style. To look at it compile their example file
 ``egpaper_final.tex``.
