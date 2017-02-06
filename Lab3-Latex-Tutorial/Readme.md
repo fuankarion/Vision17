@@ -20,6 +20,10 @@ Tip: You might want to install *sumatraPDF* instead of Adobe Acrobat to preview 
 
 Use the package manager, for example in Ubuntu 
 ´apt-get install texlive´
+You might also wan to install an edit like 
+
+ - Texmaker
+ - Lyx
 
 #### Additional packages
 
