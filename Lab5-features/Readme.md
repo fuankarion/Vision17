@@ -1,3 +1,4 @@
+
 # Lab 5 - Features 
 
 In this lab you will create a code to represent images using Textons. Then you will train and test a classifier based on the initial representation. 
@@ -7,16 +8,16 @@ Try to create good quality code so that you can reuse it in the following labs.
 
 The database for this lab comes from the [ponce group](http://www-cvr.ai.uiuc.edu/ponce_grp/data/)
 
-You can download it from the following mirrors in the university (might be fastes if you are connected to the university network)
+You can download it from the following mirrors in the university (might be faster if you are connected to the university network)
 
 -   http: http://157.253.63.7/textures.tar.gz
     
 ## Image Representation
 
-The *lib* foder contains functions that can be used to represent images as textons, and
+The *lib* folder contains functions that can be used to represent images as textons, and
 the ``example.m`` file illustrates how to use them. 
 
-Pay speccial attention to the following functions (you will fin them in the example), find out what they do, what their inputs and outputs are.
+Pay special attention to the following functions (you will find them in the example), find out what they do, what their inputs and outputs are.
 
     -   fbCreate
     -   fbRun
@@ -33,7 +34,7 @@ After images are represented as a dictionary of textons, train and test a classi
     for more information).
 -   **Random forest:** Use the matlab [tree bagger](http://www.mathworks.com/help/stats/treebagger.html) function. See an example at [kawahara.ca](http://kawahara.ca/matlab-treebagger-example/)
 
-Train both classifiers with images in the *train* directory and test them once with images in the *test* directory. Calculate the confussion matrix for training and test datasets. 
+Train both classifiers with images in the *train* directory and test them once with images in the *test* directory. Calculate the confusion matrix for training and test datasets. 
 
 ## Your Turn
 
@@ -44,8 +45,8 @@ The report for this laboratory should include
     -   How did you create the dictionary?
     -   How many textons are you using? Why?
     -   What filters discriminate the most?
--   Description of the classifiers, hyperparametes and distance metrics
-    -   What hyeprparameters are you using? Why?
+-   Description of the classifiers, hyperparameters and distance metrics
+    -   What hyperparameters are you using? Why?
     -   What adjustments did you apply to the data?
 -   Results
 -   Discussion of the results
@@ -59,3 +60,5 @@ The report for this laboratory should include
          
 
 **Due date:**
+
+
