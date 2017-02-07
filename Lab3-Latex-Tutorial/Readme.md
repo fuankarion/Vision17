@@ -2,8 +2,8 @@
 
 ## LaTeX Books
 
-Latex is feature rich is a document preparation system. Opposed to WYSIWYG editors (like word and google drive), Latex requires special markup and tagging conventions to specify the structure of a document, its style and citations and,  possibly, other cross-references (like hyperlinks). 
-We will only go through a few of the most basic features in latex, thus we  encourage you to further read about it in:
+LaTeX is feature rich is a document preparation system. Opposed to WYSIWYG editors (like word and google drive), LaTeX requires special markup and tagging conventions to specify the structure of a document, its style, citations and,  possibly, other cross-references (like hyperlinks). 
+We will only go through a few of the most basic features in LaTeX. Thus, we encourage you to further read about it in:
 
 - http://en.wikibooks.org/wiki/LaTeX
 - https://tobi.oetiker.ch/lshort/lshort.pdf
@@ -12,6 +12,7 @@ We will only go through a few of the most basic features in latex, thus we  enco
 According to  your operative system
 
 ### On Windows
+These two include latex basic packes and provide a user frienly editor:
 
 - MikTex
 - TexLive
@@ -20,7 +21,7 @@ Tip: You might want to install *sumatraPDF* instead of Adobe Acrobat to preview 
 
 ### Linux
 
-Use the package manager, for example in Ubuntu 
+Use the package manager to retrive LaTeX base packes, for example in Ubuntu and similar dirstibutions
 ´apt-get install texlive´
 
 You might also want to install an editor like:
@@ -31,13 +32,12 @@ You might also want to install an editor like:
 
 #### Other handy packages for linux
 
-- dvipng
-- ghostscript
-- psutils
-- texlive-humanities
-- python-pygments
-- kbibtex
-- texlive-latex-extra 
+- dvipng (DVI to PNG/GIF converter)
+- ghostscript ( interpreter for the PostScript language)
+- texlive-latex-extra (LaTeX supplementary packages)
+- JabRef (Java application for managing bibtex)
+- kbibtex (BibTeX editor for KDE )
+- texlive-humanities (Extra LaTeX packages for law, linguistics, social sciences, humanities)
 - texlive-latex-recommended
 
 ### Osx
