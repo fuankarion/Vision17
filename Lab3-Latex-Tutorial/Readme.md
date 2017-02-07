@@ -152,4 +152,8 @@ There cloud services that allow to write and easily compile latex documents (les
 - [Sharelatex](https://www.sharelatex.com?r=646eabb2&rm=d&rs=b)
 
 
+##Homework
+
+There are no deliberables for this Lab (and therefore there will be no grades), just take you time to install LaTeX base packages whatever your OS of choice is, also get an editor, and make sure you can properly edit and compile a simple LaTeX document with images, code and references using the cvpr style.
+
 
