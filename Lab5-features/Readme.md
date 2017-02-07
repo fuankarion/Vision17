@@ -30,7 +30,7 @@ Use ``computeTextons`` to create an appropriate set of descriptors for the datab
 
 After images are represented as a dictionary of textons, train and test a classifier using the database. Notice that the images in the mirrors have been already divided into train and test sets. This was done by randomly assigning 10 images from each category to the test. Try two different kinds of classifiers:
 
--   **Nearest neighbour:** Use intersection of histograms or Chi-Square metrics (see [opencv-histograms](http://docs.opencv.org/modules/imgproc/doc/histograms.html#comparehist) 
+-   **Nearest neighbour:** Use intersection of histograms or Chi-Square metrics (see The matlab documentation for  [KNN Clasifiers](https://www.mathworks.com/help/stats/classification-using-nearest-neighbors.html#btap7k2) and [distance metrics] (https://www.mathworks.com/help/stats/classification-using-nearest-neighbors.html)
     for more information).
 -   **Random forest:** Use the matlab [tree bagger](http://www.mathworks.com/help/stats/treebagger.html) function. See an example at [kawahara.ca](http://kawahara.ca/matlab-treebagger-example/)
 
