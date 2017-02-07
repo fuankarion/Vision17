@@ -12,7 +12,7 @@ We will only go through a few of the most basic features in LaTeX. Thus, we enco
 According to  your operative system
 
 ### On Windows
-These two include latex basic packes and provide a user frienly editor:
+These two include latex basic packages and provide a user friendly editor:
 
 - MikTex
 - TexLive
@@ -21,7 +21,7 @@ Tip: You might want to install *sumatraPDF* instead of Adobe Acrobat to preview 
 
 ### Linux
 
-Use the package manager to retrive LaTeX base packes, for example in Ubuntu and similar dirstibutions
+Use the package manager to retrieve LaTeX base packages, for example in Ubuntu and similar distributions
 ´apt-get install texlive´
 
 You might also want to install an editor like:
@@ -67,10 +67,10 @@ http://cvpr2016.thecvf.com/submission/main_conference/author_guidelines, Downloa
 
 ## Images
 
-  - The directory ``images`` contais a small example on how to add images in LaTeX.
+  - The directory ``images`` contains a small example on how to add images in LaTeX.
   - It contains the same image in several different formats and resolutions
   	- Can you see the differences?
-  	- What format you tink is more appropriate?
+  	- What format you think is more appropriate?
   - To edit vector graphics (svg or pdf) you may use [inkscape](https://inkscape.org)
   - To edit raster graphics (png or jpg) you may use [gimp](https://gimp.org)
 
@@ -97,7 +97,7 @@ http://cvpr2016.thecvf.com/submission/main_conference/author_guidelines, Downloa
 
   - The directory ``code`` shows how to add a 'good looking' code fragment in LaTeX.
   - It uses the [listings](https://en.wikibooks.org/wiki/LaTeX/Source_Code_Listings) package 
-  - Check the directive \lstdefinestyle{mystyle}. Norice how you can edit the style and even define a new one on your own
+  - Check the directive \lstdefinestyle{mystyle}. Notice how you can edit the style and even define a new one on your own
       
 
 ##  Bibliography
@@ -125,10 +125,10 @@ The directory ``bibliography`` illustrates how to add bibliography in LaTeX; usi
 
 ## LaTeX and git
 
-Latex files work very well with version control as they are plain text. However latex uses several intermediary files that we don't need in the version control system. The only files we trully want are the source files (.text) along with the images and some other assets. 
+Latex files work very well with version control as they are plain text. However latex uses several intermediary files that we don't need in the version control system. The only files we truly want are the source files (.text) along with the images and some other assets. 
 
 The ``.gitignore``file tells git to ignore files whose name match a certain pattern. Take a look at it. 
-This is a sample .gitignore file that I use for versioning tex documents, it keeps alot of intermediate files and large binary filesout of the repository, thus saving space and commint times.
+This is a sample .gitignore file that I use for versioning tex documents, it keeps a lot of intermediate files and large binary files out of the repository, thus saving space and commit times.
 
 ```
 *.aux
@@ -146,7 +146,7 @@ This is a sample .gitignore file that I use for versioning tex documents, it kee
 
 ## Cloud Latex
 
-There cloud services that allow to write and easily compile latex documents (less hassle handling dependecies .sty). Additionally some alllow  collaborative editing of the files (just like google drive).
+There cloud services that allow to write and easily compile latex documents (less hassle handling dependencies ). Additionally some allow  collaborative editing of the files (just like google drive).
 
 - [Overleaf](https://www.overleaf.com/signup?ref=e22adb5e092e)
 - [Sharelatex](https://www.sharelatex.com?r=646eabb2&rm=d&rs=b)
@@ -154,6 +154,7 @@ There cloud services that allow to write and easily compile latex documents (les
 
 ##Homework
 
-There are no deliberables for this Lab (and therefore there will be no grades), just take you time to install LaTeX base packages whatever your OS of choice is, also get an editor, and make sure you can properly edit and compile a simple LaTeX document with images, code and references using the cvpr style.
+There are no deliverables for this Lab (and therefore there will be no grades), just take you time to install LaTeX base packages whatever your OS of choice is, also get an editor (or use a cloud service), and make sure you can properly edit and compile a simple LaTeX document with images, code and references using the cvpr style.
+
 
 
