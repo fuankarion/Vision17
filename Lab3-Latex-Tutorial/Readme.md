@@ -47,7 +47,7 @@ You might also want to install an editor like:
 
 ## Compiling (rendering) LaTeX files
 
-LaTeX files are written as plain text, and must be compiled into PDF or DVI to produce publication ready documents. The compilation process feels a lot like compiling  C/C++ source code  (or any other compiled language), you proved the tex  file as input to a LaTex compiler, which will then produce a PDF or DVI file or an error log. 
+LaTeX files are written as plain text, and must be compiled into PDF or DVI to produce publication ready documents. The compilation process feels a lot like compiling  C/C++ source code  (or any other compiled language), you use the tex  file as input for a LaTex compiler, which will then produce a PDF or DVI file or an error log. 
 
 From the commandline you can use the ´pdflatex´ (recommended) or ´latex´ commands. Some modern alternatives are ´xelatex´
 and ´luatex´, which have better handling of non ascii characters.
@@ -56,14 +56,14 @@ Most LaTeX IDEs can call these command automatically and show the results. Moreo
 
 ## Style files  
   
-Latex style files contain the actual text, and most of the aesthetic aspects from the document. When writing articles for a journal or a conference, the will provide you with the style file and instructions on how to use it. Style files should
+Latex files contain the actual text, and most of the aesthetic aspects for the document. When writing articles for a journal or a conference, the will provide you with the style file and instructions on how to use it. Style files should
 be copied to the *same directory* as the rest of your latex source files. This repository already includes the 
-[cvpr](http://www.pamitc.org/cvpr15/author_guidelines.php) style. To look at it compile their example file
+[cvpr](http://www.pamitc.org/cvpr15/author_guidelines.php) style. Have a look at it, by compiling their example file
 ``egpaper_final.tex``.
 
 ## CVPR Style 
 
-http://www.pamitc.org/cvpr15/author_guidelines.php , Download the article template, keep it in your pc. From now on forward you must use this template for every lab.
+http://cvpr2016.thecvf.com/submission/main_conference/author_guidelines, Download their article template, and keep it in your pc. From now on forward **you must use this template for every lab**.
 
 ## Images
 
