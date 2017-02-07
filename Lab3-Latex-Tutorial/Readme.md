@@ -67,13 +67,12 @@ http://cvpr2016.thecvf.com/submission/main_conference/author_guidelines, Downloa
 
 ## Images
 
-  - The file ``1-images.tex`` shows how to add images in LaTeX.
-  - It contains the same image in several different formats
+  - The directory ``images`` contais a small example on how to add images in LaTeX.
+  - It contains the same image in several different formats and resolutions
   	- Can you see the differences?
-  	- Which format is more appropriate?
+  	- What format you tink is more appropriate?
   - To edit vector graphics (svg or pdf) you may use [inkscape](https://inkscape.org)
   - To edit raster graphics (png or jpg) you may use [gimp](https://gimp.org)
-
 
 ### Some Supported Image Formats
   
@@ -86,7 +85,7 @@ http://cvpr2016.thecvf.com/submission/main_conference/author_guidelines, Downloa
  - Stores pixel information
  - Limited resolution
  - Great for renders, screenshots, photos
- - Be carefullwith the size of raw images (bmp)
+ - Be carefull with the size of raw images (bmp)
  
 - Raster lossy (jpg)
  - The compression process discards information
@@ -96,12 +95,9 @@ http://cvpr2016.thecvf.com/submission/main_conference/author_guidelines, Downloa
  
 ##  Code Fragments
 
-  - The file ``2-code.tex`` illustrates how to add code fragments in LaTeX.
-  - It uses the [Minted](https://github.com/gpoore/minted) package
-  - The latest version of minted is included in this repository
-  - requires the *-shell-escape* flag
-  	- 	If you are using *kile* go to settings > build > pdflatex and add this flag to the command
-  	- 	Be very careful with extra ading extra minus signs ``-``
+  - The directory ``code`` shows how to add a 'good looking' code fragment in LaTeX.
+  - It uses the [listings](https://en.wikibooks.org/wiki/LaTeX/Source_Code_Listings) package 
+  - Check the directive \lstdefinestyle{mystyle}. Norice how you can edit the style and even define a new one on your own
       
 
 ##  Bibliography
