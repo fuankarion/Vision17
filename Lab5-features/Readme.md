@@ -1,17 +1,15 @@
 # Lab 5 - Features 
 
-In this lab you will create code to represent images using Textons and then train and test a classifier. 
+In this lab you will create a code to represent images using Textons. Then you will train and test a classifier based on the initial representation. 
 Try to create good quality code so that you can reuse it in the following labs.
 
 ## Database
 
 The database for this lab comes from the [ponce group](http://www-cvr.ai.uiuc.edu/ponce_grp/data/)
 
-You can download it from the following mirrors in the university
+You can download it from the following mirrors in the university (might be fastes if you are connected to the university network)
 
 -   http: http://157.253.63.7/textures.tar.gz
--   ssh: ``vision@157.253.63.7:/home/vision/images/textures.tar.gz``
-
     
 ## Image Representation
 
@@ -41,13 +39,13 @@ Train both classifiers with images in the *train* directory and test them once w
 
 The report for this laboratory should include
 
--   Small (one paragraph) description of the database
+-   Small (one or two paragraphs) description of the database
 -   Description of the method and filters used for representing the images
     -   How did you create the dictionary?
     -   How many textons are you using? Why?
     -   What filters discriminate the most?
--   Description of the classifiers and the distance metrics
-    -   What parameters are you using ? Why?
+-   Description of the classifiers, hyperparametes and distance metrics
+    -   What hyeprparameters are you using? Why?
     -   What adjustments did you apply to the data?
 -   Results
 -   Discussion of the results
@@ -58,6 +56,6 @@ The report for this laboratory should include
     -   What are the limitations of the database?
     -   How could the method be improved?
 
-The functions created during this lab will be used again, so try your best to make them reusable.         
+         
 
-**Due date:** March 31, 2015; 8:00 a.m.
+**Due date:**
