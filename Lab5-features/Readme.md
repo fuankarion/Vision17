@@ -32,7 +32,7 @@ addpath('/home/jcleon/visionTest/Lab05/lib')
 %%Create a filter bank with deafult params
 [fb] = fbCreate;
 
-%%Load image from disk
+%%Load sample images from disk
 imBase1=double(rgb2gray(imread('/home/fuanka/Vision17/Lab5-features/img/person1.bmp')))/255;
 imBase2=double(rgb2gray(imread('/home/fuanka/Vision17/Lab5-features/img/goat1.bmp')))/255;
 
@@ -45,6 +45,14 @@ filterResponses=fbRun(fb,horzcat(imBase1,imBase2))
 %Computer textons from filter, essentially a kmeans cluster
 
 [map,textons] = computeTextons(filterResponses,k);
+
+%Load more images
+imTest1=double(rgb2gray(imread('/home/fuanka/Vision17/Lab5-features/img/person2.bmp')))/255;
+imTest2=double(rgb2gray(imread('/home/fuanka/Vision17/Lab5-features/img/goat2.bmp')))/255;
+
+%Calculate texton representation with current texton dictionary
+tmap1 = assignTextons(fbRun(fb,imTest1),textons');
+tmap2 = assignTextons(fbRun(fb,imTest2),textons');
 ```
     
 ## Classification
