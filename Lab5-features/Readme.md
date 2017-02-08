@@ -51,8 +51,17 @@ imTest1=double(rgb2gray(imread('/home/fuanka/Vision17/Lab5-features/img/person2.
 imTest2=double(rgb2gray(imread('/home/fuanka/Vision17/Lab5-features/img/goat2.bmp')))/255;
 
 %Calculate texton representation with current texton dictionary
-tmap1 = assignTextons(fbRun(fb,imTest1),textons');
-tmap2 = assignTextons(fbRun(fb,imTest2),textons');
+tmapBase1 = assignTextons(fbRun(fb,imBase1),textons');
+tmapBase2 = assignTextons(fbRun(fb,imBase2),textons');
+tmapTest1 = assignTextons(fbRun(fb,imTest1),textons');
+tmapTest2 = assignTextons(fbRun(fb,imTest2),textons');
+
+
+D = norm(tmapBase1 - tmapTest1)
+D = norm(tmapBase1 - tmapTest2)
+
+D = norm(tmapBase2 - tmapTest1)
+D = norm(tmapBase2 - tmapTest2)
 ```
     
 ## Classification
