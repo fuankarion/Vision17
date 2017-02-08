@@ -56,12 +56,12 @@ tmapBase2 = assignTextons(fbRun(fb,imBase2),textons');
 tmapTest1 = assignTextons(fbRun(fb,imTest1),textons');
 tmapTest2 = assignTextons(fbRun(fb,imTest2),textons');
 
+%Can you tell why we need to create a histgram from the texton representation?
+D = norm(histc(tmapBase1(:),1:k)/numel(tmapBase1) - histc(tmapTest1(:),1:k)/numel(tmapTest1))
+D = norm(histc(tmapBase1(:),1:k)/numel(tmapBase1) - histc(tmapTest2(:),1:k)/numel(tmapTest2))
 
-D = norm(tmapBase1 - tmapTest1)
-D = norm(tmapBase1 - tmapTest2)
-
-D = norm(tmapBase2 - tmapTest1)
-D = norm(tmapBase2 - tmapTest2)
+D = norm(histc(tmapBase2(:),1:k)/numel(tmapBase2) - histc(tmapTest1(:),1:k)/numel(tmapTest1))
+D = norm(histc(tmapBase2(:),1:k)/numel(tmapBase2)  - histc(tmapTest2(:),1:k)/numel(tmapTest2))
 ```
     
 ## Classification
