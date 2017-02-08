@@ -25,6 +25,27 @@ Pay special attention to the following functions (you will find them in the exam
     -   assignTextons
 
 Use ``computeTextons`` to create an appropriate set of descriptors for the database. **Do not forget** that at this stage you can only use images from the *train* folder.
+
+```Matlab
+addpath('/home/jcleon/visionTest/Lab05/lib')
+
+%%Create a filter bank with deafult params
+[fb] = fbCreate;
+
+%%Load image from disk
+imBase1=double(rgb2gray(imread('/home/fuanka/Vision17/Lab5-features/img/person1.bmp')))/255;
+imBase2=double(rgb2gray(imread('/home/fuanka/Vision17/Lab5-features/img/goat1.bmp')))/255;
+
+%Set number of clusters
+k = 16*8;
+
+%Apply filterbank to sample image
+filterResponses=fbRun(fb,horzcat(imBase1,imBase2))
+
+%Computer textons from filter, essentially a kmeans cluster
+
+[map,textons] = computeTextons(filterResponses,k);
+```
     
 ## Classification
 
