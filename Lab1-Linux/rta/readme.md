@@ -1,10 +1,10 @@
 Command list:
  
-grep: Search one or various files for lines that matches the given pattern within the file. It is used in the following way:
+''grep'': Search one or various files for lines that matches the given pattern within the file. It is used in the following way:
 $ grep [-option] Pattern [File]
 In the “[File]” option, if the command ./* is used, then grep will find the given pattern in every file in the current folder.
  
-find: search for one or multiple files given some characteristics like name, size or file type. It can be used given the next structure:
+''find'': search for one or multiple files given some characteristics like name, size or file type. It can be used given the next structure:
 $ find [-option] [path] [expression] Pattern
 The options can be various. There are some examples: -name, -size, -mtime -N, -mmin -M (Search by name, size, modified in the pasts N hours, modified in the pasts M minutes)
 The -prune option it’s an action, not a test. It can be used for extracting paths until a matching pattern, if found, (example 1) or it can be used to extract those paths where the pattern are not included (example 2).
