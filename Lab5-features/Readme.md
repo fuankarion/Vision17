@@ -25,6 +25,44 @@ Pay special attention to the following functions (you will find them in the exam
     -   assignTextons
 
 Use ``computeTextons`` to create an appropriate set of descriptors for the database. **Do not forget** that at this stage you can only use images from the *train* folder.
+
+```Matlab
+addpath('/home/jcleon/visionTest/Lab05/lib')
+
+%%Create a filter bank with deafult params
+[fb] = fbCreate;
+
+%%Load sample images from disk
+imBase1=double(rgb2gray(imread('/home/fuanka/Vision17/Lab5-features/img/person1.bmp')))/255;
+imBase2=double(rgb2gray(imread('/home/fuanka/Vision17/Lab5-features/img/goat1.bmp')))/255;
+
+%Set number of clusters
+k = 16*8;
+
+%Apply filterbank to sample image
+filterResponses=fbRun(fb,horzcat(imBase1,imBase2))
+
+%Computer textons from filter, essentially a kmeans cluster
+
+[map,textons] = computeTextons(filterResponses,k);
+
+%Load more images
+imTest1=double(rgb2gray(imread('/home/fuanka/Vision17/Lab5-features/img/person2.bmp')))/255;
+imTest2=double(rgb2gray(imread('/home/fuanka/Vision17/Lab5-features/img/goat2.bmp')))/255;
+
+%Calculate texton representation with current texton dictionary
+tmapBase1 = assignTextons(fbRun(fb,imBase1),textons');
+tmapBase2 = assignTextons(fbRun(fb,imBase2),textons');
+tmapTest1 = assignTextons(fbRun(fb,imTest1),textons');
+tmapTest2 = assignTextons(fbRun(fb,imTest2),textons');
+
+%Can you tell why we need to create a histgram from the texton representation?
+D = norm(histc(tmapBase1(:),1:k)/numel(tmapBase1) - histc(tmapTest1(:),1:k)/numel(tmapTest1))
+D = norm(histc(tmapBase1(:),1:k)/numel(tmapBase1) - histc(tmapTest2(:),1:k)/numel(tmapTest2))
+
+D = norm(histc(tmapBase2(:),1:k)/numel(tmapBase2) - histc(tmapTest1(:),1:k)/numel(tmapTest1))
+D = norm(histc(tmapBase2(:),1:k)/numel(tmapBase2)  - histc(tmapTest2(:),1:k)/numel(tmapTest2))
+```
     
 ## Classification
 
