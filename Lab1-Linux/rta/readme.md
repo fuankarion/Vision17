@@ -1,10 +1,10 @@
 Command list:
  
-''grep'': Search one or various files for lines that matches the given pattern within the file. It is used in the following way:
+grep: Search one or various files for lines that matches the given pattern within the file. It is used in the following way:
 $ grep [-option] Pattern [File]
 In the “[File]” option, if the command ./* is used, then grep will find the given pattern in every file in the current folder.
  
-''find'': search for one or multiple files given some characteristics like name, size or file type. It can be used given the next structure:
+find: search for one or multiple files given some characteristics like name, size or file type. It can be used given the next structure:
 $ find [-option] [path] [expression] Pattern
 The options can be various. There are some examples: -name, -size, -mtime -N, -mmin -M (Search by name, size, modified in the pasts N hours, modified in the pasts M minutes)
 The -prune option it’s an action, not a test. It can be used for extracting paths until a matching pattern, if found, (example 1) or it can be used to extract those paths where the pattern are not included (example 2).
@@ -78,7 +78,7 @@ Link: Create a link to a selected file
 Syntax:
 $ link FILE LINKNAME
  
-#! /bin/bash: It is worth saying that that symbol “#” is for a comment. Then it can be only be read if it is read as an executable (the line of code). The “#! /bin/bash” indicates that it is a shell script (Design for running in a terminal, like it is the bash)
+'#! /bin/bash': It is worth saying that that symbol “#” is for a comment. Then it can be only be read if it is read as an executable (the line of code). The “#! /bin/bash” indicates that it is a shell script (Design for running in a terminal, like it is the bash)
  
  
 10.
@@ -87,9 +87,11 @@ To know the amout of users in the server, it's essential to use the "/etc/passwd
 11. 
 To create a list we simply use the command "cut -d ':' -f 1,7 /etc/passwd | sort -t ':' -k2" or "$cut -d ':' -f 1,7 /etc/passwd | sort -t ':' -k2 > users_list.txt" to create a text file (users_list.txt)  with the users sorted by shell. The command "cut -d ':' -f 1,7 /etc/passwd" cut each line of the file /etc/passwd by the ':' symbol. Using the '|' command will input the result of the last command into the next one. The command "sort -t ':' -k2" will order alphabeticaly the users by the second field (created with the "-t ':' -k2" option, where -k2 is the second colomn), in this case the shell.
 
-12. SCRIPT.BASH
+12.
+SCRIPT.BASH
 
-13. Database Downloaded
+13.
+Database Downloaded using the next command: "$ wget www.eecs.berkeley.edu/Research/Projects/CS/vision/grouping/BSR/BSR_bsds500.tgz". Decompressed with the command "$tar -zxvf BSR_bsds500.tgz"
 
 14.
 Once the database downloaded, I got into the folder and for every folder (train,test,val) I used the command "$find -name '*.jpg' | wc -l" wicth gives me the number of elements finishing with ".jpg". The test folder has 200 images, the val folder has 100 images and the train folder has 200 too. Applying the same command in the BSR/BSDS500/data/images folder gives us the same result (500 in total).
@@ -108,9 +110,9 @@ The Landscape images have the resolution of 481X321, then, to extract the amount
 For the command, a loop was used. By standing in the test, val or train folder the next command was used: "$for file in *.jpg;do convert -crop 256x256 $file crop_$file; done". This sintaxis gives us that for every file named 'filename'.jpg the image will be cropped into a 256x256 image. Thus resulting in 4 images (in this case) name crop_'filename'-n.jpg, n from 0 to 3, where 0 is the 256x256 image. Then, to get rid off the images, the command "$rm crop_*-[1-3].jpg" was used.
  
 References:
-http://ss64.com/bash/
-http://stackoverflow.com/
-https://www.cyberciti.biz/
-https://www.imagemagick.org/
-http://www.heatware.net/
-http://www.computerhope.com/
+(1999). An A-Z Index of the bash command line for Linux. Link: http://ss64.com/bash/
+Attwood, J. (2008) Stack Overflow. Link: http://stackoverflow.com/
+(2000). nixCraft. Link: https://www.cyberciti.biz/
+ImageMagick Studio LLC (1994). ImageMagick. Link: https://www.imagemagick.org/
+(2015). HeatWare. Link: http://www.heatware.net/
+(2017). Computer Hope. Link: http://www.computerhope.com/
