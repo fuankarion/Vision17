@@ -145,7 +145,7 @@ To create a list we simply use the command "cut -d ':' -f 1,7 /etc/passwd | sort
 12
 
 The file script.bash is the file script. The code is presented next (There are "'#" in the code. They should be replaced by "#" to get them to work if the text is copied):
-
+```bash
 '#!/bin/bash
 
 '#I find all the file with names finishing in .jpg
@@ -165,30 +165,26 @@ mkdir repeated
 for im in ${images[*]}
 
 do
+	 for im2 in ${images[*]}
 
-    for im2 in ${images[*]}
-    do
-    '#I check if the names are equal
-    if [ "$im2" != "$im" ];then
+	 do
+	  '#I check if the names are equal
+	  if [ "$im2" != "$im" ];then
 
 	'#I get the necesary information about the images to compare them
 	dat1_1=$(cksum $im | cut -d ' ' -f 1)
 	dat1_2=$(cksum $im | cut -d ' ' -f 2)
-
 	dat2_1=$(cksum $im2 | cut -d ' ' -f 1)
 	dat2_2=$(cksum $im2 | cut -d ' ' -f 2)
-
 	if [ "$dat1_1" == "$dat2_1" ];then
 	    if [ "$dat1_2" == "$dat2_2" ];then
-		cp $im repeated
+	cp $im repeated
 	    fi
 	fi
-    fi
-
-
+fi
 done
 done
-
+```
 13
 
 Database Downloaded using the next command: "$ wget www.eecs.berkeley.edu/Research/Projects/CS/vision/grouping/BSR/BSR_bsds500.tgz". Decompressed with the command "$tar -zxvf BSR_bsds500.tgz"
