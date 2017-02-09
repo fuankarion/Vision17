@@ -144,21 +144,21 @@ To create a list we simply use the command "cut -d ':' -f 1,7 /etc/passwd | sort
 
 12
 
-The file script.bash is the file script. The code is presented next:
+The file script.bash is the file script. The code is presented next (There are "'#" in the code. They should be replaced by "#" to get them to work if the text is copied):
 
-#!/bin/bash
+'#!/bin/bash
 
-#I find all the file with names finishing in .jpg
+'#I find all the file with names finishing in .jpg
 
 images=$(find -name '*.jpg'| cut -d '/' -f 2)
 
 echo "$images"
 
-#Delete repeated folder
+'#Delete repeated folder
 
 rm -r repeated 2>/dev/null
 
-#I make a new folder called repeated
+'#I make a new folder called repeated
 
 mkdir repeated
 
@@ -168,10 +168,10 @@ do
 
     for im2 in ${images[*]}
     do
-    #I check if the names are equal
+    '#I check if the names are equal
     if [ "$im2" != "$im" ];then
 
-	#I get the necesary information about the images to compare them
+	'#I get the necesary information about the images to compare them
 	dat1_1=$(cksum $im | cut -d ' ' -f 1)
 	dat1_2=$(cksum $im | cut -d ' ' -f 2)
 
