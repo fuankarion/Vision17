@@ -1,30 +1,29 @@
 
 # Lab 5 - Features 
 
-In this lab you will create a code to represent images using Textons. Then you will train and test a classifier based on the initial representation. 
-Try to create good quality code so that you can reuse it in the following labs.
+In this lab you will create a code to represent images using Textons. Then train and test a classifier based on the texton representation. 
+Try to develop quality code so that you can reuse it in the following labs.
 
 ## Database
 
-The database for this lab comes from the [ponce group](http://www-cvr.ai.uiuc.edu/ponce_grp/data/)
+The database for this lab isprovide by the [ponce group](http://www-cvr.ai.uiuc.edu/ponce_grp/data/)
 
-You can download it from the following mirrors in the university (might be faster if you are connected to the university network)
+You can download it from the following mirrors in the university (might be faster if you are connected to the university's network)
 
 -   http: http://157.253.63.7/textures.tar.gz
     
 ## Image Representation
 
-The *lib* folder contains functions that can be used to represent images as textons, and
-the ``example.m`` file illustrates how to use them. 
+The *lib* folder contains functions that can be used to represent images as textons.
 
-Pay special attention to the following functions (you will find them in the example), find out what they do, what their inputs and outputs are.
+Pay special attention to the following functions (you will find them in the example), try to figure out what they do, what their inputs and outputs are.
 
     -   fbCreate
     -   fbRun
     -   computeTextons
     -   assignTextons
 
-Use ``computeTextons`` to create an appropriate set of descriptors for the database. **Do not forget** that at this stage you can only use images from the *train* folder.
+The following script will help you to porperly create a texton dictionary from 2 sample images, then use the learnt dictionary to compare another 2 images
 
 ```Matlab
 addpath('/home/jcleon/visionTest/Lab05/lib')
