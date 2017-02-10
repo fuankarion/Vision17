@@ -55,7 +55,7 @@ tmapTest1 = assignTextons(fbRun(fb,imTest1),textons');
 tmapTest2 = assignTextons(fbRun(fb,imTest2),textons');
 
 %Check the eclidian distan ces between the histograms and convince yourself that the images of the goats are closer beacuse they have similar texture pattern
-%Can you tell why we need to create a histogram?
+%Can you tell why we need to create a histogram before measuring the distance?
 D = norm(histc(tmapBase1(:),1:k)/numel(tmapBase1) - histc(tmapTest1(:),1:k)/numel(tmapTest1))
 D = norm(histc(tmapBase1(:),1:k)/numel(tmapBase1) - histc(tmapTest2(:),1:k)/numel(tmapTest2))
 
@@ -77,24 +77,25 @@ Train both classifiers **only** with images from the *train* directory and then 
 
 The report for this laboratory should include:
 
--   Small (one or two paragraphs) description of the database
+-   Small (one or two paragraphs) description of the database.
 -   Overall description of the method and filters used for representing the images
-    -   How can we classify an image using textons? (don't be overly detalied on this, one or two paragraphs)
+    -   How can we classify an image using textons? (don't be overly detalied on this, just one or two paragraphs)
     -   What does the texton representation of an image tell us?
     -   How did you create the dictionary?
-    -   How many textons are you using? Why?
-    -   Are some filters more discriminative than others? why?    
+    -   How many textons are you using?, Why?
+    -   Can you tell if some filters more discriminative than others?, why would this happen?    
 -   Description of the classifiers, hyperparameters and distance metrics
     -   What hyperparameters can you find in the classifiers? How can you choose their values?
     -   Did you apply any adjustments or preprocessing to the data? why?
 -   Results
-    - Provide the confusion matrix for the training and test sets. 
+    - Provide the confusion matrix for the training and test sets, what is it telling you?. 
     - Do you have another metric to measure the perfomance of your method? why do you need it?
 -   Discussion of the results
     -   Which classifier works best?, any idea why?
+    -   How much time does it takes to create the texton dictionary? why is it so slow?
     -   How much time does it takes to train and apply both kinds of classifiers?
-    -   What categories cause the most confusion? could you give some insight on  why this happens?
-    -   What are the limitations of the method? (CPU and RAM constrians are well known limitations, go beyond this!!)
+    -   What categories cause the most confusion? could you give some insight on why this happens?
+    -   What are the limitations of the method? (CPU and RAM constriants are well known limitations, go beyond this!!)
     -   What are the limitations of the database?
     -   How could your method be improved?
 
