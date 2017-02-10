@@ -75,26 +75,29 @@ Train both classifiers **only** with images from the *train* directory and then 
 
 ## Your Turn
 
-The report for this laboratory should include
+The report for this laboratory should include at least:
 
 -   Small (one or two paragraphs) description of the database
--   Description of the method and filters used for representing the images
+-   Overall description of the method and filters used for representing the images
+    -   How can we classify an image using textons? (don't be overly detalied on this, one or two paragraphs)
+    -   What does the texton representation of an image tell us?
     -   How did you create the dictionary?
     -   How many textons are you using? Why?
-    -   What filters discriminate the most?
+    -   Are some filters more discriminative than others? why?    
 -   Description of the classifiers, hyperparameters and distance metrics
-    -   What hyperparameters are you using? Why?
-    -   What adjustments did you apply to the data?
+    -   What hyperparameters can you find in the classifiers? How can you choose their values?
+    -   Did you apply any adjustments or preprocessing to the data? why?
 -   Results
+    - Provide the confusion matrix for the training and test sets. 
+    - Do you have another metric to measure the perfomance of your method? why do you need it?
 -   Discussion of the results
-    -   Which classifier works best?
-    -   How much time it takes to train and apply both kinds of classifiers?
-    -   Which categories cause the most confusion?
-    -   What are the limitations of the method?
+    -   Which classifier works best?, any idea why?
+    -   How much time does it takes to train and apply both kinds of classifiers?
+    -   What categories cause the most confusion? could you give some insight on  why this happens?
+    -   What are the limitations of the method? (CPU and RAM constrians are well known limitations, go beyond this!!)
     -   What are the limitations of the database?
-    -   How could the method be improved?
+    -   How could your method be improved?
 
-         
 
 **Due date:**
 
