@@ -41,8 +41,7 @@ k = 16*8;
 %Apply filterbank to sample image
 filterResponses=fbRun(fb,horzcat(imBase1,imBase2))
 
-%Computer textons from filter, essentially a kmeans cluster
-
+%Computer textons from filter
 [map,textons] = computeTextons(filterResponses,k);
 
 %Load more images
@@ -55,7 +54,8 @@ tmapBase2 = assignTextons(fbRun(fb,imBase2),textons');
 tmapTest1 = assignTextons(fbRun(fb,imTest1),textons');
 tmapTest2 = assignTextons(fbRun(fb,imTest2),textons');
 
-%Can you tell why we need to create a histgram from the texton representation?
+%Check the eclidian distan ces between the histograms and convince yourself that the images of the goats are closer beacuse they have similar texture pattern
+%Can you tell why we need to create a histogram?
 D = norm(histc(tmapBase1(:),1:k)/numel(tmapBase1) - histc(tmapTest1(:),1:k)/numel(tmapTest1))
 D = norm(histc(tmapBase1(:),1:k)/numel(tmapBase1) - histc(tmapTest2(:),1:k)/numel(tmapTest2))
 
@@ -65,13 +65,13 @@ D = norm(histc(tmapBase2(:),1:k)/numel(tmapBase2)  - histc(tmapTest2(:),1:k)/num
     
 ## Classification
 
-After images are represented as a dictionary of textons, train and test a classifier using the database. Notice that the images in the mirrors have been already divided into train and test sets. This was done by randomly assigning 10 images from each category to the test. Try two different kinds of classifiers:
+After the images are represented using a learnt texton dictionary, train and test a classifier using the provdided database. Notice that the images in the mirrors have been already divided into train and test sets. This was done by randomly assigning 10 images from each category to the test. Try two different classifiers:
 
 -   **Nearest neighbour:** Use intersection of histograms or Chi-Square metrics (see The matlab documentation for  [KNN Clasifiers](https://www.mathworks.com/help/stats/classification-using-nearest-neighbors.html#btap7k2) and [distance metrics] (https://www.mathworks.com/help/stats/classification-using-nearest-neighbors.html)
     for more information).
 -   **Random forest:** Use the matlab [tree bagger](http://www.mathworks.com/help/stats/treebagger.html) function. See an example at [kawahara.ca](http://kawahara.ca/matlab-treebagger-example/)
 
-Train both classifiers with images in the *train* directory and test them once with images in the *test* directory. Calculate the confusion matrix for training and test datasets. 
+Train both classifiers **only** with images from the *train* directory and then test them with images **Only** from the *test* directory. Provide the confusion matrix for training and test datasets. 
 
 ## Your Turn
 
