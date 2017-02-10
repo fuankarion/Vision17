@@ -75,7 +75,7 @@ Train both classifiers **only** with images from the *train* directory and then 
 
 ## Your Turn
 
-The report for this laboratory should include at least:
+The report for this laboratory should include:
 
 -   Small (one or two paragraphs) description of the database
 -   Overall description of the method and filters used for representing the images
