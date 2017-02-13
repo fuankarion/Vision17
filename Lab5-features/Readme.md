@@ -82,7 +82,7 @@ The report for this laboratory must include:
     -   What does the texton representation of an image tell us?
     -   How did you create the dictionary?
     -   How many textons are you using?, Why?
-    -   Can you tell if some filters more discriminative than others?, why would this happen?    
+    -   Can you tell if some filters are more discriminative than others?, why would this happen?    
 -   Description of the classifiers, hyperparameters and distance metrics
     -   What hyperparameters can you find in the classifiers? How can you choose their values?
     -   Did you apply any adjustments or preprocessing to the data? why?
