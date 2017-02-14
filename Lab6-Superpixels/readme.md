@@ -3,40 +3,43 @@
 ## Data
 
 
-The data for this lab can be downloaded from the course server using http or ssh protocols
+The data for this lab can be downloaded from the course server using http:
 
-- `scp vision@SERVER_IP:/datos1/vision/images/images.tar.gz .`
 - http://157.253.63.7/Lab5Images.tar.gz
 
-For using ssh in windows you may use [putty](http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html) 
-or [filezilla](http://portableapps.com/apps/internet/filezilla_portable)  
+## Creating a  basic segmentation method
 
-
-## Implement a segmentation method
-
-Implement your own segmentation method using what you have learned in class. It should be a matlab/python (opencv3 conmpatible) function with the following signature
+Implement your own segmentation method using what you have learned in class. It should be a matlab/python function with the following signature:
 
 Matlab
 ```matlab
-function segmentation = segmentByClustering( rgb_image, featureSpace, clusteringMethod, numberOfClusters)
+function segmentation = segmentByClustering( rgbImage, featureSpace, clusteringMethod, numberOfClusters)
 ```
 
 Python
 ```python
-def segmentByClustering( rgb_image, featureSpace, clusteringMethod, numberOfClusters):
-...
+def segmentByClustering( rgbImage, featureSpace, clusteringMethod, numberOfClusters):
+    ...
     return segmentation
 ```
 Where
 
 - featureSpace : 'rgb', 'lab', 'hsv', 'rgb+xy', 'lab+xy' or 'hsv+xy'
-- clusteringMethod = 'k-means', 'gmm', 'hierarchical' or 'watershed' (code seen in class).
+- clusteringMethod = 'k-means', 'gmm', 'hierarchical' or 'watershed'.
 
 The output of the function should be an  matrix with the same withd and  height of the original image and only one channel, where each pixel has a cluster label. In other words, pixels that belong to the same cluster should have the same positive integer label.
 
+
+### Notes
+- You dont have to implemente all the code from scratch, use the built in functions of your language.
+- If you run into memory problems try scaling down the images. 
+- *xy* stands for the spatial _x_ and _y_ coordinates.
+- You may need to normalize some channels to make them comparable, or to make some of them more/less important in the clustering process. For example _newCoords = ( α\*r, α\*g, α\*b, β\*x, β\*y)_
+
+
 ## Test your function
 
-Before testing youfucntion make sure the segmentation results are acceptable. To visualize the output of your function use something like:
+Before testing your function make sure the segmentation results are acceptable. To visualize the output of your function use something like:
 
 ```matlab
 image(segm)
@@ -52,40 +55,44 @@ Try different parameters of your function, and inspect them visually before actu
 
 ### Reading ground truth data
 
-The ground truth data is saved as matlab data, it has the same name as the image file,  but a different extension. The data contains a manual segmentation created by several human annotators.
+The file 'Lab5Images.tar.gz 'contains the segmentation ground truth data. It has the same name as the image file and is saved as matlab file (.mat). The mat file contains several manual segmentation created by human annotators.
 
 For example, lets look at the ground truth for image ``train/22090`` we can use the following code
 
 ```matlab
-load('BSDS500/data/groundTruth/train/22090.mat')
+gt=load('BSDS500/data/groundTruth/train/55075.mat')
 % Load segmentation from first human
-segm=groundTruth{1}.Segmentation;
+segm=gt.groundTruth{1}.Segmentation;
 image(segm)
 colormap colorcube
 
 % create a new figure
 figure
 % Boundaries from first human
-bound=groundTruth{1}.Boundaries;
+bound=t.groundTruth{1}.Boundaries;
 image(bound)
 colormap flag
 ```
 
-## Notes
-
-- If you run into memory problems try scaling the image
-- *xy* stands for the spatial _x_ and _y_ coordinates
-- You may need to normalize the different channels to make them comparable, or to make some of them more important in the clustering process. For example _coords = ( α\*r, α\*g, α\*b, β\*x, β\*y)_
+Feel free to use/implement any evaluation strategy for your segmentation function. Just remeber there is more than a single ground truth for any given iamge. 
 
 #Your turn
 
 The report for this laboratory must include:
 
--   Small (Max. one paragraph per method) description of the clustering algorithms.
+-   Small (Max. one paragraph per method) description of the implemented clustering algorithms.
 -   Did  you have to scale (up or down) any of the channesl (r,g,b,x,y). why?
 -   Does it make sense to use other color spaces different from RGB?  why?
+-   What segmentation method or color space seems to yield the best result, can you give some insight  on why?
 -   Do you think any of the channels seems to be most discriminative?
--   The hyperparameter 'numberOfClusters', is probably the most important parameter in this problem, how can you choose it
--   How can we evaluate a segmentation problem?, is the accuracy per class enough?
+-   The hyperparameter 'numberOfClusters', is probably the most important parameter in this problem, how can you choose it?
+-   How can we evaluate a general segmentation problem?, is it diffreent if we have multiple ground truth?
+-  What evaluation strategy did you choose, why?
+
+Discuss the results
+-  What are the limitations of the method?
+-  Overall, what are the fail conditions of the implemented methods?
+-  How could your method be improved?
+
 
 
