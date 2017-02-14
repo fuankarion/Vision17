@@ -49,6 +49,27 @@ You should see an image similar to the following, where each color represents a 
 
 Try different parameters of your function, and see which ones work best. 
 
+
+## Ground truth data
+
+The ground truth data is saved as matlab data, it contains manual segmentation from different people. For example,
+to look at the ground truth for image ``train/22090`` we can use the following code
+
+```matlab
+load('BSDS500/data/groundTruth/train/22090.mat')
+% Load segmentation from first human
+segm=groundTruth{1}.Segmentation;
+image(segm)
+colormap colorcube
+
+% create a new figure
+figure
+% Boundaries from first human
+bound=groundTruth{1}.Boundaries;
+image(bound)
+colormap flag
+```
+
 ## Notes
 
 - If you run into memory problems try scaling the image
