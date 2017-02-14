@@ -81,16 +81,22 @@ Feel free to use/implement any evaluation strategy for your segmentation functio
 The report for this laboratory must include:
 
 -   Small (Max. one paragraph per method) description of the implemented clustering algorithms.
+
+Segmentation parameter tuning and Image preprocessing
+
 -   Did  you have to scale (up or down) any of the channesl (r,g,b,x,y). why?
--   Does it make sense to use other color spaces different from RGB?  why?
--   What segmentation method or color space seems to yield the best result, can you give some insight  on why?
--   Do you think any of the channels seems to be most discriminative?
 -   The hyperparameter 'numberOfClusters', is probably the most important parameter in this problem, how can you choose it?
+
+Evaluation
+
 -   How can we evaluate a general segmentation problem?, is it diffreent if we have multiple ground truth?
 -  What evaluation strategy did you choose, why?
 
 Discuss the results
+-   Does it make sense to use other color spaces different from RGB?  why?
+-  What segmentation method or color space seems to yield the best result, can you give some insight  on why?
 -  What are the limitations of the method?
+-   Do you think any of the channels seems to be most discriminative
 -  Overall, what are the fail conditions of the implemented methods?
 -  How could your method be improved?
 
