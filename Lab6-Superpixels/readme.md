@@ -6,7 +6,7 @@
 The data for this lab can be downloaded from the course server using http or ssh protocols
 
 - `scp vision@SERVER_IP:/datos1/vision/images/images.tar.gz .`
-- http://157.253.63.7/images.tar.gz
+- http://157.253.63.7/Lab5Images.tar.gz
 
 For using ssh in windows you may use [putty](http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html) 
 or [filezilla](http://portableapps.com/apps/internet/filezilla_portable)  
@@ -36,7 +36,7 @@ The output of the function should be an  matrix with the same withd and  height 
 
 ## Test your function
 
-To test the output of your function use something like
+Before testing youfucntion make sure the segmentation results are acceptable. To visualize the output of your function use something like:
 
 ```matlab
 image(segm)
@@ -47,13 +47,14 @@ You should see an image similar to the following, where each color represents a 
 
 ![Example of segmentation](segmented.png)
 
-Try different parameters of your function, and see which ones work best. 
+Try different parameters of your function, and inspect them visually before actually testing them.
 
 
-## Ground truth data
+### Reading ground truth data
 
-The ground truth data is saved as matlab data, it contains manual segmentation from different people. For example,
-to look at the ground truth for image ``train/22090`` we can use the following code
+The ground truth data is saved as matlab data, it has the same name as the image file,  but a different extension. The data contains a manual segmentation created by several human annotators.
+
+For example, lets look at the ground truth for image ``train/22090`` we can use the following code
 
 ```matlab
 load('BSDS500/data/groundTruth/train/22090.mat')
