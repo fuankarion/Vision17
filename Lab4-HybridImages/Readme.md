@@ -73,12 +73,13 @@ Include in your report the following information:
 - The pyramid (use 4 scales at least)
 - Code snippets where you explain only  the most important aspects of the code you developed
 
-The report should have max 4 pages, use the first two for the heading and the sections: abstract (optional), introduction, materials and methods, results and conclusion. Use the final 2 pages **only** for images and code snippets.
+The report should have max 4 pages, use the first two for the heading and the sections: abstract (optional), introduction, materials and methods, results, conclusions and references. Use the final 2 pages **only** for images and code snippets (that is, if you need them).
 
 Finally, do not forget to upload the report to your github repository, along with the full code you used 
 
 
 ### Deadline
+**February 23 11:59 PM**
 
 
 
