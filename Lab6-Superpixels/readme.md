@@ -84,21 +84,23 @@ The report for this laboratory must include:
 
 Segmentation parameter tuning and Image preprocessing
 
--   Did  you have to scale (up or down) any of the channesl (r,g,b,x,y). why?
+-   Did  you have to scale (up or down) the value of any of the channesl (r,g,b,x,y). why?
+-   Did you have to re-scale the images, why?
 -   The hyperparameter 'numberOfClusters', is probably the most important parameter in this problem, how can you choose it?
 
 Evaluation
 
--   How can we evaluate a general segmentation problem?, is it diffreent if we have multiple ground truth?
+-  How can we evaluate a general segmentation problem?, how can we handle the multiple ground truth?
 -  What evaluation strategy did you choose, why?
+-  How do your segementation methods perform on this sample set?
 
 Discuss the results
--   Does it make sense to use other color spaces different from RGB?  why?
--  What segmentation method or color space seems to yield the best result, can you give some insight  on why?
--  What are the limitations of the method?
--   Do you think any of the channels seems to be most discriminative
--  Overall, what are the fail conditions of the implemented methods?
--  How could your method be improved?
+-  Does it make sense to use other color spaces different from RGB?  why?
+-  What segmentation method or color space seems to yield the best result, can you give some insight on why?
+-  What are the limitations of the method? (again CPU and RAM memory are well known constriants, try to go further)
+-  Do you think any of the channels seems to be most discriminative
+-  Overall, what seem to the fail conditions of the implemented methods?
+-  Finally,  how could you improve your best method?
 
 
 
