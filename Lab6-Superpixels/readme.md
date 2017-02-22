@@ -7,7 +7,7 @@ The data for this lab can be downloaded from the course server using http:
 
 - http://157.253.63.7/Lab5Images.tar.gz
 
-It is a small, randomly selected, subset of the BSDS500 Segementation database (annotations  included). 
+It is a small, randomly selected, subset of the BSDS500 Segmentation database (annotations  included). 
 
 ## Creating a  basic segmentation method
 
@@ -30,13 +30,13 @@ Where
 - clusteringMethod = 'k-means', 'gmm', 'hierarchical' or 'watershed'.
 - numberOfClusters positve integer (larger than 2)
 
-The output of the function should be an  matrix with the same width and  heigt hof the original image and only one channel, where each pixel has a cluster label. In other words, pixels that belong to the same cluster have the same positive integer.
+The output of the function should be an  matrix with the same width and  height of the original image and only one channel, where each pixel has a cluster label. In other words, pixels that belong to the same cluster have the same positive integer.
 
 
 ### Notes
-- You dont have to implemente all the code from scratch, use the built in functions of your language.
+- You don't have to implement all the code from scratch, use the built in functions of your language.
 - If you run into memory problems try scaling down the images. 
-- *xy* stands for the spatial _x_ and _y_ coordinates. It does not matter which pixel of the iamge you label as  0,0 just be consistent, and do not forget to report it.
+- *xy* stands for the spatial _x_ and _y_ coordinates. It does not matter which pixel of the image you label as  0,0 just be consistent, and do not forget to report it.
 - You may need to normalize some channels to make them comparable, or to make some of them more/less important in the clustering process. For example _newCoords = ( α\*r, α\*g, α\*b, β\*x, β\*y)_
 
 
@@ -77,7 +77,7 @@ image(bound)
 colormap flag
 ```
 
-Feel free to use/implement any evaluation strategy for your segmentation function. DO NOT use the actual BSDS500 evaluation strategy (we will be there nex week ;) ). Just use a simple strategy that can yield a reasonable evaluation of your segmentation function. Remember there are multiple ground truths for any given image. 
+Feel free to use/implement any evaluation strategy for your segmentation function. DO NOT use the actual BSDS500 evaluation strategy (we will be there next week ;) ). Just use a simple strategy that can yield a reasonable evaluation of your segmentation function. Remember there are multiple ground truths for any given image. 
 
 #Your turn
 
@@ -87,23 +87,24 @@ The report for this laboratory must include:
 
 Segmentation parameter tuning and Image preprocessing
 
--   Did  you have to scale (up or down) the value of any of the channesl (r,g,b,x,y). why?
--   Did you have to re-scale the images, why? does it affect the result?
+-   Did  you have to scale (up or down) the value of any of the channels (r,g,b,x,y). why?
+-   Did you have to rescale the images, why? does it affect the result?
 -   The hyperparameter 'numberOfClusters', is probably the most important parameter in this problem, how can you choose it?
 
 Evaluation
 
 -  How can we evaluate a general segmentation problem?, how can we handle the multiple ground truths?
--  What evaluation strategy did you choose, why?, what would be its shortcommings, if any?
--  Using only your evaluation streatgy, how do your segementation methods perform on this sample set?
+-  What evaluation strategy did you choose, why?, what would be its shortcomings, if any?
+-  Using only your evaluation strategy, how do your segmentation methods perform on this sample set?
 
 Discuss the results
 -  Does it make sense to use other color spaces different from RGB?,  why?
 -  What segmentation method or color space seems to yield the best result, can you give some insight on why?
--  What are the limitations of the method? (again CPU and RAM memory are well known constriants, try to go further)
+-  What are the limitations of the method? (again CPU and RAM memory are well known constraints, try to go further)
 -  Do you think any of the channels seems to be most discriminative
 -  Overall, what seem to the fail conditions of the implemented methods?
 -  Finally,  how could you improve your best method?
+
 
 
 
