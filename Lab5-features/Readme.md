@@ -106,6 +106,8 @@ Creating a large texton dictionary takes A LOT of time and uses A LOT of memory.
 The report should have max 5 pages, if it is necessary use any additional pages **for references and images only**.
 Use the standard CVPR sections: abstract, introduction (be concise), materials and methods, results, conclusions and references. There is no need for an 'State of art' section. 
 
+Upload the code you used into a directory named 'code', by extraordinary results (either good or bad), I will check it.
+
 ## Deadline 
 **March 2 11:59 pm,**, as usual just upload your report to your github repo.
 
