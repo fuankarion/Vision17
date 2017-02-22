@@ -3,6 +3,8 @@
 In this lab you will create a code to represent images using Textons. Then train and test a classifier based on the texton representation. 
 Try to develop quality code so that you can reuse it in the following labs.
 
+**The code for this lab takes a VERY LONG time to execute, plan ahead a use wisely the course servers, you are not the   only one there!!!**
+
 ## Database
 
 The database for this lab is provided by the [ponce group](http://www-cvr.ai.uiuc.edu/ponce_grp/data/)
