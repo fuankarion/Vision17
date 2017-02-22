@@ -79,7 +79,7 @@ colormap flag
 
 Feel free to use/implement any evaluation strategy for your segmentation function. DO NOT use the actual BSDS500 evaluation strategy (we will be there next week ;) ). Just use a simple strategy that can yield a reasonable evaluation of your segmentation function. Remember there are multiple ground truths for any given image. 
 
-#Your turn
+##Your turn
 
 The report for this laboratory must include:
 
