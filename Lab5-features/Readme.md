@@ -101,7 +101,7 @@ The report for this laboratory must include:
     -   How could your method be improved?
 
 ###Some advice on creating your texton dictionary
-Creating a large texton dictionary takes A LOT of time and uses A LOT of memory. Creating a dictionary with the full set of training images **Is not possible, on the course server**. Unless you can find a larger machine on your own, you will have to subsample the training database. Be sure to report and discuss your sub-sampling strategy. Do not forget that textures are local patterns that repeat over the whole images.
+Creating a large texton dictionary takes A LOT of time and uses A LOT of memory. Creating a dictionary with the full set of training images **Is not possible, on the course server**. Unless you can find a larger machine on your own, you will have to subsample the training database. Yout subsample strategy is critical for the succes in this laboratory, be sure to report and discuss it. Do not forget that textures are **local patterns** that repeat over the whole images.
 
 
 ## Deadline 
