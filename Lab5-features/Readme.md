@@ -105,6 +105,6 @@ Creating a large texton dictionary takes A LOT of time and uses A LOT of memory.
 
 
 ## Deadline 
-**March 2 11:59 pm,**, as ussual just upload your report to you github repo.
+**March 2 11:59 pm,**, as ussual just upload your report to your github repo.
 
 
