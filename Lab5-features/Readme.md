@@ -103,8 +103,9 @@ The report for this laboratory must include:
 ###Some advice on creating your texton dictionary
 Creating a large texton dictionary takes A LOT of time and uses A LOT of memory. Creating a dictionary with the full set of training images **Is not possible, on the course server**. Unless you can find a larger machine on your own, you will have to subsample the training database. Your subsample strategy is critical for the success in this laboratory, be sure to report and discuss it. Do not forget that textures are **local patterns** that repeat over the whole images.
 
+The report should have max 5 pages, if it is necessary use any additional pages **for references and images only**.
+Use the standard CVPR sections: abstract, introduction (be concise), materials and methods, results, conclusions and references. There is no need for an 'State of art' section. 
 
 ## Deadline 
-**March 2 11:59 pm,**, as ussual just upload your report to your github repo.
-
+**March 2 11:59 pm,**, as usual just upload your report to your github repo.
 
