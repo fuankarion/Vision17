@@ -106,5 +106,6 @@ Discuss the results
 -  Finally,  how could you improve your best method?
 
 
-
+## Deadline 
+**March 9 11:59 pm,**, as usual just upload your report to you github repo.
 
