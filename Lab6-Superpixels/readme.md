@@ -1,6 +1,10 @@
 # Segmentation practice
 
-## Data
+In this lab you will code several well known segemetation strategies and then apply them on a small set of images with grundtruth annotations. 
+
+Try to develop quality code, you will be using it for the netx Lab.
+
+## Database
 
 
 The data for this lab can be downloaded from the course server using http:
