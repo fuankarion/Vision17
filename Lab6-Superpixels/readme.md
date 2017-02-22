@@ -92,7 +92,6 @@ Segmentation parameter tuning and Image preprocessing
 -   The hyperparameter 'numberOfClusters', is probably the most important parameter in this problem, how can you choose it?
 
 Evaluation
-
 -  How can we evaluate a general segmentation problem?, how can we handle the multiple ground truths?
 -  What evaluation strategy did you choose, why?, what would be its shortcomings, if any?
 -  Using only your evaluation strategy, how do your segmentation methods perform on this sample set?
@@ -100,12 +99,15 @@ Evaluation
 Discuss the results
 -  Does it make sense to use other color spaces different from RGB?,  why?
 -  What segmentation method or color space seems to yield the best result, can you give some insight on why?
--  What are the limitations of the method? (again CPU and RAM memory are well known constraints, try to go further)
+-  What are the limitations of the method? (again CPU and RAM memory are well known constraints, try to go further!!!)
 -  Do you think any of the channels seems to be most discriminative
--  Overall, what seem to the fail conditions of the implemented methods?
+-  Overall, what seem to be the fail conditions of the implemented methods?
+-  How could you improve your evaluation strategy?, are there any drawbacks?
 -  Finally,  how could you improve your best method?
 
+The report should have max 5 pages, if it is necessary use any additional pages for references and images **only**. Use the standard CVPR sections: abstract, introduction (again, be concise), materials and methods, results, conclusions and references. There is no need for an 'State of art' section.
 
 ## Deadline 
 **March 9 11:59 pm,**, as usual just upload your report to you github repo.
+
 
