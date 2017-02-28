@@ -1,0 +1,26 @@
+T01	bark1
+T02	bark2
+T03	bark3
+T04	wood1
+T05	wood2
+T06	wood3
+T07	water
+T08	granite
+T09	marble
+T10	floor1
+T11	floor2
+T12	pebbles
+T13	wall
+T14	brick1
+T15	brick2
+T16	glass1
+T17	glass2
+T18	carpet1
+T19	carpet2
+T20	upholstery
+T21	wallpaper
+T22	fur
+T23	knit
+T24	corduroy
+T25	plaid
+
