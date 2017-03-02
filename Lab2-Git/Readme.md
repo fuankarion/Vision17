@@ -171,7 +171,7 @@ See a more complete list at https://git-scm.com/downloads/guis
 5. Commit the changes (answers) to your local repository, give it a proper log message
 6. Push the changes to the remote repository in github.
 7. Make sure that your answers are available at 
-   `https://github.com/<USERNAME>/Vision17/tree/master/Lab1-Linux/Answers
+   `https://github.com/YOUR_USERNAME/Vision17/tree/master/Lab1-Linux/Answers
 8. Send me the link of your forked repo, 
 
 # Deadline 

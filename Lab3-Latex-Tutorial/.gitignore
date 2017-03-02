@@ -1,0 +1,11 @@
+*.aux
+*.log
+*.nav
+*.out
+*.snm
+*.synctex.gz
+*.gz
+*.toc
+*.avi
+*.mp4
+*.pdf
