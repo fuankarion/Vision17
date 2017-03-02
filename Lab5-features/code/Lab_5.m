@@ -1,5 +1,5 @@
 %We create the filter bank
-tic
+
 [fb] = fbCreate;
 
 %I load the images
@@ -14,8 +14,6 @@ filterResponses=fbRun(fb,images);
 %%
 %Computer textons from filter
 [map,textons] = computeTextons(filterResponses,k);
-toc
-save 'matrix2.mat'
 
 %%
 
@@ -74,6 +72,9 @@ confianza = sum(diag(confMat))/25;
 
 %% TreeBagger Test
 
+%% TreeBagger Test
+
+
 class = ones([length(numIm)*25 1]);
 for i=1:25
 
@@ -85,7 +86,29 @@ nTrees = 50;
 
 dTree = TreeBagger(nTrees,histos',class','Method', 'classification');
 
+confMat2 = zeros(25);
 
+for i = 1:25
+    for j=31:40
+        
+        if i<10
+            n1 = ['0' num2str(i)];
+        else
+            n1 = num2str(i);
+        end
+        
+        vt1 = assignTextons(fbRun(fb,imread(['test/T' n1 '_' num2str(j) '.jpg'])),textons');
+        predict2 = B.predict(histc(vt1(:),1:k)'/numel(vt1));
+
+        I = str2double(precidt2);
+
+        confMat2(I,i)=confMat2(I,i)+1;
+
+    end
+end
+confMat2 = confMat2/10;
+
+confianza2 = sum(diag(confMat2))/25;
 %%%%%%% Saves the  workspace and the confidence matrix
 save workspace2.mat
 save confidence.mat confianza
