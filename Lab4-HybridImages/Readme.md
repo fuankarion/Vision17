@@ -63,19 +63,24 @@ Remember that you will have to *align and probably crop* the images to get a bet
 
 ### Report
 
-Be sure to upload to the repository the following items:
+Include in your report the following information:
 
 - The original images
-- The processed images (cropped, aligned, color adjusted)
 - A short description of each image (no more than one paragraph each)
+- A description of the modifications made to the original images (crops, scaling, color modifications, etc). Along with the output of this process. 
 - If you had to capture new images just for this lab, please describe if you took any special measure
 - The final hybrid image 
 - The pyramid (use 4 scales at least)
-- The full code you used 
+- Code snippets where you explain only  the most important aspects of the code you developed
 
-Along with the items listed above be sure to upload a small report that describes the more relevant aspects of your code. 
+The report should have max 4 pages, use the first two for the heading and the sections: abstract (optional), introduction, materials and methods, results, conclusions and references. Use the final 2 pages **only** for images and code snippets (that is, if you need them).
+
+Finally, do not forget to upload the report to your github repository, along with the full code you used 
+
 
 ### Deadline
+**February 23 11:59 PM**
+
 
 
 
