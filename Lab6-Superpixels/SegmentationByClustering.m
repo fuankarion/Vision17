@@ -60,7 +60,7 @@ if strcmp(clusteringMethod,'k-means')
     % each vector is organized into a new matrix where each row is the
     % vector
     [idx,~]=kmeans(vectors,numberOfClusters);
-    segmentation=reshape(idx,n(1),n(2));
+    segmentation=T;
 end
 if strcmp(clusteringMethod,'gmm')
     % Not finished yet
