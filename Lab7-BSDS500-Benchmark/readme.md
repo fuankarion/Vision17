@@ -1,6 +1,6 @@
 # Berkeley Segmentation Dataset and Benchmark (BSDS500)
 
-In this lab you will be testing your previously developed segmentation functions in a real and large segmentation database, the BSDS500. You will also be comparing your methods against those of your  teacher, as you will also benchmark UCM segmentation algorithm.
+In this lab you will be testing your previously developed segmentation functions in a real and large segmentation database, the BSDS500. To add some extra motivation, you will also be comparing your methods against those of your teacher, can you beat him?
 
 ## Resources
 
@@ -22,11 +22,11 @@ It contains both the images and the fast benchmark code.
 
 The folder will contain the following directories
 
-- bench_fast: Fast code for running benchmarks and comparing algorithms.
+- bench_fast: Faster version of the original BSDS benchmark code.
 - BSD500:
 - Data: Images and their manual segmentations (ground truth).
-- ucm2: Precalculated results of the *Ultrametric Contour Map* segmentation algorithm.
-- Documentation: Paper describing the UCM algorithm
+  - ucm2: Precalculated results of the *Ultrametric Contour Map* segmentation algorithm.
+  - Documentation: Paper describing the UCM algorithm
 - Grouping: Implementation of the UCM algorithm
 
 ## Ground truth data
