@@ -80,7 +80,10 @@ if strcmp(clusteringMethod,'gmm')
     segmentation = {reshape(A,n(1),n(2)),GMM};
 end
 if strcmp(clusteringMethod,'hierarchical')
-    
+    Dists = pdist(vectors);
+    Z = linkage(Dists);
+    T = cluster(Z, 'maxclust', numberOfClusters);
+    segmentation = reshape(T, n(1), n(2));   
 end
 if strcmp(clusteringMethod,'watershed')
     % Not finished yet
