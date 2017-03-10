@@ -80,10 +80,33 @@ if strcmp(clusteringMethod,'gmm')
     segmentation = {reshape(A,n(1),n(2)),GMM};
 end
 if strcmp(clusteringMethod,'hierarchical')
+        % Superpixels are created using watersheds
+    I = rgb2gray(rgbImage);
+    hy = fspecial('sobel');
+    grad = sqrt(imfilter(double(I), hy', 'replicate').^2 + imfilter(double(I), hy, 'replicate').^2);
+    h=20;
+    marker = imextendedmin(grad, h);
+    new_grad = imimposemin(grad, marker);
+    ws = watershed(new_grad);
+    
+    % We take the each region of the watershed and compact it to make a
+    % super pixel catacterized by the mean vector.
+    vectors = zeros(max(ws(:)),n(3));
+    temp = zeros(1,n(3));
+    for i = 1:max(ws(:))
+        [row,col]=find(ws==i);
+        for j=1:numel(row)
+            temp2=im(row(j),col(j));
+            temp=temp+temp2(:)';
+        end
+        vectors(i,:)=temp/numel(row);
+    end
+    
     Dists = pdist(vectors);
-    Z = linkage(Dists);
+    Dists = squareform(Dists);
+    Z = linkage(Dists,'centroid','euclidean','savememory', 'on');
     T = cluster(Z, 'maxclust', numberOfClusters);
-    segmentation = reshape(T, n(1), n(2));   
+    segmentation = reshape(T, n(1), n(2)); 
 end
 if strcmp(clusteringMethod,'watershed')
     % Not finished yet
