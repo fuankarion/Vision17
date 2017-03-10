@@ -71,9 +71,9 @@ The file ``bench/test_benchs.m`` contains several examples of how to use the ben
 
 There is little codign to do in this lab, most of the 'heavy lifting' was already done in Lab06. To start, take a  look at the file that defines the function ``boundaryBench`` (BSR/bench/benchmarks/)and read the description of its inputs.
 
-# Your Turn
+## Your Turn
 
-## Start with your best segementation method
+### Start with your best segementation method
 
 Choose two of the functions you developed during the Lab06, use those with that yield the best performance. Feel free to modifiy or enhance any algortihm based on your findings for the last lab.
 
@@ -81,58 +81,30 @@ Now, adjust the function you designed in the past lab so that it works on the BS
 
 There is at least one hyper-parameter for your segmentation method: K. Use the ``train``  and ``eval`` sets to explore the best values for K and any other hyper parameter.
 
-## Test your method
+### Test your method
 
-Run a **segmentations benchmark** (labeled as  4. morphological version for : all the benchmarks for results stored as a cell of segmentations) for your two methods, compare it to the state of the art. Use the **only** the ``test`` set of the BSDS500. 
+Run a **segmentation benchmark** (labeled as  "4. morphological version for : all the benchmarks for results stored as a cell of segmentations") for your two methods, also  run the segementaion benchmarkl for the provided UCM sementations (at BSDS500/ucm2). Use the **only** the ``test`` for comparisons.
 
 The final plot should contain at least three lines (two instances of your function and the UCM algorithm). You can also use the plot found [in this repository](Figure02.fig) as a base. Look at the code of the ``plot_eval`` function for more information on how to create these plots.
 
-See http://www.eecs.berkeley.edu/Research/Projects/CS/vision/grouping/resources.html#bench for an example otuput.
-
 Use different thresholds values to generate a curve.
 
-A summary of the steps required is:
-
-- Apply your function to each of the images in the *test* dataset
-- For each image, create a *.mat* file that contains a cell array, which contains severa matrices representing the output of the function for different values of the parameter. Look at the *bench/data/segs* folder for examples.
-- Run the ``boundaryBench`` function specifying the folder with the *.mat* files as ``pbDir``. See the third example in the *test_benchs* file.
-- Generate the plot using the code from the ``test_eval`` function.
-
-## Report
-
-Write a report describing your chosen segmentation methods, the testing methodology, the results from the tests, and a discussion about the results and potential improvements to the function. Use the CVPR LaTeX template. Upload to your repository the report (tex and pdf) and the code for your segmentation function. A rubric of how this report will be graded can be found [here](rubric.md). You may work in pairs.
+See http://www.eecs.berkeley.edu/Research/Projects/CS/vision/grouping/resources.html#bench for an example otuput.
 
 
-**Due:** March 17, 2016; 8:00 a.m.
+### Report
 
-## Running the benchmark remotely
+The report for this laboratory must include:
+- A brief description of the selected segmentation methods, why did you choose them?, did you make any modification, or  enhancements?
+- What are the hyper paremeters of the mehtods, what do they mean?, how do you choose them? 
+- Results for the BSDS benchmark for the three mehtods.  Iclude a graphic where you compare the curves you generated for the three methods.
+- Which methods is the best, why? among the methods you developed, which one works best, why? do you think your selection of K could improve/worsen the results?
+- You made a simpler comparison of methods on the last Lab, does the BSDS have simmilar results (i.e. your best algorithm remains the best), why or why not?
+- What seem to be the limitations of the algorithms you developed, do you think the errors on your segmentation mehthods follow any pattern(s)?. Again execution time and resource usage are not our main concern.
+- How could your improve your algorithms?
 
-The full benchmark on the 200 test images can take a several hours. If you prefer, you may run it on the course server.
+### Deadline
 
-However, all of you would be using the same account so please take into account the following
 
-- Be careful not to mess with other people's data or processes
-- Create a new directory and work only there, don't go into other people's directories
-
-In order to be able to disconnect from the server and let it keep working you can use [sceen](http://linux.die.net/man/1/screen).
-Connect using ``ssh`` and afterwards type
-
-```bash
-screen -S <session_name>
-```
-
-Use your name as session name, so that you don't get confused with other people working at the same time. If you disconnect from the session, you can return to it by typing
-
-```bash
-screen -r <session_name>
-```
-
-## Extra Credit
-
-- Run the benchmark with at least *three* segmentation methods from
-- k-means
-- gmm
-- hierarchical
-- watershed
 
 
