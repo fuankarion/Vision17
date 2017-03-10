@@ -98,6 +98,35 @@ if strcmp(clusteringMethod,'watershed')
     marker = imextendedmin(grad, A-numberOfClusters);
     new_grad = imimposemin(grad, marker);
     segmentation= watershed(new_grad);
+    
+    
+    %%%% Just a start
+        % Not finished yet
+    im = rgb2gray(rgbImage);
+    hy = fspecial('sobel');
+    hx = hy';
+    Iy = imfilter(double(im), hy, 'replicate');
+    Ix = imfilter(double(im), hx, 'replicate');
+    grad = Iy.^2+Ix.^2;
+    
+    for h = 10:10:50
+        marker = imextendedmin(grad, h);
+        new_grad = imimposemin(grad, marker);
+        ws = watershed(new_grad);
+        figure; 
+        subplot(1,2,1); 
+        imshow(im);
+        subplot(1,2,2);
+        imshow(ws==0);
+        title(h);
+    
+        segmentation= watershed(grad);
+        A = max(segmentation(:));
+        marker = imextendedmin(grad, A-numberOfClusters);
+        new_grad = imimposemin(grad, marker);
+        segmentation= watershed(new_grad);
+    end
+end
 end
 
 
