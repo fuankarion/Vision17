@@ -99,7 +99,7 @@ The report for this laboratory must include:
 - Do you think the errors on your segmentation methods follow any pattern(s)?
 - How could you improve your algorithms? Think big, be creative, we are in the what if domain :)
 
-### Provisional Deadline
+### Deadline
 **March 23 11:59 pm,**, as usual just upload your report to your github repo.
 
 
