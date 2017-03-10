@@ -19,41 +19,44 @@ switch featureSpace(1:3)
         Im=rgbImageN;
 end
 if strcmp(featureSpace(end-2:end),'+xy')
-    [X,Y]=meshgrid(1:size(rgbImage,1),1:size(rgbImage,2));
+    [X,Y]=meshgrid((1:size(rgbImage,1))./size(rgbImage,1),...
+        (1:size(rgbImage,2))./size(rgbImage,2));
     Im=cat(3,Im,X,Y);
 end
 
 switch clusteringMethod
     case 'k-means'
-        segmentation=Kmeans(Im,numberOfClusters);
+%         ImMat=[];
+%         for i=1:size(Im,3)
+%             Chn=Im(:,:,i);
+%             ImMat=cat(2,Chn(:));
+%         end
+        ImMat=reshape(Im,[],size(Im,3));
+        Idx=kmeans(ImMat,numberOfClusters);
+        segmentation=reshape(Idx,size(Im,1),size(Im,2));
     case 'gmm'
-        segmentation=GMM(Im,numberOfClusters);
+        ImMat=[];
+        for i=1:size(Im,3)
+            Chn=Im(:,:,i);
+            ImMat=cat(2,Chn(:));
+        end
+        GMMModel=fitgmdist(ImMat,numberOfClusters);
+        Idx=cluster(GMMModel,ImMat);
+        segmentation=reshape(Idx,size(Im,1),size(Im,2));
     case 'hierarchical'
-        segmentation=Hierarchical(Im,numberOfClusters);
+        ImMat=[];
+        for i=1:size(Im,3)
+            Chn=Im(:,:,i);
+            ImMat=cat(2,Chn(:));
+        end
+        Dist=linkage(pdist(ImMat));
+        Idx=cluster(Dist,'maxclust',numberOfClusters);
+        segmentation=reshape(Idx,size(Im,1),size(Im,2));
     case 'watershed'
-        segmentation=Watershed(Im,numberOfClusters);
+        ImMat=mean(Im,3);
+        for i=0:1e-1:1
+            
+        end
     otherwise
 end
-end
-
-function ImSeg=Kmeans(Im,numberOfClusters)
-ImMat=[];
-for i=1:size(Im,3)
-    Chn=Im(:,:,i);
-    ImMat=cat(2,Chn(:));
-end
-Idx=kmeans(ImMat,numberOfClusters);
-ImSeg=reshape(Idx,size(Im,1),size(Im,2));
-end
-
-function ImSeg=GMM(Im,numberOfClusters)
-
-end
-
-function ImSeg=Hierarchical(Im,numberOfClusters)
-
-end
-
-function ImSeg=Watershed(Im,numberOfClusters)
-
 end
