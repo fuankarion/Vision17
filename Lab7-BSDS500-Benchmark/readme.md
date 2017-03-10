@@ -27,12 +27,11 @@ The folder will contain the following directories
 - Data: Images and their manual segmentations (ground truth).
   - ucm2: Precalculated results of the *Ultrametric Contour Map* segmentation algorithm.
   - Documentation: Paper describing the UCM algorithm
-- Grouping: Implementation of the UCM algorithm
+- Grouping: Implementation of the UCM algorithm (for those brave students that get offended at the mention of precalculated results ;) )   
 
 ## Ground truth data
 
-The ground truth data is saved as matlab data, it contains a manual segmentation from several persons. For example,
-to look at the ground truth for image ``train/22090`` we can use the following code
+The ground truth data is saved as matlab datafiles, it contains manual segmentation from several persons. Let me remind you how to look at the ground truth for image ``train/22090`` we can use the following code
 
 ```matlab
 load('BSDS500/data/groundTruth/train/22090.mat')
@@ -60,49 +59,46 @@ image(horzcat(bound,bound2))
 colormap colorcube
 ```
 
-Notice how there is not a single ground Truth in the data. This is a constant along all images
+Notice that there are multiple ground truths in the data. This happens for all images
 
 
 ## Benchmark
 
-Before you proceed with the actual benchmark, first keep in mind that the provided mex files provided are **only compatible with linux**. Second, just like with the texton lab, this one might be **quite computationally expensive**. Plan ahead and be mindful of the course limited resources. Unlike Lab05, this time the computation time in the 'test set' is as expensive as in the train or val set.
+Before you proceed jeep in mind that, just like with the texton lab, this benchmak is **quite computationally expensive**. Plan ahead and be mindful of the course limited resources. Unlike Lab05, this time the computation time in the 'test set' is as expensive as in the train or val set.
 
-The file ``bench/test_benchs.m`` contains several examples of how to use the benchmark functions for different types of *result* images. Look at it and run the examples.
+The file ``bench_fast/test_benchs_fast.m`` contains several examples of how to use the benchmark functions two different types of output images. you might want to focus on the one labeled "%% 4. morphological version for : all the benchmarks for results stored as a cell of segmentations"
 
-There is little coding to do in this lab, most of the 'heavy lifting' was already done in Lab06. To start, take a  look at the file that defines the function ``boundaryBench`` (BSR/bench/benchmarks/)and read the description of its inputs.
 
 ## Your Turn
 
+There is little coding to do in this lab, most of the 'heavy lifting' was already done in Lab06. To start, take a  look at the  files at (./BSR/bench_fast/data/segs), the ultimate goal of your code is to produce matlab data files just like these. They are just cell arrays, where each element is a segmentation of the original image calculated with a different K; be consistent across all images, that is the Nth element on the array for any image should be calculated with the same K.  
+
 ### Start with your best segmentation method
 
-Choose two of the functions you developed during the Lab06, use those with that yield the best performance. Feel free to modify or enhance any algorithm based on your findings for the last lab.
+Choose two of the functions you developed during the Lab06, use those that yield the best performance. Feel free to modify or enhance any algorithm based on your findings for the last lab. If you think any of the functions is too computationally expensive this is the moment to make some improvements. Remember the benchmark must be run with all 200 images.
 
-Now, adjust the function you designed in the past lab so that it works on the BSDS Benchmark. Essentially you must be able to process all the images in 'data' and then write the segmentation results in the same format as those in '/bench_fast/data/segs'. This is just as cell array where each element is a segmentation of the original image calculated with a different K; be consistent across all images, that is the Nth element on the array for any image should be calculated with the same K. 
+Now, adjust the function you designed in the past lab so that it works on the BSDS Benchmark. Essentially you must be able to process all the images in 'data' and then write the segmentation results in the same format as those in '/bench_fast/data/segs'. 
 
-There is at least one hyper-parameter for your segmentation method: K. Use the ``train``  and ``eval`` sets to explore the best values for K and any other hyper parameter.
+There is, at least, one hyper-parameter for your segmentation method: K (number of clusters). Use the ``train``  and ``eval`` sets to explore the best set of values for K and any other hyper parameter.
 
-### Test your method
+### Testing your method
 
-Run a **segmentation benchmark** (labeled as  "4. morphological version for : all the benchmarks for results stored as a cell of segmentations") for your two methods, also  run the segmentation benchmark for the provided UCM segmentations (at BSDS500/ucm2). Use the **only** the ``test`` for comparisons.
+Once you get the segmented images in the proper format, run a **segmentation benchmark** for your two methods, also  run the same benchmark for the provided UCM segmentations (at BSDS500/ucm2). Use the **only** the ``test`` for comparisons.
 
-The final plot should contain at least three lines (two instances of your function and the UCM algorithm). You can also use the plot found [in this repository](Figure02.fig) as a base. Look at the code of the ``plot_eval`` function for more information on how to create these plots.
-
-Use different thresholds values to generate a curve.
-
-See http://www.eecs.berkeley.edu/Research/Projects/CS/vision/grouping/resources.html#bench for an example otuput.
+Use different thresholds values to generate a nice curve. See http://www.eecs.berkeley.edu/Research/Projects/CS/vision/grouping/resources.html#bench for an example output.
 
 
 ### Report
 
 The report for this laboratory must include:
-- A brief description of the selected segmentation methods, why did you choose them?, did you make any modification, or  enhancements?
-- What are the hyper parameters of the methods, what do they mean?, how do you choose them? 
-- Results for the BSDS benchmark for the three methods.  Include a graphic where you compare the curves you generated for the three methods.
-- Which methods is the best, why? among the methods you developed, which one works best, why? do you think your selection of K could improve/worsen the results?
-- You made a simpler comparison of methods on the last Lab, does the BSDS have similar results (i.e. your best algorithm remains the best), why or why not?
+- A brief description of the selected segmentation methods, why did you choose them?, did you make any modification, or  enhancements? why?
+- What are the hyper parameters of these methods, what do they mean?, how could you choose them? 
+- Results for the BSDS benchmark for the three methods.  Do not forget to include a graphic where you compare the curves you generated for the three methods.
+- Among the methods you developed, which one works best, why? do you think your selection of K could improve/worsen the results?
+- Did you beat Pablo, No? why?.
+- On the last Lab, you made a simple comparison of segemnetation methods, does the BSDS benchmark has similar results (i.e. your best algorithm remains the best), why or why not?
 - What seem to be the limitations of the algorithms you developed, do you think the errors on your segmentation methods follow any pattern(s)?. Again execution time and resource usage are not our main concern.
-- How could your improve your algorithms?
+- How could you improve your algorithms?
 
 ### Deadline
-
 
