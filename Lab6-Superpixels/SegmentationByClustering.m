@@ -71,6 +71,7 @@ if strcmp(clusteringMethod,'hierarchical')
     
 end
 if strcmp(clusteringMethod,'watershed')
+    % Not finished yet
     im = rgb2gray(rgbImage);
     hy = fspecial('sobel');
     hx = hy';
