@@ -19,8 +19,8 @@ if strcmp(featureSpace(1:3),'rgb')
     im = rgbImage;
 elseif strcmp(featureSpace(1:3),'hsv')
     im = rgb2hsv(rgbImage);
-elseif strcmp(feautureSpace(1:3),'lab')
-    im = rgb2lab(rgbimage);
+elseif strcmp(featureSpace(1:3),'lab')
+    im = rgb2lab(rgbImage);
 else
     error('The featureSpace only accepts rgb, hsv or lab as entry')
 end
@@ -64,8 +64,20 @@ if strcmp(clusteringMethod,'k-means')
 end
 if strcmp(clusteringMethod,'gmm')
     % Not finished yet
-    GMM = fitgmdist(vectors,numberOfClusters);
-    segmentation = {GMM,vectors};
+    GMM = fitgmdist(vectors,numberOfClusters,'RegularizationValue',0.1);
+    % Classification normalizing (valor-mu)/desv
+    dists = zeros(size(vectors,1),numberOfClusters);
+    mu = GMM.mu;
+    sig = GMM.Sigma;
+    for i =1:numberOfClusters
+        for j = 1:size(vectors,1)
+%             size(mu(:,i))
+%             size(vectors(:,j))
+            dists(j,i) = norm(mu(i,:)-vectors(j,:))./sig(i,i);
+        end
+    end
+    [~,A]=max(dists,[],2);
+    segmentation = {reshape(A,n(1),n(2)),GMM};
 end
 if strcmp(clusteringMethod,'hierarchical')
     
