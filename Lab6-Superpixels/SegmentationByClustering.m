@@ -79,14 +79,15 @@ if strcmp(clusteringMethod,'gmm')
     [~,A]=max(dists,[],2);
     segmentation = {reshape(A,n(1),n(2)),GMM};
 end
+% HIERARCHICAL CLUSTERING
 if strcmp(clusteringMethod,'hierarchical')
-        % Superpixels are created using watersheds
+    % Superpixels are created using watersheds
     I = rgb2gray(rgbImage);
-    hy = fspecial('sobel');
-    grad = sqrt(imfilter(double(I), hy', 'replicate').^2 + imfilter(double(I), hy, 'replicate').^2);
-    h=20;
-    marker = imextendedmin(grad, h);
-    new_grad = imimposemin(grad, marker);
+%     hy = fspecial('sobel');
+%     grad = sqrt(imfilter(double(I), hy', 'replicate').^2 + imfilter(double(I), hy, 'replicate').^2);
+    h=10;
+    marker = imextendedmin(I, h);
+    new_grad = imimposemin(I, marker);
     ws = watershed(new_grad);
     
     % We take the each region of the watershed and compact it to make a
@@ -96,17 +97,19 @@ if strcmp(clusteringMethod,'hierarchical')
     for i = 1:max(ws(:))
         [row,col]=find(ws==i);
         for j=1:numel(row)
-            temp2=im(row(j),col(j));
+            temp2=im(row(j),col(j),:);
             temp=temp+temp2(:)';
         end
         vectors(i,:)=temp/numel(row);
     end
-    
     Dists = pdist(vectors);
     Dists = squareform(Dists);
-    Z = linkage(Dists,'centroid','euclidean','savememory', 'on');
+    Z = linkage(Dists,'centroid','euclidean'); %,'savememory', 'on'
     T = cluster(Z, 'maxclust', numberOfClusters);
-    segmentation = reshape(T, n(1), n(2)); 
+    segmentation = zeros(size(I));
+    for i = 1:max(ws(:))
+        segmentation = segmentation + T(i)*(ws==i);
+    end
 end
 if strcmp(clusteringMethod,'watershed')
     % Not finished yet
