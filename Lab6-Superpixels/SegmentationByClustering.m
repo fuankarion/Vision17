@@ -36,18 +36,6 @@ if length(featureSpace)==6
     end
 end
 
-% im = imread('3c.jpg');
-% im = imresize(im, 0.1);
-% ab = double(im(:,:,));
-% nrows = size(im(:,:,1));
-% ncols = size(im(:,:,2));
-% nplanes = size(im(:,:,3));
-% im_reshape = reshape(im,nrows*ncols*nplanes,3);
-%
-% % repeat the clustering 3 times to avoid local minima
-% [cluster_idx, cluster_center] = kmeans(im_reshape,numberOfClusters)
-% % pixel_labels = reshape(cluster_idx,nrows,ncols,nplanes);
-% imshow(pixel_labels,[]), title('image labeled by cluster index');
 n = size(im);
 vectors = zeros([n(1)*n(2) n(3)]);
 % transform the image into
@@ -81,35 +69,23 @@ if strcmp(clusteringMethod,'gmm')
 end
 % HIERARCHICAL CLUSTERING
 if strcmp(clusteringMethod,'hierarchical')
-    % Superpixels are created using watersheds
-    I = rgb2gray(rgbImage);
-%     hy = fspecial('sobel');
-%     grad = sqrt(imfilter(double(I), hy', 'replicate').^2 + imfilter(double(I), hy, 'replicate').^2);
-    h=10;
-    marker = imextendedmin(I, h);
-    new_grad = imimposemin(I, marker);
-    ws = watershed(new_grad);
-    
-    % We take the each region of the watershed and compact it to make a
-    % super pixel catacterized by the mean vector.
-    vectors = zeros(max(ws(:)),n(3));
-    temp = zeros(1,n(3));
-    for i = 1:max(ws(:))
-        [row,col]=find(ws==i);
-        for j=1:numel(row)
-            temp2=im(row(j),col(j),:);
-            temp=temp+temp2(:)';
+    % The resolution of the image is lowered to 100x100
+    im = imresize(im, [100 100]);
+    m=size(im);
+    vectors = zeros([m(1)*m(2) m(3)]);
+    % transform the image into representation space
+    for j = 1:m(2)
+        for i = 1:m(1)
+            vectors((j-1)*m(1)+i,:)=reshape(im(i,j,:),1,[]);
         end
-        vectors(i,:)=temp/numel(row);
     end
+    % hierarchical segementation
     Dists = pdist(vectors);
     Dists = squareform(Dists);
-    Z = linkage(Dists,'centroid','euclidean'); %,'savememory', 'on'
+    Z = linkage(Dists,'centroid','euclidean','savememory', 'on');
     T = cluster(Z, 'maxclust', numberOfClusters);
-    segmentation = zeros(size(I));
-    for i = 1:max(ws(:))
-        segmentation = segmentation + T(i)*(ws==i);
-    end
+    T = reshape(T,100,100);
+    segmentation = imresize(T,[n(1) n(2)],'nearest');
 end
 if strcmp(clusteringMethod,'watershed')
     % Not finished yet
