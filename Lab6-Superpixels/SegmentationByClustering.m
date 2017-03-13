@@ -70,7 +70,8 @@ end
 % HIERARCHICAL CLUSTERING
 if strcmp(clusteringMethod,'hierarchical')
     % The resolution of the image is lowered to 100x100
-    im = imresize(im, [100 100]);
+    % im = imresize(im, [100 100]);
+    im = imresize(im, [50 50]);
     m=size(im);
     vectors = zeros([m(1)*m(2) m(3)]);
     % transform the image into representation space
