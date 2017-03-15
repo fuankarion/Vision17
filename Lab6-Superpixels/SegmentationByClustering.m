@@ -89,45 +89,24 @@ if strcmp(clusteringMethod,'hierarchical')
     segmentation = imresize(T,[n(1) n(2)],'nearest');
 end
 if strcmp(clusteringMethod,'watershed')
-    % Not finished yet
+    % This code cannot guarantee a segmentation in a number of regions. It depends on the contrast difference for minima.
+    % This parameter, h, has a very important effect on the results of the segmentation, but varies strongly from one
+    % image to another.
     im = rgb2gray(rgbImage);
     hy = fspecial('sobel');
     hx = hy';
     Iy = imfilter(double(im), hy, 'replicate');
     Ix = imfilter(double(im), hx, 'replicate');
     grad = Iy.^2+Ix.^2;
-    segmentation= watershed(grad);
-    A = max(segmentation(:));
-    marker = imextendedmin(grad, A-numberOfClusters);
+    
+    h = 500; % Contrast difference to be considered a minimum. 
+    ucm = zeros(size(grad));
+    marker = imextendedmin(grad, h);
     new_grad = imimposemin(grad, marker);
-    segmentation= watershed(new_grad);
+    ws = watershed(new_grad);
+    ucm = max(ucm,h*(ws==0));
     
-    
-    %%%% Just a start
-        % Not finished yet
-    im = rgb2gray(rgbImage);
-    hy = fspecial('sobel');
-    hx = hy';
-    Iy = imfilter(double(im), hy, 'replicate');
-    Ix = imfilter(double(im), hx, 'replicate');
-    grad = Iy.^2+Ix.^2;
-    
-    for h = 10:10:50
-        marker = imextendedmin(grad, h);
-        new_grad = imimposemin(grad, marker);
-        ws = watershed(new_grad);
-        figure; 
-        subplot(1,2,1); 
-        imshow(im);
-        subplot(1,2,2);
-        imshow(ws==0);
-        title(h);
-    
-        segmentation= watershed(grad);
-        A = max(segmentation(:));
-        marker = imextendedmin(grad, A-numberOfClusters);
-        new_grad = imimposemin(grad, marker);
-        segmentation= watershed(new_grad);
+    segmentation= ucm;
     end
 end
 end
