@@ -1,5 +1,5 @@
 %{
-Método para obtener índice de Jaccard
+Método para obtener indice de Jaccard
 Input:
     Segmentation: Imagen con etiquetas de segmentacion de metodo
     GroundTruth: Imagen con etiquetas de anotaciones
@@ -7,7 +7,7 @@ Input:
     GTVec: Vector con etiquetas de objeto a unir para GroundTruth
 %}
 function Jacc=EvulateSegmentation(Segmentation,GroundTruth,SegVec,GTVec)
-% Matrices binarias cuyos valores positivos serán las etiquetas de los
+% Matrices binarias cuyos valores positivos seran las etiquetas de los
 % vectores
 BWSeg=zeros(size(Segmentation));
 BWGT=BWSeg;
@@ -18,7 +18,7 @@ end
 for i=GTVec
     BWGT=or(BWGT,GroundTruth==i);
 end
-% Magnitud de intersección entre matrices binarias
+% Magnitud de interseccion entre matrices binarias
 Intersec=nnz(and(BWSeg,BWGT));
 % Indice de Jaccard: Intersec(A,B)/Union(A,B)
 Jacc=Intersec/(nnz(BWSeg)+nnz(BWGT)-Intersec);

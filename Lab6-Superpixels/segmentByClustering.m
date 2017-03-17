@@ -66,7 +66,7 @@ switch clusteringMethod
         % Se convierte la imagen 3D de MxNxC a 2D de M*NxC
         ImMat=reshape(Im,[],size(Im,3));
         % Crear dendograma 
-        Dist=linkage(ImMat,'ward','euclidean','savememory','on');
+        Dist=linkage(ImMat,'centroid','euclidean','savememory','on');
         % Cortar dendograma en numero de clusters pedido
         Idx=cluster(Dist,'maxclust',numberOfClusters);
         % Convertir el vector 1D de indices M*N a 2D de MxN
