@@ -1,4 +1,4 @@
-directory = './data/images/*.jpg';
+directory = './BSR/bench_fast/data/images/*.jpg';
 
 
 Files = dir(directory);
@@ -9,7 +9,7 @@ segmentations = cell(numel(Files), numel(k), 2);
 
 for i = 1:length(Files)
     
-    im = imread(Files(k).name);
+    im = imread([directory(1:(end-5)) Files(i).name]);
     
     for j = 1:numel(k)
         segmentatios{i,j,1} = segmentByClustering(im, 'rgb+xy', 'k-means', k(j));
@@ -20,4 +20,4 @@ for i = 1:length(Files)
 
 end
 
-save('Segmentation_Cell.mat', segmentations); 
+save('Segmentation_Cell.mat', 'segmentations'); 
