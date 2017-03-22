@@ -1,4 +1,4 @@
-directory = './BSR/bench_fast/data/images/*.jpg';
+directory = './data/images/*.jpg';
 
 
 Files = dir(directory);
