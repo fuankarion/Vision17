@@ -100,6 +100,6 @@ The report for this laboratory must include:
 - How could you improve your algorithms? Think big, be creative, we are in the what if domain :)
 
 ### Deadline
-**March 23 11:59 pm,**, as usual just upload your report to your github repo.
+**March 30 11:59 pm,**, as usual just upload your report to your github repo.
 
 
