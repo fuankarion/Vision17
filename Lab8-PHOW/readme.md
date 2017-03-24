@@ -54,9 +54,9 @@ The report for this laboratory must include:
 -  What are the most relevant hyperparameters for the PHOW strategy.  Did you found any other relevant parameters inside the script?
 - How can you choose the best set of hyper parameters for Caltech 101 and imagenet set?, what are their values?
 - Evaluate the performance (ACA) of the classifier in the train set of imagenet and Caltech 101 and imagenet. Why is there such a big difference?
--Performance (ACA) Using your classification function on imagenet test,  
--What seem to be the ‘easy’ classes, what seem to be the hardest?, why?
--How could  you improve  your results,  Think big, be creative, we are in the what if domain :)
+- Performance (ACA) Using your classification function on imagenet test,
+- What seem to be the ‘easy’ classes, what seem to be the hardest?, why?
+- How could  you improve  your results,  Think big, be creative, we are in the what if domain :)
 
 ## Deadline
 April 6 11:59pm
