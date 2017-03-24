@@ -1,7 +1,7 @@
 
 # PHOW Image Classification
 
-In this Lab we will be exploring a classic computer vision strategy for object recognition namely the "Pyramid histograms of visual words" or "PHOW". Unlike most Labs there will be little coding to do, as we will use the VLFeat Library, originally developed by Andrea Vedaldi and Brian Fulkerson. Moreover, we will also take a peek a two essential datasets for object recognition task.  The classic (read old) caltech 101 dataset, second the ImageNet dataset, currently the de-facto standard for object recognition.
+In this Lab we will be exploring a classic computer vision strategy for object recognition namely the "Pyramid histograms of visual words" or "PHOW". Unlike most Labs there will be little coding to do, as we will use the VLFeat Library, originally developed by Andrea Vedaldi and Brian Fulkerson. Moreover, we will also take a peek a two essential datasets for the object recognition task.  The classic (read old) caltech 101 dataset, second the ImageNet dataset, currently the de-facto standard for object recognition.
 
 ## Setup
 
