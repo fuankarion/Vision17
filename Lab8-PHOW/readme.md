@@ -1,11 +1,12 @@
+
 # PHOW Image Classification
 
-In this Lab we will be exploring a classic computer vision strategy for object recognition namely the "Pyramid histograms of visual words" or "PHOW". Unlike most Labs there will be little coding to do, as we will use the VLFeat Library, originaly developed by Andrea Vedaldi and Brian Fulkerson. Moreover, we will also take a peak a two essential datasets for object recognition task. First the clasic (read solved) caltech 101 dataset, second the ImageNet dataset, currently the de-facto standard for object recognition.
+In this Lab we will be exploring a classic computer vision strategy for object recognition namely the "Pyramid histograms of visual words" or "PHOW". Unlike most Labs there will be little coding to do, as we will use the VLFeat Library, originally developed by Andrea Vedaldi and Brian Fulkerson. Moreover, we will also take a peek a two essential datasets for object recognition task.  The classic (read old) caltech 101 dataset, second the ImageNet dataset, currently the de-facto standard for object recognition.
 
 
 ## Setup
 
-First download the [vl_feat](http://www.vlfeat.org/index.html) library. 
+First download the [vl_feat](http://www.vlfeat.org/index.html) library.
 
 After downloading and uncompressing the folder, open matlab and run the following command
 
@@ -13,57 +14,55 @@ After downloading and uncompressing the folder, open matlab and run the followin
 run('**VLFEATROOT**/toolbox/vl_setup')
 ```
 
-This simple installation procedure should work for most. For detailed information and troubleshoting see [vl_feat matlab toolbox installation](http://www.vlfeat.org/install-matlab.html).
+This simple installation procedure should work for most. For detailed information and troubleshooting see [vl_feat matlab toolbox installation](http://www.vlfeat.org/install-matlab.html).
 
 ## Example
 
-The vl_feat library already includes an excellent example on how to use PHOW on the caltech 101 dataset see [phow_caltech101](http://www.vlfeat.org/applications/caltech-101-code.html). 
+The vl_feat library already includes an excellent example on how to use PHOW on the caltech 101 dataset see [phow_caltech101](http://www.vlfeat.org/applications/caltech-101-code.html).
 
-Analyze the script and understand what it does. If you want, run it using checkpoints to further see how it works. Do not forget to take a close look at the results and file output, be sure you undestand the former, and you know what is being stored for the later.
+Analyze the script and understand what it does. If you want, run it using checkpoints to further see how it works. Do not forget to take a close look at the results and file output, be sure you understand the former, and you know what is being stored for the later. Tip: there are relevant parameters ‘hidden’  well beyond the first few lines of the script.
 
-## Your Turn
-
-Use the techniques illustrated in the example to train and test a classifier in a subset of the [image-net](http://www.image-net.org) database. 
-
-- http://157.253.63.7/imagenet_small.tgz 
-- ssh: ``vision@157.253.63.7:datos1/vision/images/imagenet_small.tgz``
-
-**This is a large file (~11GB)!!**, so it would be best to download it using ``wget`` in the couse server
-
-Adapt the script from the example to work on this new dataset. What performance do you get? How does it compare to the results from caltech-101? Can you guess what causes the differences?
-
-Using all the 200 will add a signiicant load on the course server, however the current hardware should be able to handle, try to  use the full dataset.
-
-Also, experiment with the script to try to find out the following
+Experiment further with the script to try to find out the following
 
 - How does the problem changes when the number of categories increases?
 - How does the problem changes when the size of the training set changes?
-- How does the result chang when the size of the test (validation) set changes?
-- How does the problem changes when the number of dictionary workds changes?
-- How does the problem changes when the spatial paritioning changes (``conf.numSpatialX``)?
+- How does the result change when the size of the test (validation) set changes?
+- How does the result changes when the number of dictionary words changes?
+- How does the problem changes when the spatial partitioning changes (``conf.numSpatialX/Y``)?
 
+Try also to figure out how these setting change the memory and CPU time required for the process, we are switching to a larger dataset.
 
-Answer all questions from the following points of view
+## Your Turn
 
-- Performance of the classifier (in test and training)
-- Computational resources needed
+Use the techniques illustrated in the example to train and test a classifier in a subset of the [image-net](http://www.image-net.org) database.
 
-Don't just say *"it improves"*; explain how much it improves. Is it linear? Is it significant? Where are the computing resources being used? What are the practical implications? What are the costs and the benefits? 
+- http://157.253.63.7/imagenet_small.tgz
+- ssh: ``vision@157.253.63.7:datos1/vision/images/imagenet_small.tgz``
+
+**This is a large file (~2.5GB)!!**, so it would be best to download it using ``wget`` in the course server
+
+Adapt the script from the example to work the train set on this new dataset. What performance do you get with default params? How does it compare to the results from caltech-101? Any idea what causes the differences?
+
+Using all the 100 images from all 200 classes will add a significant load on the course server, and you probably will run out of memory. You can, however, reduce the number of images per class and train with the whole class-set.
+
+Finally develop a small classification function which allows to use your bets model with the test Set.
+Report the overall ACA over the 200 categories on the test set (a single number). 
+
 
 ## Report
 
-In addition to the source code used in the above exercise, you should upload a report (using the LaTeX style) containing the following points
+The report for this laboratory must include:
 
-- Description of the database
-- Description of the recognition method (focus on the adjustments you made to adapt it to the database)
-- Training and test results
-- Discussion of the results
-- Discussion on the effecs of
-  - number of categories 
-  - size of training set
-  - number of spatial partitions
-- Limitations of the method
-- Possible improvements
+- Short description of the Caltech 101 and Imagenet dataset (max 1 paragraph each)
+- Short description of the  PHOW strategy (max 2 paragraphs)
+-  What are the most relevant hyperparameter for the PHOW strategy.  Did you found any other relevant parameter inside the script?
+- how can you choose the best set of hyper parameters for Caltech 101 and imagenet set?, what are their values?
+- Performance (ACA) of the classifier in the train set of imagenet and Caltech 101 and imagenet. Why is there such a big difference?
+-Performance (ACA) Using your classification function on imagenet test,  
+-What seem to be the ‘easy’ classes, what seem to be the hardest?, why?
+-How could  you improve  your results,  Think big, be creative, we are in the what if domain :)
 
-##Due date
-April 7, 2016; 8:00 a.m.
+##Deadline
+April 
+
+
