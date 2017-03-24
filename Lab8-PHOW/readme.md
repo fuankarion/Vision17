@@ -59,7 +59,7 @@ The report for this laboratory must include:
 - How could  you improve  your results,  Think big, be creative, we are in the what if domain :)
 
 ## Deadline
-April 6 11:59pm
+**April 6 11:59pm**, as usual just upload your report to you github repo.
 
 
 
