@@ -112,6 +112,6 @@ Discuss the results
 The report should have max 5 pages, if it is necessary use any additional pages for references and images **only**. Use the standard CVPR sections: abstract, introduction (again, be concise), materials and methods, results, conclusions and references. There is no need for an 'State of art' section.
 
 ## Deadline 
-**March 9 11:59 pm,**, as usual just upload your report to you github repo.
+**March 16 11:59 pm,**, as usual just upload your report to you github repo.
 
 
