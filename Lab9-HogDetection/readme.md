@@ -16,6 +16,8 @@ Again most of the heavy lifting is already done, as the codebase for this Lab is
 ## Data description
 The basic resources for this lab can be downloaded at:
 
+XXXX
+
 There are 3 directories in the download:
 
 - Train: Set of train images that contain at least 1 face (as by the specs of our subset).
@@ -24,10 +26,14 @@ There are 3 directories in the download:
 
 
 ## Evaluation
-As we work on a very small subset of the dataset the default challenge, the standard evaluation code is not appropriate, therefore we will be using a modified version of the original evaluation code that applies only to the subset we selected. This modified version can be obtained at:
+As we work on a very small subset of the dataset from the default challenge, the standard evaluation code is not appropriate, therefore we will be using a modified version of the original evaluation code that applies only to the subset we selected. This modified version can be obtained at:
 
+XXXAvaialbe on Monday April 3 
 
 ## Your Turn
 Create a multi-scale HOG detector for faces using the provided dataset.
-As we are now far more experienced in the Computer vision world, **you are free to apply any modification, extension pre/post-processing to the base algorithm or data as long as the core of your strategy remains a multi-scale HOG detector**
+
+We are now far more experienced in the Computer vision world, hence there are no further guidelines for this lab, moreover **you are free to apply any modification, extension pre/post-processing to the base algorithm or data as long as the core of your strategy remains a multi-scale HOG detector**
+
+## Report 
 
