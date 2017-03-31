@@ -33,10 +33,6 @@ Create a multi-scale HOG detector for faces using the provided dataset. Then tes
 
 We are now far more experienced in the Computer vision world, hence there are no further guidelines for this lab, moreover **you are free to apply any modification, extension pre/post-processing to the base algorithm or data, as long as the core of your strategy remains a multi-scale HOG detector**.    
 
-## Extra credit
-Ever heard of the [viola-jones algorithm](http://www.vision.caltech.edu/html-files/EE148-2005-Spring/pprs/viola04ijcv.pdf)?. It is classic boosting  strategy first presented for face and can be easily to other detection problems. 
-There are lots of implementations around the web, pick the one you like the most and get results on our test set. Include in your report the quantitative comparison against multiscale-hog, which one  works best? any idea why?
-
 ## Report 
 The report for this laboratory must include:
 - A brief description of the multiscale multi-scale HOG  strategy, why can you apply it to a detection problem?
@@ -48,5 +44,11 @@ The report for this laboratory must include:
 - Do you think the false positives follow a pattern?
 - Do you think the false negatives follow a pattern?
 - How could you improve your algorithms? Think big, be creative, we are in the what if domain :)
+
+
+## Extra credit
+Ever heard of the [viola-jones algorithm](http://www.vision.caltech.edu/html-files/EE148-2005-Spring/pprs/viola04ijcv.pdf)?. It is classic boosting  strategy first presented for face and can be easily to other detection problems. 
+There are lots of implementations around the web, pick the one you like the most and get results on our test set. Include in your report the quantitative comparison against multiscale-hog, which one  works best? any idea why?
+
 
 
