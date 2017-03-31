@@ -33,6 +33,9 @@ Create a multi-scale HOG detector for faces using the provided dataset. Then tes
 
 We are now far more experienced in the Computer vision world, hence there are no further guidelines for this lab, moreover **you are free to apply any modification, extension pre/post-processing to the base algorithm or data, as long as the core of your strategy remains a multi-scale HOG detector**.    
 
+## Extra credit
+Ever heard of the [viola-jones algorithm](http://www.vision.caltech.edu/html-files/EE148-2005-Spring/pprs/viola04ijcv.pdf)?. 
+
 ## Report 
 The report for this laboratory must include:
 - A brief description of the multiscale multi-scale HOG  strategy, why can you apply it to a detection problem?
