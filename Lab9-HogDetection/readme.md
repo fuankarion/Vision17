@@ -1,5 +1,5 @@
 
-# HOG Detection
+# HOG Face Detection
 Just like in the last laboratory, we will be using another classic computer vision strategy, namely, the multi-scale HOG descriptor for object detection. Again our codebase will be the VLFeat Library. This time we will switch our attention from generaci objects to a different problem, for this Lab, will use a small subset of a modern and database the [WIDER FACE: A Face Detection Benchmark](http://mmlab.ie.cuhk.edu.hk/projects/WIDERFace/). This dataset is **very challenging** with over 393,703 and contains face instances from several every day scenarios like public events, family meetings, common
 leisure activities, etc.
 
