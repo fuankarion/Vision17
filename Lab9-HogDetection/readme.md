@@ -35,13 +35,13 @@ We are now far more experienced in the Computer vision world, hence there are no
 
 ## Report 
 The report for this laboratory must include:
-A brief description of the multiscale multi-scale HOG  strategy, why can you apply it to a detection problem?
-Can you identify any hyper parameter on the multi-scale HOG?, why is it usefull?
-How can you evaluate a general detection problem? 
-Overall description of your strategy including any modifications/enhancements you applied to it.
-Your results on our test subset of the wider-face dataset.
-What seems to be the limitations of the strategy  you developed?.
-Do you think the false positives follow a pattern?
-Do you think the false negatives follow a pattern?
- How could you improve your algorithms? Think big, be creative, we are in the what if domain :)
+- A brief description of the multiscale multi-scale HOG  strategy, why can you apply it to a detection problem?
+- Can you identify any hyper parameter on the multi-scale HOG?, why is it usefull?
+- How can you evaluate a general detection problem? 
+- Overall description of your strategy including any modifications/enhancements you applied to it.
+- Your results on our test subset of the wider-face dataset.
+- What seems to be the limitations of the strategy  you developed?.
+- Do you think the false positives follow a pattern?
+- Do you think the false negatives follow a pattern?
+- How could you improve your algorithms? Think big, be creative, we are in the what if domain :)
 
