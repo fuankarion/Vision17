@@ -48,7 +48,7 @@ The report for this laboratory must include:
 
 ## Extra credit 1
 Ever heard of the [viola-jones algorithm](http://www.vision.caltech.edu/html-files/EE148-2005-Spring/pprs/viola04ijcv.pdf)?. It is classic boosting strategy first presented for real-time face detection, it can be easily extended to other detection problems. 
-There are lots of implementations around the web, pick the one you like the most and get results on our test set. Include in your report the quantitative comparison against multiscale-hog, which one  works best? any idea why?
+There are lots of implementations around the web, pick the one you like the most and get results on our test set. Include in your report the **quantitative** comparison against multiscale-hog, which one  works best? any idea why?
 
 ## Extra credit 2
 
