@@ -43,7 +43,7 @@ In other words **Everything goes**  as long as:
 ## Report 
 The report for this laboratory must include:
 - A brief description of the multiscale multi-scale HOG  strategy, why can you apply it to a detection problem?
-- Can you identify any hyper parameter on the multi-scale HOG?, why is it usefull?
+- Can you identify any hyper parameter on the multi-scale HOG?, what is it usefull for?
 - How can you evaluate a general detection problem? 
 - Overall description of your strategy including any modifications/enhancements you applied to it.
 - Your results on our test subset of the wider-face dataset.
