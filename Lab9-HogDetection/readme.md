@@ -46,13 +46,13 @@ The report for this laboratory must include:
 - How could you improve your algorithms? Think big, be creative, we are in the what if domain :)
 
 
-## Extra credit
+## Extra credit 1
 Ever heard of the [viola-jones algorithm](http://www.vision.caltech.edu/html-files/EE148-2005-Spring/pprs/viola04ijcv.pdf)?. It is classic boosting strategy first presented for real-time face detection, it can be easily extended to other detection problems. 
 There are lots of implementations around the web, pick the one you like the most and get results on our test set. Include in your report the quantitative comparison against multiscale-hog, which one  works best? any idea why?
 
-## Extra credit
+## Extra credit 2
 
 Our good man waldo is hidden somewhere in the dataset, can you find him?
 
-![Waldo](https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwjdj53q_4HTAhWMTCYKHVvXC5MQjRwIBw&url=https%3A%2F%2Ftwitter.com%2Fwhereswaldo&psig=AFQjCNHjWtvpjOUHSRu1TkBow7AEQZrEfA&ust=1491092838044141)
+![Waldo](https://pbs.twimg.com/profile_images/561277979855056896/4yRcS2Zo.png)
 
