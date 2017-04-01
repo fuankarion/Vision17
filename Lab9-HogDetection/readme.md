@@ -54,5 +54,5 @@ There are lots of implementations around the web, pick the one you like the most
 
 Our good man waldo is hidden somewhere in the dataset, can you find him?
 
-![Waldo](https://pbs.twimg.com/profile_images/561277979855056896/4yRcS2Zo.png | width=100)
+![Waldo](https://pbs.twimg.com/profile_images/561277979855056896/4yRcS2Zo.png =250x250)
 
