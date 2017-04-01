@@ -43,7 +43,7 @@ In other words **Everything goes**  as long as:
 ## Report 
 The report for this laboratory must include:
 - A brief description of the multiscale multi-scale HOG  strategy, why can you apply it to a detection problem?
-- Can you identify any hyper parameter on the multi-scale HOG?, what is it usefull for?
+- Can you identify any hyper parameter on the multi-scale HOG?, what is it useful for?
 - How can you evaluate a general detection problem? 
 - Overall description of your strategy including any modifications/enhancements you applied to it.
 - Your results on our test subset of the wider-face dataset.
@@ -62,5 +62,6 @@ There are lots of implementations around the web, pick the one you like the most
 Our good man waldo is hidden somewhere in the dataset, can you find him?. Tip use this mugshot to find him. gl hf
 
 <img src="https://pbs.twimg.com/profile_images/561277979855056896/4yRcS2Zo.png" alt="Waldo" width="250" height="250">
+
 
 
