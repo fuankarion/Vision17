@@ -52,7 +52,7 @@ There are lots of implementations around the web, pick the one you like the most
 
 ## Extra credit 2
 
-Our good man waldo is hidden somewhere in the dataset, can you find him?
+Our good man waldo is hidden somewhere in the dataset, can you find him? use a detector for this task
 
 <img src="https://pbs.twimg.com/profile_images/561277979855056896/4yRcS2Zo.png" alt="Waldo" width="250" height="250">
 
