@@ -36,9 +36,9 @@ Create a multi-scale HOG detector for faces using the provided dataset. Then eva
 We are now far more experienced in the Computer vision world, so this time you will get no further guidelines. Moreover you are free to apply any modification, extension pre/post-processing to the base algorithm or data, Notice this means you can even add more images from the original dataset **on the train phase**. 
 
 In other words **Everything goes**  as long as:
-You don't cheat.
-Test set remains the same
-**The core of your strategy remains a multi-scale HOG detector**.
+- You don't cheat.
+- Test set remains unaltered
+- **The core of your strategy remains a multi-scale HOG detector**.
 
 ## Report 
 The report for this laboratory must include:
