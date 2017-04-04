@@ -33,14 +33,12 @@ After download, adapt the hardcoded paths you yout envirroment, they are easy to
 
 To use the evaluation code your results must be in a specific format, the prediction for each image should be included in a file as follows :
 
+```
 0_Parade_Parade_0_102   -> image name, ignore extension
-
 2                       -> number of face detections on image
-
 499 176 59 59 0.25      -> x coodinate of top left corner,y coodinate of top left corner, width, height, confidence
-
 568 625 84 84 0.5
-
+```
 
 ## Your Turn
 
