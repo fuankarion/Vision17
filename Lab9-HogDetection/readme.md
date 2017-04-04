@@ -27,7 +27,7 @@ There are 3 directories in the download:
 ## Evaluation
 As we work on a very small subset of the original dataset, the standard evaluation code is not appropriate, therefore we will be using a modified version of the original evaluation code that applies only to the subset we selected. This modified version can be obtained at:
 
-XXX Available on Monday April 3 
+http://157.253.63.7/eval_tools_mod.tar.gz
 
 ## Your Turn
 
