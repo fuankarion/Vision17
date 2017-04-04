@@ -8,12 +8,12 @@ For this Lab, we will use a small subset of a modern database the [WIDER FACE: A
 
 This lab uses resources from the [Multimedia Laboratory, of the Chinese University of Hong Kong](http://mmlab.ie.cuhk.edu.hk), you might want to check their website.
 
-To better approach approach the problem (read to get results above 0.0) we will operate over a very small subset of WIDER FACE. We will work only on face instances whose area is larger than 90x90 pixels, avoiding those who are rather small and/or have a significant amount of blur.
+To better approach approach the problem (read to get results above 0.0) we will operate over a very small subset of WIDER FACE. We will work only on face instances whose area is larger than 80x80 pixels, avoiding those who are rather small and/or have a significant amount of blur.
 
-Once again most of the technical heavy lifting is already done, as the codebase for this Lab is provided and thoroughly explained by the [Visual Geometry Group at Oxford](http://www.robots.ox.ac.uk/~vgg/practicals/category-detection/). Read the tutorial and make sure that the technical aspects of their implementations are clear.
+Once again most of the technical heavy lifting is already done, as the codebase for this Lab is provided and thoroughly explained by the [Visual Geometry Group at Oxford](http://www.robots.ox.ac.uk/~vgg/practicals/category-detection/). Read their tutorial and make sure that the technical aspects of their implementations are clear.
 
 ## Data 
-The subset of wider that we will use in this lab can be downloaded at:
+The subset of WIDER FACE that we will use in this lab can be downloaded at:
 
 http://157.253.63.7/lab9Detection.tar
 
@@ -28,6 +28,16 @@ There are 3 directories in the download:
 As we work on a very small subset of the original dataset, the standard evaluation code is not appropriate, therefore we will be using a modified version of the original evaluation code that applies only to the subset we selected. This modified version can be obtained at:
 
 http://157.253.63.7/eval_tools_mod.tar.gz
+
+After download, adapt the hardcoded paths you yout envirroment, they are easy to spot as they all begin with '/home/jcleon'
+
+To use the evaluation code your results must be in a specific format, the prediction for each image should be included in a file as follows :
+
+0_Parade_Parade_0_102   -> image name, ignore extension
+2                       -> number of face detections on image
+499 176 59 59 0.25      -> x coodinate of top left corner,y coodinate of top left corner, width, height, confidence
+568 625 84 84 0.5
+
 
 ## Your Turn
 
