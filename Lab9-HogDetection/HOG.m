@@ -1,10 +1,12 @@
 clear all; clc
 
-% run('VLFEATROOT/toolbox/vl_setup')
+run('VLFEATROOT/toolbox/vl_setup')
 
-% path2images = '/datos1/vision/lab9Detection/TrainCrops/';
+path2images = '/datos1/vision/lab9Detection/TrainCrops/';
 
-cd C:\Users\usuario\Dropbox\Universidad\Maestria2\Vision\Textures
+% cd C:\Users\usuario\Dropbox\Universidad\Maestria2\Vision\Textures
+
+cd(path2images);
 
 files = dir
 directoryNames = {files([files.isdir]).name}
@@ -62,7 +64,7 @@ end
 % in the complete train set and we compute their HOG. It is very unlikely
 % that these patches correspond to positives.
 
-cd train
+cd TrainImages
 
 files = dir
 directoryNames = {files([files.isdir]).name}
@@ -124,6 +126,7 @@ lambda = 1 / (C * (numPos + numNeg)) ;
 % Learn the SVM using an SVM solver
 w = vl_svmtrain(X,Annotations,lambda,'epsilon',0.01,'verbose') ;
 
+save('trainedSVM.mat','w')
 
 
 
