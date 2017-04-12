@@ -1,8 +1,11 @@
-clear all; clc
+clear all; clc,
+
+root = pwd;
 
 run('VLFEATROOT/toolbox/vl_setup')
 
-path2images = '/datos1/vision/lab9Detection/TrainCrops/';
+%path2images = '/datos1/vision/lab9Detection/TrainCrops/';
+path2images = 'C:\Users\usuario\Dropbox\Universidad\Maestria2\Vision\Textures\images\TrainCrops\';
 
 % cd C:\Users\usuario\Dropbox\Universidad\Maestria2\Vision\Textures
 
@@ -59,6 +62,7 @@ for i=1:lengthimages
     end
 end
 
+cd ..
 %% NEGATIVES FOR THE SVM
 % To produce negatives for the SVM, we extract random patches from images
 % in the complete train set and we compute their HOG. It is very unlikely
@@ -82,14 +86,17 @@ for i=1:length(directoryNames)
     ima = im2single(ima);
     [size1 size2] = size(ima);
     
-    xo = round(rand()*(size1 - 100));
-    xf = xo + 100;
-    yo = round(rand()*(size2 - 125));
-    yf = yo + 125;
     
-    cellSize = 8;
-    hogneg = vl_hog(ima(xo:xf, yo:yf), cellSize);
-    negs{end + 1, 1} = hogneg;
+    if size1 > 101 && size2 > 126
+        xo = ceil(rand()*(size1 - 101));
+        xf = xo + 100;
+        yo = ceil(rand()*(size2 - 126));
+        yf = yo + 125;
+    
+        cellSize = 8;
+        hogneg = vl_hog(ima(xo:xf, yo:yf), cellSize);
+        negs{end + 1, 1} = hogneg;
+    end
     end
     
  cd ..
@@ -112,10 +119,10 @@ for i=1:numNeg
     neg(:,i) = reshape(negs{i}, 13*16*31, 1);
 end
 
-annotationsPos = ones(1, size(pos, 2));
+annotationsPos = ones(1, size(pos, 2);
 annotationsNeg = -ones(1, size(neg, 2));
 
-Annotations = vertcat(annotationsPos, annotationsNeg);
+Annotations = cat(2, annotationsPos, annotationsNeg);
 
 X = horzcat(pos, neg);
 
@@ -126,8 +133,11 @@ lambda = 1 / (C * (numPos + numNeg)) ;
 % Learn the SVM using an SVM solver
 w = vl_svmtrain(X,Annotations,lambda,'epsilon',0.01,'verbose') ;
 
+cd(root)
+
 save('trainedSVM.mat','w')
 
+cd ..
 
 
 
