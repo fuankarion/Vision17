@@ -119,7 +119,7 @@ for i=1:numNeg
     neg(:,i) = reshape(negs{i}, 13*16*31, 1);
 end
 
-annotationsPos = ones(1, size(pos, 2);
+annotationsPos = ones(1, size(pos, 2));
 annotationsNeg = -ones(1, size(neg, 2));
 
 Annotations = cat(2, annotationsPos, annotationsNeg);
