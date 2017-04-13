@@ -131,11 +131,11 @@ C = 10 ;
 lambda = 1 / (C * (numPos + numNeg)) ;
 
 % Learn the SVM using an SVM solver
-w = vl_svmtrain(X,Annotations,lambda,'epsilon',0.01,'verbose') ;
+[w,b] = vl_svmtrain(X,Annotations,lambda,'epsilon',0.01,'verbose') ;
 
 cd(root)
 
-save('trainedSVM.mat','w')
+save('trainedSVM.mat','w','b')
 
 cd ..
 
