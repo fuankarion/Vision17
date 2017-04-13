@@ -1,5 +1,5 @@
 %% Test SVM
-
+clear all, clc
 %run('~/JeanneretMadrid/lab8/VLFEATROOT/toolbox/vl_setup')
 tic
 load('trainedSVM2.mat')
