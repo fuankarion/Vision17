@@ -75,5 +75,5 @@ Our good man waldo is hidden somewhere in the dataset, can you find him?. Tip us
 <img src="https://pbs.twimg.com/profile_images/561277979855056896/4yRcS2Zo.png" alt="Waldo" width="250" height="250">
 
 
-Deadline
+## Deadline
 **28 April** As usual upload your report on github
