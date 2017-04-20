@@ -9,7 +9,7 @@ This lab uses the [Keras Library](https://github.com/fchollet/keras), an easy to
 
 TensorFlow and keras are already installed at the course servers, however there are no gpus avaible on them, so the execution time will be longer than the demo during the class. If you want, you can install the mentioned libraries and run the examples in your pc, if you own a computer with a discrete **Nvidia** graphics card it will run much faster (porably faster than in the course servers).
 
-The full scripts for this are avilable [here]() and [here].
+The full scripts for this are avilable [here](convMNIST.py) and [here](fcMNIST.py).
 
 ## Handwritten digits recognition using Neural Networks
 The data for the lab is available online and can be automatically download using the Keras library, it is as simple as:
