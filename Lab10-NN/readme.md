@@ -75,7 +75,7 @@ model.summary()
 
 Before we start the optimization process, take a time to think about the network, how many parameters does it have?, what kind of operation does the neuron?
 
-Now start the optimization process, using Stochastic gradient descent (sgd), a learning rate of 0.01, no decay and a momentum of 0.9. since we have a single neuron we have to relax the classification problem into an estimation one, thus, we use a mean squared error loss function (a bit of a cheapshot, but is the only way to train a netowrk of this size for a classfication problem):
+Now start the optimization process, using Stochastic gradient descent (sgd), a learning rate of 0.01, no decay and a momentum of 0.9. since we have a single neuron we have to relax the classification problem into an estimation one, thus, we use a mean squared error loss function (a bit of a cheapshot, but is the only way to train a network of this size for a classification problem):
 
 
 ```python
@@ -92,7 +92,7 @@ what does the loss value over the epochs tells you?, why the does the accuracy s
 ## A Bigger network
 
 
-The result on our first network was rather lackluster, but remember it is the smallest network than can be designed, and is still better than a random classification, we are probably heading in the right direction and just need a bigger network to improve the results, let's modify the network touse 10 neurons on the first layer, followed by our current 1 neuron layer.
+The result on our first network was rather lackluster, but remember it is the smallest network than can be designed, and is still better than a random classification, we are probably heading in the right direction and just need a bigger network to improve the results, let's modify the network to use 10 neurons on the first layer, followed by our current 1 neuron layer.
 
 ```python
 #Define a new neural network model
@@ -107,7 +107,7 @@ model.summary()
 
 ```
 ## Non Linear Gating
-The result improves but just a bit, as long as we don't add any nonlinearities, even the largest network will still perform a linear operation over the input, and wont be much bettern than the single neuron network
+The result improves but just a bit, as long as we don't add any nonlinearities, even the largest network will still perform a linear operation over the input, and won't be much better than the single neuron network
 
 ```python
 #Define a new neural network model
@@ -131,7 +131,7 @@ This time our classification accuracy is close to 0.48, a big jump that suggest 
 
 The very first step in the first example was to destroy the images spatial information in order to work  with 1d neural layers. Convolutional neural layers will allow us to keep this spatial information.
 
-The overal set up for the experiment is the same, however, aswe now have a muchbigger network, we can properly formulate the problem as a classification problem rather than a regression one, hence we modify the shape of the labels by using 
+The overall set up for the experiment is the same, however, as we now have a much bigger network, we can properly formulate the problem as a classification problem rather than a regression one, hence we modify the shape of the labels by using 
 
 ```python
 Y_train = np_utils.to_categorical(y_train, 10)
@@ -145,7 +145,7 @@ model = Sequential()
 #Add a layer with 64 2d convolutional filter of size 3x3
 model.add(Convolution2D(64, 3, 3,  input_shape=(1,28,28),dim_ordering="th"))
 model.add(Activation('relu'))
-#Performa a Maximun pooling operation over the nonlinear responses of the convolutional #layer
+#Perform a Maximum pooling operation over the nonlinear responses of the convolutional #layer
 model.add(MaxPooling2D(pool_size=(2,2),dim_ordering="th"))
 
 model.add(Convolution2D(32, 3, 3,dim_ordering="th"))
@@ -172,4 +172,6 @@ model.compile(loss='categorical_crossentropy', optimizer='sgd', metrics=['accura
 ```
 
 ## Final thoughts
-While there are no deliverables for this lab, you might want to play arround with this dataset and the convolutional neural layers, it will give you some ideas on how to design them and train them from scratch  
+While there are no deliverables for this lab, you might want to play around with this dataset and the convolutional neural layers, it will give you some ideas on how to design them and train them from scratch. 
+
+
