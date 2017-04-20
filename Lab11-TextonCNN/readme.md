@@ -1,7 +1,7 @@
 # Convolutional Neural Networks for Image Classification
 In this lab we will be exploring the use of Convolutional Neural Networks (CNN) for image classification. We will start from the very beginning, that is, as will design a CNN and will train it from a random weight initialization.
 
-**Note, while executing the code does not take that long as in thers Lab you will have to discover an appropaite network by trial an error, this might be time consuming, plan ahead and dont get descouraged with the negative results.**
+**Note, while executing the code does not take that long as in thers Lab you will have to discover an appropriate network by trial and error, this might be time consuming, plan ahead and don't get discouraged with the negative results.**
 
 ## Resources
 The [VGG Convolutional Neural Networks Practical](http://www.robots.ox.ac.uk/~vgg/practicals/cnn/index.html) will be a great reference for this tutorial. We will also stick to our traditions and use the [vl-feat](http://www.vlfeat.org/matlab/matlab.html) along with its extension for CNNs [MatConvNet](http://www.vlfeat.org/matconvnet/functions/).
@@ -45,24 +45,25 @@ Unlike the set you already know from Lab5, we randomly sampled *128x128* patches
 
 Design a network to classify this new texton dataset. Just like in Lab 10 you are on your own, 
 
-**For the first phase of this lab** (more on that later) the one requirement is to use **only a CNN**, that is you are not allowed to apply any pre/postprocessing, other vision or learning strategies are also forbiden. Additionally you must **stick to the provided data** as it would be rather easy to cheat with the already known texton dataset.
+**For the first phase of this lab** (more on that later) the one requirement is to use **only a CNN**, that is you are not allowed to apply any pre/postprocessing, other vision or learning strategies are also forbidden. Additionally you must **stick to the provided data** as it would be rather easy to cheat with the already known texton dataset.
 
 ## Report
 The report for this lab should be brief (no more than 3 pages, - you can still use additional pages for figures and references-). It must contain the following information:
 
 - A description of your network, and the ideas you tried to implement on that design.
 - What challenges you faced while designing the architecture?
-- Ablation tests, we will try to explain why the network works by removing some layers of your network, how does each removed layer affect the performance?, what does it tell about yuor architecture?
+- Ablation tests, we will try to explain why the network works by removing some layers of your network, how does each removed layer affect the performance?, what does it tell about your architecture?
 - The results of your network in train and validation sets.
 
 Do not forget to upload a MATLAB .m file containing the description of the network (similar to ``initializeCharacterCNN.m``). At the start of each layer include a comment indicating the size of the input
 
-Last but not least **Do not include in the report your best network!!**, if you only have 1 network architetcure remove some layers, use less convolutional filters or do whatever change that brings a suboptimal performance on the network. This bizzare requirement will make as soon as we start phase 2.
+Last but not least **Do not include in the report your best network!!**, if you only have 1 network architecture remove some layers, use less convolutional filters or do whatever change that brings a suboptimal performance on the network. This bizarre requirement will make as soon as we start phase 2.
 
 ## Due Date:
 
 
-## Phase 2, The Texton Challenge (Avilable 27 April)
+## Phase 2, The Texton Challenge (Available 27 April)
+
 
 
 
