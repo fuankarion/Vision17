@@ -37,7 +37,7 @@ Go through [Part 5](http://www.robots.ox.ac.uk/~vgg/practicals/cnn/index.html#pa
 
 ## Data
 
-The file [textonsdb](http://157.253.63.7/textonsdb.tgz), contains the a modified version of the dataset from Lab5. Yup, we will deal again with those pesky repeated local patterns. In our favor, this time we have a far better tool in our hands.
+The file [textonsdb](), contains the a modified version of the dataset from Lab5. Yup, we will deal again with those pesky repeated local patterns. In our favor, this time we have a far better tool in our hands.
 
 Unlike the set you already know from Lab5, we randomly sampled *128x128* patches from each image in the train set in order to create a 'new' set of 25000 training images, this sampling is a merely technical shortcut, as larger images will require a lot more time to process.
 
