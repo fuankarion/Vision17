@@ -67,4 +67,10 @@ The function *getBatchWithJitter* is hardcoded for 32x32 images, its adaptation 
 **May 4 2016** As ussual just upload you report to git
 
 ## Phase 2, The Texton Challenge (Available 27 April)
+We will be helding our small 'texture classification challenge', like most real-world challenges you are free to use **any strategy (cheating is not a valid strategy!)** to produce the better classification over the test set of our modified texture database. Yoursubmisions will have a standard format (just like in lab 10), they will be evaluated and ranked according to their (F1?/ACA?)..... Finally, unlike real world challengens, you cannot develop a joint solution with another group, any such submision will be disregaded. 
+
+As this extra credit requires a lot of effort, there will be a special bounus. The best two submision will be able to change one of their Labs grades (and thta is **any grade**) for a 5.0. Any other submision that ranks above (.....) will get a +1.0 that can be added to any one of their Labs grades. 
+
+
+
 
