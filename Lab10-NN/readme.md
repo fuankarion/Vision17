@@ -3,13 +3,13 @@
 In this lab we will introduce the very basic concepts of neural networks using the classic MNIST dataset. Just like the very first Labs this is a tutorial, hence there are no deliverables or deadlines.
 
 
-# Resources
+## Resources
 
 This lab uses the [Keras Library](https://github.com/fchollet/keras), an easy to use deep learning library built on top of Google's own machine intelligence library [Tensor Flow](https://www.tensorflow.org). You might want to check their websites.
 
 If you want, you can install the mentioned libraries and run the examples in your pc, if you own a computer with a discrete **Nvidia** graphics card it will run much faster.
 
-#Handwritten digits recognition using Neural Networks
+## Handwritten digits recognition using Neural Networks
 The data for the lab is available online and can be automatically download using the Keras library, it is as simple as:
 
 
