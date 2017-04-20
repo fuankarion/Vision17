@@ -1,7 +1,7 @@
 # Convolutional Neural Networks for Image Classification
 In this lab we will be exploring the use of Convolutional Neural Networks (CNN) for image classification. We will start from the very beginning, that is, we will design and train a CNN from a random weight initialization.
 
-**Note, while executing the code does not take that long as in thers Lab you will have to discover an appropriate network by trial and error, this might be time consuming, plan ahead and don't get discouraged with the negative results.**
+**Note, while executing the code does not take that long as in other Labs, you will have to discover an appropriate network by trial and error, this might be time consuming, plan ahead and don't get discouraged with the negative results.**
 
 ## Resources
 The [VGG Convolutional Neural Networks Practical](http://www.robots.ox.ac.uk/~vgg/practicals/cnn/index.html) will be a great reference for this tutorial. We will also stick to our traditions and use the [vl-feat](http://www.vlfeat.org/matlab/matlab.html) along with its extension for CNNs [MatConvNet](http://www.vlfeat.org/matconvnet/functions/).
