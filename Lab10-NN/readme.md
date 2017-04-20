@@ -49,7 +49,7 @@ print ('X_train.shape ', X_train.shape)
 print ('X_test.shape ', X_test.shape)
 ```
 
-Now we can build a Neural Network to classify the MNIST data. As first example, we will use a minimal 1 layer 1 fully connected neuron
+Now we can build a Neural Network to classify the MNIST data. As first example, we will use a minimal 1 layer 1 fully connected neural network
 
 
 ```python
