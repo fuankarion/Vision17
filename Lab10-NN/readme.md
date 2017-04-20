@@ -107,7 +107,7 @@ model.summary()
 
 ```
 ## Non Linear Gating
-The result improves but just a bit, as long as we don't add any nonlinearities, even the largest network will still perform a linear operation over the input, hence we add some non linearities.
+The result improves but just a bit, as long as we don't add any nonlinearities, even the largest network will still perform a linear operation over the input, and wont be much bettern than the single neuron network
 
 ```python
 #Define a new neural network model
