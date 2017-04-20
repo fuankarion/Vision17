@@ -89,7 +89,7 @@ model.fit(X_train, y_train, nb_epoch=100, verbose=1,batch_size=900)
 
 what does the loss value over the epochs tells you?, why the does the accuracy seems to reach a plateau at 0.2 accuracy?, do you think this a problem on the optimization parameters, feel free to change them.
 
-## a 'deeper network'
+## A Bigger network
 
 
 The result on our first network was rather lackluster, but remember it is the smallest network than can be designed, and is still better than a random classification, we are probably heading in the right direction and just need a bigger network to improve the results, let's modify the network touse 10 neurons on the first layer, followed by our current 1 neuron layer.
@@ -106,7 +106,7 @@ model.add(Dense(1, init='uniform'))
 model.summary()
 
 ```
-
+## Non Linear Gating
 The result improves but just a bit, as long as we don't add any nonlinearities, even the largest network will still perform a linear operation over the input, hence we add some non linearities.
 
 ```python
