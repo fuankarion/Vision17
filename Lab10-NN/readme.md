@@ -174,6 +174,6 @@ model.compile(loss='categorical_crossentropy', optimizer='sgd', metrics=['accura
 ```
 
 ## Final thoughts
-While there are no deliverables for this lab, you might want to play around with this dataset and the convolutional neural layers, it will give you some ideas on how to design them and train them from scratch. 
+While there are no deliverables for this lab, you might want to play around with this dataset and the convolutional neural layers, it will give you some ideas on how to design and train them from scratch. 
 
 
