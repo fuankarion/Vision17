@@ -43,7 +43,7 @@ The file [textonsdb](), contains the modified texton dataset for this Lab.
 
 ## Phase 1, Your turn
 
-Design a network to classify this new texton dataset. Just like in Lab 10 you are on your own, 
+Design a Neural Network to classify this new texton dataset. Just like in Lab 10 you are on your own, 
 
 **For the first phase of this lab** (more on that later) the one requirement is to use **only a CNN**, that is you are not allowed to apply any pre/postprocessing, other vision or learning strategies are also forbidden. Additionally you must **stick to the provided data** as it would be rather easy to cheat with the already known texton dataset.
 
