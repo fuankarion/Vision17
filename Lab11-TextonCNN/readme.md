@@ -1,5 +1,5 @@
 # Convolutional Neural Networks for Image Classification
-In this lab we will be exploring the use of Convolutional Neural Networks (CNN) for image classification. We will start from the very beginning, that is, as will design a CNN and will train it from a random weight initialization.
+In this lab we will be exploring the use of Convolutional Neural Networks (CNN) for image classification. We will start from the very beginning, that is, we will design and train a CNN from a random weight initialization.
 
 **Note, while executing the code does not take that long as in thers Lab you will have to discover an appropriate network by trial and error, this might be time consuming, plan ahead and don't get discouraged with the negative results.**
 
