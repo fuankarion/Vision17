@@ -39,27 +39,32 @@ Go through [Part 5](http://www.robots.ox.ac.uk/~vgg/practicals/cnn/index.html#pa
 
 The file [textonsdb](), contains the a modified version of the dataset from Lab5. Yup, we will deal again with those pesky repeated local patterns. In our favor, this time we have a far better tool in our hands.
 
-Unlike the set you already know from Lab5, we randomly sampled *128x128* patches from each image in the train set in order to create a 'new' set of 25000 training images, this sampling is a merely technical shortcut, as larger images will require a lot more time to process.
+Unlike the set you already know from Lab5, we randomly sampled *128x128* patches from each image in the train set in order to create a 'new' set of 25000 training images, this sampling is a mere technical shortcut, as larger images will require a lot more time to process.
 
-## Your turn
+## Phase 1, Your turn
 
-Design a network to classify this new texton dataset. Just like in Lab 10 you are on your own, and **for the first phase of this lab** (more on that later) the one requirement is to use **only a CNN**, that is no pre-processing, you are not allowed to apply any postprocessing, other vision or learning strategies. Additionally you must **stick to the provided data** as it would be easy to cheat with the already known texton dataset.
+Design a network to classify this new texton dataset. Just like in Lab 10 you are on your own, 
+
+**For the first phase of this lab** (more on that later) the one requirement is to use **only a CNN**, that is you are not allowed to apply any pre/postprocessing, other vision or learning strategies are also forbiden. Additionally you must **stick to the provided data** as it would be rather easy to cheat with the already known texton dataset.
 
 ## Report
-The report for this lab should be brief (no more than 3 pages, - you can still use additional pages for figures and references-). It must contain the following information
+The report for this lab should be brief (no more than 3 pages, - you can still use additional pages for figures and references-). It must contain the following information:
 
-- A brief description of your network, and the ideas you tried to implement on its design . What challenges you faced while designing the architecture?
-- Ablation tests, we will try to explain why the networkworld by removing some layers of your network, how does it affect the performance?
-- The results of your network in train and test, also indicate the time it took to train
+- A description of your network, and the ideas you tried to implement on that design.
+- What challenges you faced while designing the architecture?
+- Ablation tests, we will try to explain why the network works by removing some layers of your network, how does each removed layer affect the performance?, what does it tell about yuor architecture?
+- The results of your network in train and validation sets.
 
-Do not forget to upload a .m file containing the description of the network (similar to ``initializeCharacterCNN.m``). At the start of each layer include a comment indicating the size of the input
+Do not forget to upload a MATLAB .m file containing the description of the network (similar to ``initializeCharacterCNN.m``). At the start of each layer include a comment indicating the size of the input
 
-**Do not include in the report your best network!!**
+Last but not least **Do not include in the report your best network!!**, if you only have 1 network architetcure remove some layers, use less convolutional filters or do whatever change that brings a suboptimal performance on the network. This bizzare requirement will make as soon as we start phase 2.
 
 ## Due Date:
 
 
-## Phase 2, The Texton Challenge
+## Phase 2, The Texton Challenge (Avilable 27 April)
+
+
 
 
 
