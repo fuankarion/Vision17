@@ -57,7 +57,7 @@ The report for this lab should be brief (no more than 3 pages, - you can still u
 
 Do not forget to upload a MATLAB .m file containing the description of the network (similar to ``initializeCharacterCNN.m``). At the start of each layer include a comment indicating the size of the input
 
-Last but not least **Do not include in the report your best network!!**, if you only have 1 network architecture remove some layers, use less convolutional filters or do whatever change that brings a suboptimal performance on the network. This bizarre requirement will make as soon as we start phase 2.
+Last but not least **Do not include in the report your best network!!**, if you only have 1 network architecture remove some layers, use less convolutional filters or do whatever change that brings a suboptimal performance on the network. This bizarre requirement will become clear as we start phase 2.
 
 ## Due Date:
 **May 4 2016** As ussual just upload you report to git
