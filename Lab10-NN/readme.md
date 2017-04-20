@@ -125,10 +125,7 @@ model.summary()
 
 ```
 
-
-This time our classification accuracy is close to 0.48,  if we keep  adding several more layers (convolutional and non linear filters) which will, likely, improve our accuracy, as long as we keep adding ReLu functions with them.
-
-Try adding several more layers to the current network, what's the best accuracy you can get?
+This time our classification accuracy is close to 0.48, a big jump that suggest to keep adding several more layers (convolutional and non linear filters) which will, likely, improve our results. Try adding several more layers to the current network, what's the best accuracy you can get?
 
 ## A convolutional neural network
 
