@@ -52,7 +52,7 @@ The report for this lab should be brief (no more than 3 pages, - you can still u
 
 - A description of your network, and the ideas you tried to implement on that design.
 - What challenges you faced while designing the architecture?
-- Ablation tests, we will try to explain why the network works by removing some layers of your network, how does each removed layer affect the performance?, what does it tell about your architecture?
+- Ablation tests, we will try to explain why the network works by removing some layers from it, how does each removed layer affect the performance?, what does it tell about your architecture?
 - The results of your network in train and validation sets.
 
 Do not forget to upload a MATLAB .m file containing the description of the network (similar to ``initializeCharacterCNN.m``). At the start of each layer include a comment indicating the size of the input
