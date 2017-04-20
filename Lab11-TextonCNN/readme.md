@@ -4,7 +4,7 @@ In this lab we will be exploring the use of Convolutional Neural Networks (CNN) 
 **Note, while executing the code does not take that long as in other Labs, you will have to discover an appropriate network by trial and error, this might be time consuming, plan ahead and don't get discouraged by the negative results.**
 
 ## Resources
-The [VGG Convolutional Neural Networks Practical](http://www.robots.ox.ac.uk/~vgg/practicals/cnn/index.html) will be a great reference for this tutorial. We will also stick to our traditions and use the [vl-feat](http://www.vlfeat.org/matlab/matlab.html) along with its extension for CNNs [MatConvNet](http://www.vlfeat.org/matconvnet/functions/).
+The [VGG Convolutional Neural Networks Practical](http://www.robots.ox.ac.uk/~vgg/practicals/cnn/index.html) will be a great reference for this tutorial. We will also stick to our traditions and use the [vl-feat](http://www.vlfeat.org/matlab/matlab.html) along with its extension for CNNs [MatConvNet](http://www.vlfeat.org/matconvnet/functions/). If you have a computer with an Nvidia-GPU, make sure you install the GPU comptibility for MatConvNet it might be a bit tricky but the speed up is totally worth it.
 
 
 ### Creating a CNN
@@ -52,12 +52,16 @@ The report for this lab should be brief (no more than 3 pages, - you can still u
 
 - A description of your network, and the ideas you tried to implement on that design.
 - What challenges you faced while designing the architecture?
+- Does the use of jitter helps?
 - Ablation tests, we will try to explain why the network works by removing some layers from it, how does each removed layer affect the performance?, what does it tell about your architecture?
 - The results of your network in train and validation sets.
 
 Do not forget to upload a MATLAB .m file containing the description of the network (similar to ``initializeCharacterCNN.m``). At the start of each layer include a comment indicating the size of the input
 
 Last but not least **Do not include in the report your best network!!**, if you only have 1 network architecture remove some layers, use less convolutional filters or do whatever change that brings a suboptimal performance on the network. This bizarre requirement will become clear as we start phase 2.
+
+### About the jitter function
+The function *getBatchWithJitter* is hardcoded for 32x32 images, its dapatation for images with diffrent size is not exactly trivial. You can use my modification the function called *getBatchWithJitter128* if you want,  but beware this mod is not fully tested.
 
 ## Due Date:
 **May 4 2016** As ussual just upload you report to git
