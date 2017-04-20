@@ -1,15 +1,17 @@
-# Neural Networks tutorial
+# Neural Networks Tutorial
 
-In this lab we will introduce the very basic concepts of neural networks using the classic MNIST dataset. Just like Lab3 this is a tutorial, hence there are no deliverables or deadlines.
+In this lab we will introduce the very basic concepts of neural networks using the classic MNIST dataset. Just like the very first Labs, this is a tutorial, hence there are no deliverables or deadlines.
 
 
-# Resources
+## Resources
 
 This lab uses the [Keras Library](https://github.com/fchollet/keras), an easy to use deep learning library built on top of Google's own machine intelligence library [Tensor Flow](https://www.tensorflow.org). You might want to check their websites.
 
-If you want, you can install the mentioned libraries and run the examples in your pc, if you own a computer with a discrete **Nvidia** graphics card it will run much faster.
+TensorFlow and keras are already installed at the course servers, however there are no gpus avaible on them, so the execution time will be longer than the demo during the class. If you want, you can install the mentioned libraries and run the examples in your pc, if you own a computer with a discrete **Nvidia** graphics card it will run much faster (porably faster than in the course servers).
 
-#Handwritten digits recognition using Neural Networks
+The full scripts for this Lab are avilable [here](convMNIST.py) and [here](fcMNIST.py), no comments though.
+
+## Handwritten digits recognition using Neural Networks
 The data for the lab is available online and can be automatically download using the Keras library, it is as simple as:
 
 
@@ -49,7 +51,7 @@ print ('X_train.shape ', X_train.shape)
 print ('X_test.shape ', X_test.shape)
 ```
 
-Now we can build a Neural Network to classify the MNIST data. As first example, we will use a minimal 1 layer 1 fully connected neuron
+Now we can build a Neural Network to classify the MNIST data. As first example, we will use a minimal 1 layer 1 fully connected neural network
 
 
 ```python
@@ -73,9 +75,9 @@ model.summary()
 
 ```
 
-Before we start the optimization process, take a time to think about the network, how many parameters does it have?, what kind of operation does the neuron, and by extension the network over the train data?
+Before we start the optimization process, take a time to think about the network, how many parameters does it have?, what kind of operation does the neuron?
 
-Now start the optimization process, using Stochastic gradient descent (sgd), a learning rate of 0.01, no decay and a momentum of 0.9. since we have a single neuron we will relax the classification problem into an estimation problem, thus, we use a mean squared error loss function:
+Now start the optimization process, using Stochastic gradient descent (sgd), a learning rate of 0.01, no decay and a momentum of 0.9. since we have a single neuron we have to relax the classification problem into an estimation one, thus, we use a mean squared error loss function (a bit of a cheapshot, but is the only way to train a network of this size for a classification problem):
 
 
 ```python
@@ -87,12 +89,12 @@ model.compile(loss='mean_squared_error',optimizer='sgd',metrics=['accuracy'],lr=
 model.fit(X_train, y_train, nb_epoch=100, verbose=1,batch_size=900)
 ```
 
-what does the loss value over the epochs tells you?, why the accuracy does not seem to increase?, do you think this a problem on the optimization parameters, fee free to change the optimization parameters.
+what does the loss value over the epochs tells you?, why the does the accuracy seems to reach a plateau at 0.2 accuracy?, do you think this a problem on the optimization parameters, feel free to change them.
 
-## a 'deeper network'
+## A Bigger network
 
 
-The result on our first network was rather lackluster, but remember it is the smallest network than can be designed, and is still better than a random classification, we probably need a big network to improve the results, let's modify the network use 10 neurons on the first layer, followed by our current 1 neuron layer.
+The result on our first network was rather lackluster, but remember it is the smallest network than can be designed, and is still better than a random classification, we are probably heading in the right direction and just need a bigger network to improve the results, let's modify the network to use 10 neurons on the first layer, followed by our current 1 neuron layer.
 
 ```python
 #Define a new neural network model
@@ -106,8 +108,8 @@ model.add(Dense(1, init='uniform'))
 model.summary()
 
 ```
-
-The result improves but just a bit, as long as we don't add any nonlinearities, even the largest network will still perform a linear operation over the input, hence we add some non linearities.
+## Non Linear Gating
+The result improves but just a bit, as long as we don't add any nonlinearities, even the largest network will still perform a linear operation over the input, and won't be much better than the single neuron network
 
 ```python
 #Define a new neural network model
@@ -125,31 +127,27 @@ model.summary()
 
 ```
 
-
-This time our classification accuracy is close to 0.48,  if we keep  adding several more layers (convolutional and non linear filters) which will, likely, improve our accuracy, as long as we keep adding ReLu functions with them.
-
-Try adding several more layers to the current network, what's the best accuracy you can get?
+This time our classification accuracy is close to 0.48, a big jump that suggest to keep adding several more layers (convolutional and non linear filters) which will, likely, improve our results. Try adding several more layers to the current network, what's the best accuracy you can get?
 
 ## A convolutional neural network
 
-The very first step in the first example was to destroy the images spatial information in order to work  with 1d neural layers. We can still keep the spatial information if we use convolutional neural layers. 
+The very first step in the first example was to destroy the images spatial information in order to work  with 1d neural layers. Convolutional neural layers will allow us to keep this spatial information.
 
-Theoveral set up for the data is the same,  however this time we formulate thje problem as a classification problem rather than a regression one, hence we modify the sahpe of the labels by using 
+The overall set up for the experiment is the same, however, as we now have a much bigger network, we can properly formulate the problem as a classification problem rather than a regression one, hence we modify the shape of the labels by using 
 
 ```python
 Y_train = np_utils.to_categorical(y_train, 10)
 Y_test = np_utils.to_categorical(y_test, 10)
 ```
 
-
-The convolutional network
+Define the convolutional network as:
 
 ```python
 model = Sequential()
 #Add a layer with 64 2d convolutional filter of size 3x3
 model.add(Convolution2D(64, 3, 3,  input_shape=(1,28,28),dim_ordering="th"))
 model.add(Activation('relu'))
-#Performa a Maximun pooling operation over the nonlinear responses of the convolutional #layer
+#Perform a Maximum pooling operation over the nonlinear responses of the convolutional #layer
 model.add(MaxPooling2D(pool_size=(2,2),dim_ordering="th"))
 
 model.add(Convolution2D(32, 3, 3,dim_ordering="th"))
@@ -169,4 +167,13 @@ model.add(Dense(10, activation='softmax'))
 
 model.summary()
 ```
+And use a suitable loss function for a classification problem:
+
+```python
+model.compile(loss='categorical_crossentropy', optimizer='sgd', metrics=['accuracy'])
+```
+
+## Final thoughts
+While there are no deliverables for this lab, you might want to play around with this dataset and the convolutional neural layers, it will give you some ideas on how to design and train them from scratch. 
+
 
