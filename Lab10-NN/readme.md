@@ -87,12 +87,12 @@ model.compile(loss='mean_squared_error',optimizer='sgd',metrics=['accuracy'],lr=
 model.fit(X_train, y_train, nb_epoch=100, verbose=1,batch_size=900)
 ```
 
-what does the loss value over the epochs tells you?, why the accuracy does not seem to increase?, do you think this a problem on the optimization parameters, fee free to change the optimization parameters.
+what does the loss value over the epochs tells you?, why the does the accuracy seems to reach a plateau at 0.2 accuracy?, do you think this a problem on the optimization parameters, feel free to change them.
 
 ## a 'deeper network'
 
 
-The result on our first network was rather lackluster, but remember it is the smallest network than can be designed, and is still better than a random classification, we probably need a big network to improve the results, let's modify the network use 10 neurons on the first layer, followed by our current 1 neuron layer.
+The result on our first network was rather lackluster, but remember it is the smallest network than can be designed, and is still better than a random classification, we are probably heading in the right direction and just need a bigger network to improve the results, let's modify the network touse 10 neurons on the first layer, followed by our current 1 neuron layer.
 
 ```python
 #Define a new neural network model
