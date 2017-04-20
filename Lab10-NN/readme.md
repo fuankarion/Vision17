@@ -73,9 +73,9 @@ model.summary()
 
 ```
 
-Before we start the optimization process, take a time to think about the network, how many parameters does it have?, what kind of operation does the neuron, and by extension the network over the train data?
+Before we start the optimization process, take a time to think about the network, how many parameters does it have?, what kind of operation does the neuron?
 
-Now start the optimization process, using Stochastic gradient descent (sgd), a learning rate of 0.01, no decay and a momentum of 0.9. since we have a single neuron we will relax the classification problem into an estimation problem, thus, we use a mean squared error loss function:
+Now start the optimization process, using Stochastic gradient descent (sgd), a learning rate of 0.01, no decay and a momentum of 0.9. since we have a single neuron we have to relax the classification problem into an estimation one, thus, we use a mean squared error loss function (a bit of a cheapshot, but is the only way to train a netowrk of this size for a classfication problem):
 
 
 ```python
