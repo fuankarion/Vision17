@@ -1,7 +1,7 @@
 # Convolutional Neural Networks for Image Classification
 In this lab we will be exploring the use of Convolutional Neural Networks (CNN) for image classification. We will start from the very beginning, that is, we will design and train a CNN from a random weight initialization.
 
-**Note, while executing the code does not take that long as in other Labs, you will have to discover an appropriate network by trial and error, this might be time consuming, plan ahead and don't get discouraged with the negative results.**
+**Note, while executing the code does not take that long as in other Labs, you will have to discover an appropriate network by trial and error, this might be time consuming, plan ahead and don't get discouraged by the negative results.**
 
 ## Resources
 The [VGG Convolutional Neural Networks Practical](http://www.robots.ox.ac.uk/~vgg/practicals/cnn/index.html) will be a great reference for this tutorial. We will also stick to our traditions and use the [vl-feat](http://www.vlfeat.org/matlab/matlab.html) along with its extension for CNNs [MatConvNet](http://www.vlfeat.org/matconvnet/functions/).
@@ -37,9 +37,9 @@ Go through [Part 5](http://www.robots.ox.ac.uk/~vgg/practicals/cnn/index.html#pa
 
 ## Data
 
-The file [textonsdb](), contains the a modified version of the dataset from Lab5. Yup, we will deal again with those pesky repeated local patterns. In our favor, this time we have a far better tool in our hands.
+We will fall back to the texton dataset (beacuse those pesky local patterns have been asking for it!!). Unlike the set you already know from Lab5, we randomly sampled *128x128* patches from each image in the train set in order to create a 'new' texton dataset with 25000 images, this sampling is a mere technical shortcut, as larger images will require a lot more time to process.
 
-Unlike the set you already know from Lab5, we randomly sampled *128x128* patches from each image in the train set in order to create a 'new' set of 25000 training images, this sampling is a mere technical shortcut, as larger images will require a lot more time to process.
+The file [textonsdb](), contains the modified texton dataset for this Lab.
 
 ## Phase 1, Your turn
 
