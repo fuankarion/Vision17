@@ -129,17 +129,16 @@ This time our classification accuracy is close to 0.48, a big jump that suggest 
 
 ## A convolutional neural network
 
-The very first step in the first example was to destroy the images spatial information in order to work  with 1d neural layers. We can still keep the spatial information if we use convolutional neural layers. 
+The very first step in the first example was to destroy the images spatial information in order to work  with 1d neural layers. Convolutional neural layers will allow us to keep this spatial information.
 
-Theoveral set up for the data is the same,  however this time we formulate thje problem as a classification problem rather than a regression one, hence we modify the sahpe of the labels by using 
+The overal set up for the experiment is the same, however, aswe now have a muchbigger network, we can properly formulate the problem as a classification problem rather than a regression one, hence we modify the shape of the labels by using 
 
 ```python
 Y_train = np_utils.to_categorical(y_train, 10)
 Y_test = np_utils.to_categorical(y_test, 10)
 ```
 
-
-The convolutional network
+Define the convolutional network as:
 
 ```python
 model = Sequential()
@@ -166,4 +165,11 @@ model.add(Dense(10, activation='softmax'))
 
 model.summary()
 ```
+And use a suitable loss function for a classification problem:
 
+```python
+model.compile(loss='categorical_crossentropy', optimizer='sgd', metrics=['accuracy'])
+```
+
+## Final thoughts
+While there are no deliverables for this lab, you might want to play arround with this dataset and the convolutional neural layers, it will give you some ideas on how to design them and train them from scratch  
