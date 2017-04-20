@@ -61,16 +61,10 @@ Do not forget to upload a MATLAB .m file containing the description of the netwo
 Last but not least **Do not include in the report your best network!!**, if you only have 1 network architecture remove some layers, use less convolutional filters or do whatever change that brings a suboptimal performance on the network. This bizarre requirement will become clear as we start phase 2.
 
 ### About the jitter function
-The function *getBatchWithJitter* is hardcoded for 32x32 images, its dapatation for images with diffrent size is not exactly trivial. You can use my modification the function called *getBatchWithJitter128* if you want,  but beware this mod is not fully tested.
+The function *getBatchWithJitter* is hardcoded for 32x32 images, its dapatation for images with diffrent sizes is not exactly trivial. You can use my modification if that function called *getBatchWithJitter128.m* if you want. But beware, while it worked ok for me, it just a quick and dirty hack over the initial function.
 
 ## Due Date:
 **May 4 2016** As ussual just upload you report to git
 
 ## Phase 2, The Texton Challenge (Available 27 April)
-
-
-
-
-
-
 
