@@ -38,15 +38,15 @@ Go through [Part 5](http://www.robots.ox.ac.uk/~vgg/practicals/cnn/index.html#pa
 
 ## Data
 
-We will fall back to the texton dataset (beacuse those pesky local patterns have been asking for it!!). Unlike the set you already know from Lab5, we randomly sampled *128x128* patches from each image in the train set in order to create a 'new' texton dataset with 25000 images, this sampling is a mere technical shortcut, as larger images will require a lot more time to process.
+We will fall back to the texture dataset (beacuse those pesky local patterns have been asking for it!!). Unlike the set you already know from Lab5, we randomly sampled *128x128* patches from each image in the train set in order to create a 'new' texture dataset with 25000 images, this sampling is a mere technical shortcut, as larger images will require a lot more time to process.
 
-The file [textonsdb](), contains the modified texton dataset for this Lab.
+The file [textonsdb](), contains the modified texture dataset for this Lab.
 
 ## Phase 1, Your turn
 
-Design a Neural Network to classify this new texton dataset. Just like in Lab 10 you are on your own, 
+Design a Neural Network to classify this new texture dataset. Just like in Lab 10 you are on your own, 
 
-**For the first phase of this lab** (more on that later) the one requirement is to use **only a CNN**, that is you are not allowed to apply any pre/postprocessing, other vision or learning strategies are also forbidden. Additionally you must **stick to the provided data** as it would be rather easy to cheat with the already known texton dataset.
+**For the first phase of this lab** (more on that later) the one requirement is to use **only a CNN**, that is you are not allowed to apply any pre/postprocessing, other vision or learning strategies are also forbidden. Additionally you must **stick to the provided data** as it would be rather easy to cheat with the already known texture dataset.
 
 ## Report
 The report for this lab should be brief (no more than 4 pages, - you can still use additional pages for figures and references-). It must contain the following information:
@@ -67,7 +67,7 @@ The function *getBatchWithJitter* is hardcoded for 32x32 images, its adaptation 
 ## Due Date:
 **May 4 2016** As ussual just upload you report to git
 
-## Phase 2, The Texton Challenge (Available 27 April)
+## Phase 2, The Texture Recognition Challenge (Available 27 April)
 We will be helding our small 'texture classification challenge', like most real-world challenges you are free to use **any strategy (cheating is not a valid strategy!)** to produce the better classification over the test set of our modified texture database. Yoursubmisions will have a standard format (just like in lab 10), they will be evaluated and ranked according to their (F1?/ACA?)..... Finally, unlike real world challengens, you cannot develop a joint solution with another group, any such submision will be disregaded. 
 
 As this extra credit requires a lot of effort, there will be a special bounus. The best two submision will be able to change one of their Labs grades (and thta is **any grade**) for a 5.0. Any other submision that ranks above (.....) will get a +1.0 that can be added to any one of their Labs grades. 
