@@ -16,6 +16,7 @@ Learn about the different types of layers and what they do, specially:
 - Nonlinear gating
 - Pooling
 - Normalisation
+- Dropout layers
 
 Specifically, try to understand the dimensions of their inputs and outputs. How can you connect them? How does the data flows across the network?
 
