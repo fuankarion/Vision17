@@ -4,8 +4,9 @@ In this lab we will be exploring the use of Convolutional Neural Networks (CNN) 
 **Note, while executing the code does not take that long as in other Labs, you will have to discover an appropriate network by trial and error, this might be time consuming, plan ahead and don't get discouraged by the negative results.**
 
 ## Resources
-The [VGG Convolutional Neural Networks Practical](http://www.robots.ox.ac.uk/~vgg/practicals/cnn/index.html) will be a great reference for this tutorial. We will also stick to our traditions and use the [vl-feat](http://www.vlfeat.org/matlab/matlab.html) along with its extension for CNNs [MatConvNet](http://www.vlfeat.org/matconvnet/functions/). If you have a computer with an Nvidia-GPU, make sure you install the GPU comptibility for MatConvNet it might be a bit tricky but the speed up is totally worth it.
+The [VGG Convolutional Neural Networks Practical](http://www.robots.ox.ac.uk/~vgg/practicals/cnn/index.html) will be a great kick start for this Lab. We will stick to our traditions and use the [vl-feat](http://www.vlfeat.org/matlab/matlab.html) along with its extension for CNNs [MatConvNet](http://www.vlfeat.org/matconvnet/functions/). If you have a computer with an Nvidia-GPU, make sure you install the GPU compatibility for MatConvNet it might be a bit tricky but the speed up is totally worth it.
 
+## Cluster and GPU Access (will be discused today on class)
 
 ### Creating a CNN
 Read through [Part 1](http://www.robots.ox.ac.uk/~vgg/practicals/cnn/index.html#part1) of the practical.
