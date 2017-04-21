@@ -17,7 +17,7 @@ The assignation is a follows
  --- | --- 
 Guillaume's team | GPU 0
  Jorge's Team | GPU 0
- Edgard -> GPU 1
+ Edgard | GPU 1
  Crhistian's Team | GPU 1
  Fabian's team | GPU 1 
  Sebastian's Team | GPU 2
