@@ -6,7 +6,28 @@ In this lab we will be exploring the use of Convolutional Neural Networks (CNN) 
 ## Resources
 The [VGG Convolutional Neural Networks Practical](http://www.robots.ox.ac.uk/~vgg/practicals/cnn/index.html) will be a great kick start for this Lab. We will stick to our traditions and use the [vl-feat](http://www.vlfeat.org/matlab/matlab.html) along with its extension for CNNs [MatConvNet](http://www.vlfeat.org/matconvnet/functions/). If you have a computer with an Nvidia-GPU, make sure you install the GPU compatibility for MatConvNet it might be a bit tricky but the speed up is totally worth it.
 
-## Cluster and GPU Access (will be discused today on class)
+## Cluster and GPU Access 
+
+We have 4 gpus avilable for the whole group, therefore we must be very carefull on its usage. According to the class discusion, each group will be assigned to a single GPU, and a single 'uniandes account' per team will have access to the cluster infraestructre.
+
+The assignation is a follows 
+- Guillaume's team -> GPU 0
+- Jorge's Team-> GPU 0
+- Edgard -> GPU 1
+- Crhistian Team -> GPU 1
+- Fabian's team -> GPU 1 
+- Sebastian's Team -> GPU 2
+- Laura's team -> GPU 2
+- Mariajose's team -> GPU 2 
+- Ruben's team -> GPU 3 
+- Alejandro's team -> GPU 3
+
+This assignation **will not be modify** unless it absolutely necesary or if the DSIT says otherwise.
+
+### Cluster Acces Times
+
+T.B.D
+
 
 ### Creating a CNN
 Read through [Part 1](http://www.robots.ox.ac.uk/~vgg/practicals/cnn/index.html#part1) of the practical.
