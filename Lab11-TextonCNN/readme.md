@@ -34,8 +34,8 @@ This assignation **will not be modified** unless it absolutely necessary or if t
 
 We have asked the DSIT for exclusive access on the following time frames:
 
-Weekdays -> 18:00  to 0:00
-Weekends -> 13:00  to 19:00
+- Weekdays -> 18:00  to 0:00
+- Weekends -> 13:00  to 19:00
 
 However we still await for confirmation on this.
 
