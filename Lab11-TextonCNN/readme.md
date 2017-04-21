@@ -8,7 +8,7 @@ The [VGG Convolutional Neural Networks Practical](http://www.robots.ox.ac.uk/~vg
 
 ## Cluster and GPU Access 
 
-We have 4 gpus avilable for the whole group, therefore we must be very carefull on its usage. According to the class discusion, each group will be assigned to a single GPU, and a single 'uniandes account' per team will have access to the cluster infraestructre.
+We have 4 gpus available for the whole group, therefore we must be very careful on its usage. According to the class discussion, each group will be assigned to a single GPU, and only one 'uniandes account' per team will have access to the cluster infrastructure.
 
 The assignation is a follows 
 - Guillaume's team -> GPU 0
@@ -22,16 +22,22 @@ The assignation is a follows
 - Ruben's team -> GPU 3 
 - Alejandro's team -> GPU 3
 
-This assignation **will not be modify** unless it absolutely necesary or if the DSIT says otherwise.
+GPU RAM memory is by far the most sensitive resource, unlike most Labs,  you will have a **very strict resource limit**:
+- Teams in GPUs 1 & 2 will not be allowed to run any process over 4GB, 
+- Teams on GPUs 0 and 3 you will not be allowed to run any process with more than 6GB. 
 
-### Cluster Acces Times
+While I  can not directly enforce this resource limit, I will be check from time time the resource usage, if any team fails to comply with the resource limit, I will first politely ask the team leader (the ones with access to the cluster) to tune down the parameters on your experiments. Anyway, if  you repeatedly fail to comply with it, I will ask the DSIT to temporarily block the access to the cluster. Lets never get there.
+
+This assignation **will not be modified** unless it absolutely necessary or if the DSIT requires otherwise.
+
+### Cluster Access Times
 
 We have asked the DSIT for exclusive access on the following time frames:
 
 Weekdays -> 18:00  to 0:00
 Weekends -> 13:00  to 19:00
 
-However we still await for confimation on this.
+However we still await for confirmation on this.
 
 ### Creating a CNN
 Read through [Part 1](http://www.robots.ox.ac.uk/~vgg/practicals/cnn/index.html#part1) of the practical.
@@ -63,7 +69,7 @@ Go through [Part 5](http://www.robots.ox.ac.uk/~vgg/practicals/cnn/index.html#pa
 
 ## Data
 
-We will fall back to the texture dataset (beacuse those pesky local patterns have been asking for it!!). Unlike the set you already know from Lab5, we randomly sampled *128x128* patches from each image in the train set in order to create a 'new' texture dataset with 25000 images, this sampling is a mere technical shortcut, as larger images will require a lot more time to process.
+We will fall back to the texture dataset (because those pesky local patterns have been asking for it!!). Unlike the set you already know from Lab5, we randomly sampled *128x128* patches from each image in the train set in order to create a 'new' texture dataset with 25000 images, this sampling is a mere technical shortcut, as larger images will require a lot more time to process.
 
 The file [textonsdb](), contains the modified texture dataset for this Lab.
 
@@ -96,6 +102,7 @@ The function *getBatchWithJitter* is hardcoded for 32x32 images, its adaptation 
 We will be helding our small 'texture classification challenge', like most real-world challenges you are free to use **any strategy (cheating is not a valid strategy!)** to produce the better classification over the test set of our modified texture database. Yoursubmisions will have a standard format (just like in lab 10), they will be evaluated and ranked according to their (F1?/ACA?)..... Finally, unlike real world challengens, you cannot develop a joint solution with another group, any such submision will be disregaded. 
 
 As this extra credit requires a lot of effort, there will be a special bounus. The best two submision will be able to change one of their Labs grades (and thta is **any grade**) for a 5.0. Any other submision that ranks above (.....) will get a +1.0 that can be added to any one of their Labs grades. 
+
 
 
 
