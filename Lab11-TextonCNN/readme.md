@@ -48,10 +48,10 @@ Design a Neural Network to classify this new texton dataset. Just like in Lab 10
 **For the first phase of this lab** (more on that later) the one requirement is to use **only a CNN**, that is you are not allowed to apply any pre/postprocessing, other vision or learning strategies are also forbidden. Additionally you must **stick to the provided data** as it would be rather easy to cheat with the already known texton dataset.
 
 ## Report
-The report for this lab should be brief (no more than 3 pages, - you can still use additional pages for figures and references-). It must contain the following information:
+The report for this lab should be brief (no more than 4 pages, - you can still use additional pages for figures and references-). It must contain the following information:
 
 - A description of your network, and the ideas you tried to implement on that design.
-- What challenges you faced while designing the architecture?
+- What challenges did you face while designing the architecture?, how much you had to change your original design until it worked
 - Does the use of jitter helps?
 - Ablation tests, we will try to explain why the network works by removing some layers from it, how does each removed layer affect the performance?, what does it tell about your architecture?
 - The results of your network in train and validation sets.
