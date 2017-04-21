@@ -11,6 +11,8 @@ The [VGG Convolutional Neural Networks Practical](http://www.robots.ox.ac.uk/~vg
 We have 4 gpus available for the whole group, therefore we must be very careful on its usage. According to the class discussion, each group will be assigned to a single GPU, and only one 'uniandes account' per team will have access to the cluster infrastructure.
 
 The assignation is a follows 
+| Account | GPU |
+| --- | --- |
 |Guillaume's team | GPU 0|
 | Jorge's Team | GPU 0|
 | Edgard -> GPU 1|
