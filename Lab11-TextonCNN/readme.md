@@ -26,8 +26,12 @@ This assignation **will not be modify** unless it absolutely necesary or if the 
 
 ### Cluster Acces Times
 
-T.B.D
+We have asked the DSIT for exclusive access on the following time frames:
 
+Weekdays -> 18:00  to 0:00
+Weekends -> 13:00  to 19:00
+
+However we still await for confimation on this.
 
 ### Creating a CNN
 Read through [Part 1](http://www.robots.ox.ac.uk/~vgg/practicals/cnn/index.html#part1) of the practical.
