@@ -11,6 +11,8 @@ The [VGG Convolutional Neural Networks Practical](http://www.robots.ox.ac.uk/~vg
 We have 4 gpus available for the whole group, therefore we must be very careful on its usage. According to the class discussion, each group will be assigned to a single GPU, and only one 'uniandes account' per team will have access to the cluster infrastructure.
 
 The assignation is a follows 
+
+
  Account | GPU 
  --- | --- 
 Guillaume's team | GPU 0
@@ -23,6 +25,7 @@ Guillaume's team | GPU 0
  Mariajose's team | GPU 2 
  Ruben's team | GPU 3 
  Alejandro's team | GPU 3
+ 
 
 GPU RAM memory is by far the most sensitive resource, unlike most Labs,  you will have a **very strict resource limit**:
 - Teams in GPUs 1 & 2 will not be allowed to run any process over 4GB, 
