@@ -75,7 +75,7 @@ Go through [Part 5](http://www.robots.ox.ac.uk/~vgg/practicals/cnn/index.html#pa
 
 We will fall back to the texture dataset (because those pesky local patterns have been asking for it!!). Unlike the set you already know from Lab5, we randomly sampled *128x128* patches from each image in the train set in order to create a 'new' texture dataset with 25000 images, this sampling is a mere technical shortcut, as larger images will require a lot more time to process.
 
-The file [texturedb](http://157.253.63.7/texturesPublic) is a matlab file, which contains the modified texture dataset for this Lab.
+The file [texturedb](http://157.253.63.7/texturesPublic) is a matlab file, which contains the modified texture dataset for this Lab. The file contains the images, its label and the set they belong to (check the meta-info for a more detailed description), also notice all the test images have '0' as label.
 
 ## Phase 1, Your turn
 
