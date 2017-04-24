@@ -33,7 +33,7 @@ http://157.253.63.7/eval_tools_mod.tar.gz
 ### Edit (24/04/17)
 The files in the above link contain the Train set and the **Test** set, the later does not contain labels and **won't work for the provided evaluation tool**. Instead download the actual validation data from:
 
-http://157.253.63.7/valimages.zip
+http://157.253.63.7/ValImagesLab9.zip
 
 Sorry for the inconvenience.
 
