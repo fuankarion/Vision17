@@ -31,7 +31,7 @@ GPU RAM memory is by far the most sensitive resource, unlike most Labs,  you wil
 - Teams in GPUs 1 & 2 will not be allowed to run any process over 4GB, 
 - Teams on GPUs 0 and 3 you will not be allowed to run any process with more than 6GB. 
 
-While I  can not directly enforce this resource limit, I will be check from time time the resource usage, if any team fails to comply with the resource limit, I will first politely ask the team leader (the ones with access to the cluster) to tune down the parameters on their experiments. Anyway, if  you repeatedly fail to comply with the limit, I will ask the DSIT to temporarily block the access to the cluster. Lets never get there.
+While I  can not directly enforce this resource limit, I will be checking from time time the resource usage, if any team fails to comply with the resource limit, I will first politely ask the team leader (the ones with access to the cluster) to tune down the parameters on their experiments. Anyway, if  you repeatedly fail to comply with the limit, I will ask the DSIT to temporarily block the access to the cluster. Lets never get there.
 
 This assignation **will not be modified** unless it absolutely necessary or if the DSIT requires otherwise.
 
@@ -62,40 +62,39 @@ Go through [Part 4](http://www.robots.ox.ac.uk/~vgg/practicals/cnn/index.html#pa
 What is *training with Jitter*?
 What are its advantages?
 
-
 ### Classifying images with a CNN
 
 Go through [Part 5](http://www.robots.ox.ac.uk/~vgg/practicals/cnn/index.html#part-5-using-pretrained-models) of the practical.
 
 - Visualize the model and see the different layers.
 - Test it on the *peppers* image
-- Test it on some of the *ImageNET* images from the PHOW Lab
+- Test it on some of the *ImageNET* images from the PHOW Lab (Lab 08)
 - Test it on a random image
 
 ## Data
 
 We will fall back to the texture dataset (because those pesky local patterns have been asking for it!!). Unlike the set you already know from Lab5, we randomly sampled *128x128* patches from each image in the train set in order to create a 'new' texture dataset with 25000 images, this sampling is a mere technical shortcut, as larger images will require a lot more time to process.
 
-The file [textonsdb](), contains the modified texture dataset for this Lab.
+The file [texturedb](), contains the modified texture dataset for this Lab.
 
 ## Phase 1, Your turn
 
 Design a Neural Network to classify this new texture dataset. Just like in Lab 10 you are on your own, 
 
-**For the first phase of this lab** (more on that later) the one requirement is to use **only a CNN**, that is you are not allowed to apply any pre/postprocessing, other vision or learning strategies are also forbidden. Additionally you must **stick to the provided data** as it would be rather easy to cheat with the already known texture dataset.
+**For the first phase of this lab** (more on that later) the one requirement is to use **only a CNN**, that is you are not allowed to apply any pre/postprocessing and other vision or learning strategies are forbidden. Additionally you must **stick to the provided data** as it would be rather easy to cheat with the already known texture dataset.
 
 ## Report
 The report for this lab should be brief (no more than 4 pages, - you can still use additional pages for figures and references-). It must contain the following information:
 
 - A description of your network, and the ideas you tried to implement on that design.
-- What challenges did you face while designing the architecture?, how much you had to change your original design until it worked
+- What challenges did you face while designing the architecture?, how much you had to change your original design until it worked?
 - Does the use of jitter helps?
 - Ablation tests, we will try to explain why the network works by removing some layers from it, how does each removed layer affect the performance?, what does it tell about your architecture?
 - The results of your network in train and validation sets.
 
-Do not forget to upload a MATLAB .m file containing the description of the network (similar to ``initializeCharacterCNN.m``). At the start of each layer include a comment indicating the size of the input
+Do not forget to upload a MATLAB .m file containing the description of the network (similar to ``initializeCharacterCNN.m``). At the start of each layer include a comment indicating the size of the input.
 
-Last but not least **Do not include in the report your best network!!**, if you only have 1 network architecture remove some layers, use less convolutional filters or do whatever change that brings a suboptimal performance on the network. This bizarre requirement will become clear as we start phase 2.
+Last but not least **Do not include in the report your best network!!**, if you only have 1 network architecture remove some layers, use less convolutional filters or do whatever change that brings a suboptimal performance on the network. This bizarre requirement will become clear as we enter phase 2.
 
 ### About the jitter function
 The function *getBatchWithJitter* is hardcoded for 32x32 images, its adaptation for images with different sizes is not exactly trivial. If you want, you can use my modification of that function called *getBatchWithJitter128.m* . But beware, while it worked ok for me, it just a quick and dirty hack over the initial function, I cant guarantee it works as expected in every possible scenario.
@@ -107,6 +106,7 @@ The function *getBatchWithJitter* is hardcoded for 32x32 images, its adaptation 
 We will be helding our small 'texture classification challenge', like most real-world challenges you are free to use **any strategy (cheating is not a valid strategy!)** to produce the better classification over the test set of our modified texture database. Yoursubmisions will have a standard format (just like in lab 10), they will be evaluated and ranked according to their (F1?/ACA?)..... Finally, unlike real world challengens, you cannot develop a joint solution with another group, any such submision will be disregaded. 
 
 As this extra credit requires a lot of effort, there will be a special bounus. The best two submision will be able to change one of their Labs grades (and thta is **any grade**) for a 5.0. Any other submision that ranks above (.....) will get a +1.0 that can be added to any one of their Labs grades. 
+
 
 
 
