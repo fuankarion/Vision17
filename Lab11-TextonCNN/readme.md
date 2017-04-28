@@ -37,12 +37,11 @@ This assignation **will not be modified** unless it absolutely necessary or if t
 
 ### Cluster Access Times
 
-We have asked the DSIT for exclusive access on the following time frames:
+The DSIT has granted us exclusive access to the GPUs on the cluster for the following time frames:
 
 - Weekdays -> 18:00  to 0:00
 - Weekends -> 13:00  to 19:00
 
-However we still await for confirmation on this.
 
 ### Creating a CNN
 Read through [Part 1](http://www.robots.ox.ac.uk/~vgg/practicals/cnn/index.html#part1) of the practical.
@@ -70,6 +69,9 @@ Go through [Part 5](http://www.robots.ox.ac.uk/~vgg/practicals/cnn/index.html#pa
 - Test it on the *peppers* image
 - Test it on some of the *ImageNET* images from the PHOW Lab (Lab 08)
 - Test it on a random image
+
+### Recommended Resources
+This [paper](https://arxiv.org/abs/1407.1610) will give you further insight on what to try while training a CNN. It is certainly not a technical tutorial, but I strongly recommend to read it before you start designing CNN architectures
 
 ## Data
 
