@@ -263,7 +263,7 @@ Look at the manual entries for both of them and try to understand what they do.
 
 The previous examples calculated the optical flow and showed it to you. For the two available tasks of the Lab, your mission is to use the optical flow to characterize some simple video events.
 
-###Task A
+## #Task A
 
 Modify the ``lk_track.py`` example, such that you can capture a subject in your laptop's webcam and detect when it moves to the left or right:
 
@@ -273,13 +273,19 @@ Tips:
 - Give a proper feedback to the user (at the very least a **readable** console output)
 - Block other events for a couple of a seconds
 
-###Task B
-Modify the ``opt_flow.py`` example to read a sample video from the [HumanEva Dataset](http://humaneva.is.tue.mpg.de/datasets_human_1)  (Can’t provide a download link on the course serves as the dataset requires you to login and sign an agreement) so that you can tell if the subject in the video is running clockwise or counterclockwise. You do not need to finetune you method so that it works with every subject, it is enough if it works with a single video.
+### Task B
+Modify the ``opt_flow.py`` example to read a sample video from the [HumanEva Dataset](http://humaneva.is.tue.mpg.de/datasets_human_1) (Can’t provide a download link on the course serves as the dataset requires you to login and sign an agreement) so that you can tell if the subject in the video is running clockwise or counterclockwise. You do not need to finetune you method so that it works with every subject, it is enough if it works with a single video.
 
 Tips:
 - Do not try to summarize the whole video.
 - You can trim the video so the subject makes exactly one cycle.
 - It is a static camera, the location and the direction of the motion are especially important to this task.
+
+## Report
+We will relax the usual delivery requirements for this one. Upload a small report to you github, any format you like; Describe your approach to solve any of the tasks, your code, and the general instructions to run it.
+
+## Deadline
+**Friday 19 2017** 11:59
 
 ## References
 
@@ -303,6 +309,8 @@ Tips:
 
 - https://python-pillow.github.io/
 - http://scikit-image.org/
+
+
 
 
 
