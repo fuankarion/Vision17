@@ -22,7 +22,7 @@ There are two files you might want to take a look:
 - trainFCN. Sample routine for **finetuning** an FCN network, it will log train data to ./net/log.txt
 
 Additionally inside the directory ./net you will find 3 relevant resources
-- Fcn_alexnet.caffemodel: weights for the fully convolution mode  of Alexnet in pascal VOC
+- Model.txt: URL to download theweights for the base fully convolution model of Alexnet already trained in pascal VOC
 - Solver.prototxt: Overall training/fine-tuning configuration 
 - trainVal.prototxt: Network descriptor
 
