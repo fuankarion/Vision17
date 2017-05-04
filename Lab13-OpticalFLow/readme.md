@@ -1,6 +1,6 @@
 # Optical Flow in OpenCV
 
-In this lab we will have some fun with the optical flow, unlike most Labs, there are two optional tasks to be completed, you might choose **only one of them**.
+In this lab we will have some fun with the Optical Flow, unlike most Labs, there are two optional tasks to be completed, you might choose **only one of them**.
 
 ## Setup
 
@@ -10,9 +10,9 @@ http://157.253.63.7/win_python_vision_3.zip
 
 You will find a compressed directory with [winpython](http://winpython.sourceforge.net/), a python distribution for windows with default bindings to the OpenCV library. If you are working on mac you can use [anaconda python](https://www.continuum.io/downloads). For linux you can install via the package manager or compile form source code, if you have some spare time.
 
-While you can code python on any plain text editor, we will recommend to use an IDE like [Spyder IDE](https://pythonhosted.org/spyder/) or some more advanced text editors like [Sublime] (https://www.sublimetext.com) or [LightTable](http://lighttable.com)
+While you can code python on any plain text editor, we will recommend to use an IDE like [Spyder IDE](https://pythonhosted.org/spyder/) or some more advanced text editors like [Sublime](https://www.sublimetext.com) or [LightTable](http://lighttable.com)
 
-If you are not familiar with python syntax, at the bottom of this documentsyou will find links to several *Python for matlab users* documents.
+If you are not familiar with python syntax, at the bottom of this document you will find links to several *Python for matlab users* documents.
 
 ## Samples
 
@@ -263,9 +263,9 @@ Look at the manual entries for both of them and try to understand what they do.
 
 The previous examples calculated the optical flow and showed it to you. For the two available tasks of the Lab, your mission is to use the optical flow to characterize some simple video events.
 
-## #Task A
+## Task A
 
-Modify the ``lk_track.py`` example, such that you can capture a subject in your laptop's webcam and detect when it moves to the left or right:
+Modify the ``lk_track.py`` example, such that you can capture an objetc with your laptop's webcam and detect when it moves to the left or right:
 
 Tips:
 - Detect the event (sudden increase in lateral flow)
@@ -282,7 +282,7 @@ Tips:
 - It is a static camera, the location and the direction of the motion are especially important to this task.
 
 ## Report
-We will relax the usual delivery requirements for this one. Upload a small report to you github, any format you like; Describe your approach to solve any of the tasks, your code, and the general instructions to run it.
+We will relax the usual delivery requirements for this one. Upload a small report to you github, any format you like; Describe your approach to solve any of the tasks. Upload your code, and the general instructions to run it.
 
 ## Deadline
 **Friday 19 2017** 11:59
