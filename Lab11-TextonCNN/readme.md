@@ -80,7 +80,6 @@ This [paper](https://arxiv.org/abs/1407.1610) will give you further insight on w
 
 As there have been several technical difficulties to setup the training code, you might use the following sample to train a small CNN (Notice the loss will barely drop **for this net** no matter how long you train). This code asumes an Nvidia GPU is available and cuda 8.0 is installed.
 
-
 ## Data
 
 We will fall back to the texture dataset (because those pesky local patterns have been asking for it!!). Unlike the set you already know from Lab5, we randomly sampled *128x128* patches from each image in the train set in order to create a 'new' texture dataset with 25000 images, this sampling is a mere technical shortcut, as larger images will require a lot more time to process.
@@ -110,7 +109,7 @@ Last but not least **Do not include in the report your best network!!**, if you 
 The function *getBatchWithJitter* is hardcoded for 32x32 images, its adaptation for images with different sizes is not exactly trivial. If you want, you can use my modification of that function called [getBatchWithJitter128.m](getBatchWithJitter128.m) . But beware, while it worked ok for me, it just a quick and dirty hack over the initial function, I can't guarantee it works as expected in every possible scenario.
 
 ## Due Date:
-**May 4 2016** As usual just upload you report to git
+**May 1 2016 11:59pm** As usual just upload you report to git
 
 ## Phase 2, The Texture Recognition Challenge (Available 27 April)
 We will be holding our small 'texture classification challenge', like most real-world challenges you are free to use **any strategy (cheating is not a valid strategy!)** to produce the better classification over the test set of our modified texture database. Your Submissions will have a standard format (just like in lab 10), they will be evaluated and ranked according to their (F1?/ACA?)..... Finally, unlike real world challenges, you cannot develop a joint solution with another group, any such submission will be disregarded. 
