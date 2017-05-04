@@ -263,7 +263,7 @@ Look at the manual entries for both of them and try to understand what they do.
 
 The previous examples calculated the optical flow and showed it to you. For the two available tasks of the Lab, your mission is to use the optical flow to characterize some simple video events.
 
-## Task A
+### Task A
 
 Modify the ``lk_track.py`` example, such that you can capture an objetc with your laptop's webcam and detect when it moves to the left or right:
 
