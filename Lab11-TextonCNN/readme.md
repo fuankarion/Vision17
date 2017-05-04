@@ -44,7 +44,8 @@ The DSIT has granted us exclusive access to the GPUs on the cluster for the foll
 
 ## Sample Code (Edit)
 
-As there have been several technical difficulties to setup the training code, you might use the following sample to train a sample network (Notice the loss will barely drop **for this net** no matter how long you train). This code asumes an Nvidia GPU is available and cuda 8.0 is installed.
+As there have been several technical difficulties to setup the training code, you might use the following sample to train a small CNN (Notice the loss will barely drop **for this net** no matter how long you train). This code asumes an Nvidia GPU is available and cuda 8.0 is installed.
+
 http://157.253.63.7/TestTextures.zip
 
 ### Creating a CNN
