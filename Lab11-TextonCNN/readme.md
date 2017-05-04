@@ -88,7 +88,7 @@ The function *getBatchWithJitter* is hardcoded for 32x32 images, its adaptation 
 
 As there have been several technical difficulties to setup the training code, you might use the following sample to train a small CNN (Notice the loss will barely drop **for this net** no matter how long you train). This code asumes an Nvidia GPU is available and cuda 8.0 is installed.
 
-
+http://157.253.63.7/TestTextures.zip
 
 ## Phase 1, Your turn
 
