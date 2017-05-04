@@ -1,6 +1,6 @@
 # Fully Convolutional Networks for Image Segmentation
 
-This one is for nature lovers :). In this lab you finetune a fully convolutional network to segment horses on the “weizmann horse image database” provided by [Eran Borenstein](http://www.msri.org/people/members/eranb/), 
+This one is for nature lovers :). In this lab you will finetune a fully convolutional network to segment horses on the “weizmann horse image database” provided by [Eran Borenstein](http://www.msri.org/people/members/eranb/), 
 
 ## Resources
 This Laboratory is based on the [tutorial](https://github.com/NVIDIA/DIGITS/tree/master/examples/semantic-segmentation) provided by Nvidia. It is strongly recommended to read the tutorial and get a nice grasp on the main ideas. Our task is just a tuned down version of the fine tuning exercise presented there. 
