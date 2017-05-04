@@ -43,8 +43,6 @@ The DSIT has granted us exclusive access to the GPUs on the cluster for the foll
 - Weekends -> 13:00  to 19:00
 
 
-http://157.253.63.7/TestTextures.zip
-
 ### Creating a CNN
 Read through [Part 1](http://www.robots.ox.ac.uk/~vgg/practicals/cnn/index.html#part1) of the practical.
 Learn about the different types of layers and what they do, specially:
