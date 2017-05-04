@@ -1,4 +1,4 @@
-#Fully Convolutional Networks for Image Segmentations
+# Fully Convolutional Networks for Image Segmentations
 
 This one is for nature lovers :). In this lab you finetune a fully convolutional network to segment horses on the “weizmann horse image database” provided by [Eran Borenstein](http://www.msri.org/people/members/eranb/), 
 
