@@ -32,7 +32,7 @@ If you need some help with the prototxt files, you can check the caffe reources 
 
 ### A Handy layer
 
-Unlike most fine tune processes where the final layer of a network is learnt from scratch and some of the other layers are fine tuned, we will finetune **only** the layers related to the deconvolution process, and will learn a minimal 3 class output at the very top of the network. This final layer is called *score_3classes*.
+Unlike most fine tune procedures, where the final layer of a network is removed and learnt from scratch while some of the other layers are fine tuned. We will finetune **only** the layers related to the deconvolution process, while freezing the lowe layers, and finally adjuts our net outpur with a simple 3 class output at the very top of the network. This final layer is called *score_3classes* and can be found on the trainVal.prototxt.
 
 ## Your turn
 Finetune the provided network for the “weizmann horse image database”, remember there are  4 main steps:
