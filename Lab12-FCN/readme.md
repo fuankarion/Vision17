@@ -8,8 +8,8 @@ This Laboratory is based on the [tutorial](https://github.com/NVIDIA/DIGITS/tree
 ### Database
 
 The data for this lab can be obtained from [Eran’s website](http://www.msri.org/people/members/eranb/), it contains 2 main directories
-- Rgb: rgb 328 images of horses
-- Figure_ground: Hand labeled segmentation of the image, with two labels: Horse (white), background (black)
+- Rgb: Color images of 328  horses
+- Figure_ground: Hand labeled segmentation of the horse images. There are only two labels: Horse (white), background (black)
 
 ### Deep Learning  Engine
 The baseline code works over the [caffe deep learning library](https://github.com/BVLC/caffe), specifically its python bindings.  If you need a quick introduction for python you might want to check the resources available on [Laboratory 13](https://github.com/fuankarion/Vision17/tree/master/Lab13-OpticalFLow). If you have an Nvidia GPU available it should have at least 2GB Memory, otherwise you will not be able to complete this Lab.
