@@ -36,10 +36,10 @@ Unlike most fine tune procedures, where the final layer of a network is removed 
 
 ## Your turn
 Finetune the provided network for the “weizmann horse image database”, remember there are  4 main steps:
-Create image labels
-Create LMDBs
-Decide a training schedule (number of iterations, steps, & learning rate)
-Import pretrained model 
+- Create image labels
+- Create LMDBs
+- Decide a training schedule (number of iterations, steps, & learning rate)
+ Import pretrained model 
 
 
 
