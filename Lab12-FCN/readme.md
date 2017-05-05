@@ -46,5 +46,5 @@ Finetune the provided network for the “weizmann horse image database”, remem
 We will relax the usual delivery requirements for this one. Upload a small report to you github, any format you like; Describe your approach to train the FCN including the data prepartion. Perform a simple evaluation on a subset of the horses dataset using the jaccard index. Finally upload your code, and the general instructions to run it.
 
 ## Deadline
-Friday 19 2017 11:59
+**Friday 19 2017 11:59**
 
