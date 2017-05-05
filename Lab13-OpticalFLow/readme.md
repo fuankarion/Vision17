@@ -285,7 +285,7 @@ Tips:
 We will relax the usual delivery requirements for this one. Upload a small report to you github, any format you like; Describe your approach to solve any of the tasks. Upload your code, and the general instructions to run it.
 
 ## Deadline
-**Friday 19 2017** 11:59
+**Friday 19 2017 11:59**
 
 ## References
 
