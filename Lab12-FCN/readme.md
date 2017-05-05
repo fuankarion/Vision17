@@ -1,6 +1,6 @@
 # Fully Convolutional Networks for Image Segmentation
 
-This one is for nature lovers :). In this lab you will finetune a fully convolutional network to segment horses on the “weizmann horse image database” provided by [Eran Borenstein](http://www.msri.org/people/members/eranb/), 
+This one is for nature lovers :). In this lab you will fine tune a fully convolutional network to segment horses on the “weizmann horse image database” provided by [Eran Borenstein](http://www.msri.org/people/members/eranb/), 
 
 ## Resources
 This Laboratory is based on the [tutorial](https://github.com/NVIDIA/DIGITS/tree/master/examples/semantic-segmentation) provided by Nvidia. It is strongly recommended to read the tutorial and get a nice grasp on the main ideas. Our task is just a tuned down version of the fine tuning exercise presented there. 
@@ -32,15 +32,15 @@ If you need some help with the prototxt files, you can check the caffe reources 
 
 ### A Handy layer
 
-Unlike most fine tune procedures, where the final layer of a network is removed and learnt from scratch while some of the other layers are fine tuned. We will finetune **only** the layers related to the deconvolution process, while freezing the lowe layers, and finally adjuts our net outpur with a simple 3 class output at the very top of the network. This final layer is called *score_3classes* and can be found on the trainVal.prototxt.
+Unlike most fine tune procedures, where the final layer of a network is removed and learnt from scratch while some of the other layers are fine tuned. We will finetune **only** the layers related to the deconvolution process, while freezing the lower layers, and finally adjust our net output with a simple 3 class output at the very top of the network. This final layer is called *score_3classes* and can be found on the trainVal.prototxt.
 
 ## Your turn
-Finetune the provided network for the “weizmann horse image database”, remember there are  4 main steps:
-- Create image labels
-- Create LMDBs
-- Decide a training schedule (number of iterations, steps, & learning rate)
- Import pretrained model 
-
+Finetune the provided network for the “weizmann horse image database”, remember there are 5 main steps:
+- Create image labels, pay attention to the scheme used in the nvidia tutorial and use pixel intensity to label horses, background and ignore labels
+- Create LMDBs, use the utilities  provided by your instructor, this can be tricky with caffe default binaries
+- Decide a training schedule, find a proper configuration on the solver so you can get the better train results.  
+- Import pretrained model, pay attention to line 18 on trainFCN.py
+- Start learning, provided everything is on its place, just run *python trainFCN.py*
 
 
 
