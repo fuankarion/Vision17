@@ -24,9 +24,9 @@ There are two files you might want to take a look:
 - trainFCN. Sample routine for **finetuning** an FCN network, it will log train data to ./net/log.txt
 
 Additionally inside the directory ./net you will find 3 relevant resources
-- Model.txt: URL to download the weights for the base fully convolution model of Alexnet already trained in pascal VOC
-- Solver.prototxt: Overall training/fine-tuning configuration 
-- trainVal.prototxt: Network descriptor
+- Model.txt: URL to download the weights for the fully convolutional version of AlexNet trained in pascal VOC.
+- Solver.prototxt: Overall training/fine-tuning configuration.
+- trainVal.prototxt: Network descriptor.
 
 If you need some help with the prototxt files, you can check the caffe reources on [layers](http://caffe.berkeleyvision.org/tutorial/layers.html)
 
