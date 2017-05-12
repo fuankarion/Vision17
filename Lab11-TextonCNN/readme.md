@@ -121,7 +121,7 @@ The challenge serveis is available at..., it will evaluate the per class precisi
 As this extra credit requires a lot of effort, there will be a special bonus. The best two submission will be able to change one of their Labs grades (and that is **any grade**) for a 5.0. Any other submission that ranks above 0.70 average F1 measure will get a +1.0 that can be added to any one of their Labs grades. 
 
 Finally, to add some extra motivation, your lab instructor will also be part of this challenge, can you beat him?
-
+<p align="center">
 ![](https://media.giphy.com/media/26BRzQS5HXcEWM7du/giphy.gif)
-
+</p>
 
