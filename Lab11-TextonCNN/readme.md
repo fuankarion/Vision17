@@ -116,7 +116,7 @@ We will be holding our small 'texture classification challenge', like most real-
 
 Your Submissions will have a standard format (just like in lab 10), However, this time it will be a plain text file with .txt extension. Each line will contain the classification result of **a single image** using the following format: *imageId,Label*. You can find sample file with randomly generated labels on ...
 
-The challenge serveis is available at..., it will evaluate the per class precision and recall, and rank your submission according to their average F1 measure. A leaderboard is also available on the same server. 
+The challenge serveis is available [here](http://34.192.217.75:3000), it will evaluate the per class precision and recall, and rank your submission according to their average F1 measure. A leaderboard is also available on the same server. 
 
 As this extra credit requires a lot of effort, there will be a special bonus. The best two submission will be able to change one of their Labs grades (and that is **any grade**) for a 5.0. Any other submission that ranks above 0.70 average F1 measure will get a +1.0 that can be added to any one of their Labs grades. 
 
