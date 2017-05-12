@@ -122,6 +122,6 @@ As this extra credit requires a lot of effort, there will be a special bonus. Th
 
 Finally, to add some extra motivation, your lab instructor will also be part of this challenge, can you beat him?
 
-
+![](https://media.giphy.com/media/26BRzQS5HXcEWM7du/giphy.gif)
 
 
