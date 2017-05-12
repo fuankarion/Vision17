@@ -111,9 +111,15 @@ Last but not least **Do not include in the report your best network!!**, if you 
 ## Due Date:
 **May 11 2017 11:59pm** As usual just upload you report to git
 
-## Phase 2, The Texture Recognition Challenge (Available 27 April)
-We will be holding our small 'texture classification challenge', like most real-world challenges you are free to use **any strategy (cheating is not a valid strategy!)** to produce the better classification over the test set of our modified texture database. Your Submissions will have a standard format (just like in lab 10), they will be evaluated and ranked according to their (F1?/ACA?)..... Finally, unlike real world challenges, you cannot develop a joint solution with another group, any such submission will be disregarded. 
+## Phase 2, The Texture Recognition Challenge 
+We will be holding our small 'texture classification challenge', like most real-world challenges you are free to use **any strategy (cheating is not a valid strategy!)** to produce the better classification over the test set of our modified texture database. Unlike real world challenges, you cannot develop a joint solution with another group, any such submission will be disregarded. 
 
-As this extra credit requires a lot of effort, there will be a special bonus. The best two submission will be able to change one of their Labs grades (and that is **any grade**) for a 5.0. Any other submission that ranks above (.....) will get a +1.0 that can be added to any one of their Labs grades. 
+Your Submissions will have a standard format (just like in lab 10), However, this time it will be a plain text file with .txt extension. Each line will contain the classification result of **a single image** using the following format: *imageId,Label*. You can find sample file with ramdoly generated labels on ...
+
+The challenge serveis is avilable at..., it will evaluate the per class precsion and recall, and rank your submission according to their average F1 measure. A leaderborad is also available on the same server. 
+
+As this extra credit requires a lot of effort, there will be a special bonus. The best two submission will be able to change one of their Labs grades (and that is **any grade**) for a 5.0. Any other submission that ranks above 0.70 average F1 measure will get a +1.0 that can be added to any one of their Labs grades. 
+
+Finally, to add some extra motivation, your lab instructor will also be part of this challenge, can you beat him?
 
 
