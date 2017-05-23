@@ -26,8 +26,7 @@ Guillaume's team | GPU 0
  
 
 GPU RAM memory is by far the most sensitive resource, unlike most Labs,  you will have a **very strict resource limit**:
-- Teams in GPUs 1 & 2 will not be allowed to run any process over 4GB, 
-- Teams on GPUs 0 and 3 you will not be allowed to run any process with more than 6GB. 
+- No team will be allowed to run any process with more than 6GB. 
 
 While I  can not directly enforce this resource limit, I will be checking from time time the resource usage, if any team fails to comply with the resource limit, I will first politely ask the team leader (the ones with access to the cluster) to tune down the parameters on their experiments. Anyway, if  you repeatedly fail to comply with the limit, I will ask the DSIT to temporarily block the access to the cluster. Lets never get there.
 
