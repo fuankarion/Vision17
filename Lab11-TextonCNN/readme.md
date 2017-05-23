@@ -19,12 +19,10 @@ Guillaume's team | GPU 0
  Jorge's Team | GPU 0
  Edgard | GPU 1
  Crhistian's Team | GPU 1
- Fabian's team | GPU 1 
+ Fabian's team | GPU 2 
  Sebastian's Team | GPU 2
- Laura's team | GPU 2
- Mariajose's team | GPU 2 
+  Mariajose's team | GPU 3 
  Ruben's team | GPU 3 
- Alejandro's team | GPU 3
  
 
 GPU RAM memory is by far the most sensitive resource, unlike most Labs,  you will have a **very strict resource limit**:
